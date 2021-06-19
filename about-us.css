@@ -1,0 +1,249 @@
+
+
+@media screen and (min-width:800px)  {
+    
+ body {
+         width: 100%;
+         height: 100vh;
+         background: #E5E5E5;
+         color: #333333;
+         font-family: 'Red Hat Display', sans-serif;
+         font-size: 16px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: 21px;
+         letter-spacing: 0em;
+         text-align: left;
+         padding: 0px;
+         
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a.nav-bar:hover{
+           background-color: #00C5B4;
+           border-radius: 5px;
+           width: 66px;
+           height: 30px;
+           padding: 15px;
+           text-align: center;
+           color: #ffffff;
+           transition: background 1s linear 0.1s , color 0.5s linear 0s; 
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 10px;
+            
+
+        }
+        span#logo-navbar{
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            padding-right: 15%;
+        }
+        a#nav-logo{
+            text-align: center;
+            padding-top: 10px;
+            
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    div.header-container{
+        background: url(/imges/about.jpg), #DDDADA;
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        border-width: 8px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 1372px;
+        height: 739px;
+    }
+    div.about-content{
+        height: 260px;
+        width:  420px;
+        background: rgba(0, 197, 180, 0.54);
+        border-radius: 15px;
+        color: #ffffff;
+        padding: 8px;
+        position: relative;
+        right: 40px;
+        top: 60px;
+    }
+   
+    div#our-mission {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    p.mission-statement{
+        font-size: 28px;
+        font-weight: 400;
+       line-height: 2;
+    }
+    div#services{
+        background: rgba(120, 240, 230, 0.4);
+       padding: 15px 5px;
+    }
+
+    h2{
+       margin: 5px 30% 5px ;
+       padding: 10px 0 15px;
+       font-size: 37px;
+       font-weight: 700;
+       text-align: center; 
+       text-decoration: underline #00C5B4 5px ; 
+
+    }
+
+    div.service-img{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content:space-between;
+        justify-content: space-evenly;
+        
+    }
+
+    div.services-link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content:space-between;
+        justify-content: space-evenly;
+        font-size: 24px;
+        text-align: center;
+        flex-basis:1 ;
+        margin: 10px 5px;
+        padding-right: 20px;
+    }
+    div#values{
+        background: rgba(168, 168, 168, 0.2);
+        
+    }
+    div#values-and-images{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    img#value-logo{
+        height: 200px;
+        width: 250;
+    
+    }
+    ul.list-values{
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 28px;
+    }
+    li.list-values{
+        margin: 35px 5px;
+    }
+    div.our-founder{
+        background-color: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    img#founder-img{
+        width: 35%;
+        height: 40%;
+        margin:5px 10px;
+    }
+    p.our-founder{
+        padding-right: 8px;
+        font-size: 24px;
+        line-height: 2;
+       font-weight: normal;
+        width: 40%;
+        height: 30%;
+    }
+    div.our-team{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    img#our-team-img{
+        width: 45%;
+        height: 40%;
+    }
+    p.our-team{
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 2;
+        width: 30%;
+        height: 30%;
+    }
+    h4{
+        margin: 5px 30% 5px ;
+       padding: 10px 0 15px;
+       text-align: center;
+    
+    }
+    h4.Newsletter{
+        font-size: 37px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    span#underline{
+        text-decoration: underline #00C5B4 8px;
+        
+    }
+    div#email-sign-up{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input.user-input{
+        box-sizing: border-box;
+        border: 1px solid #C4C4C4;
+        border-radius: 5px;
+        background: #F9F9F9;
+        width: 15%;
+        height: 25px;
+    }
+    input#sign-up-btn{
+        width: 10%;
+        height: 25px;       
+        background: #00C5B4;
+        border-radius: 5px;
+        font-weight: bold;
+        line-height: 20px;
+        color: #000000;
+        box-sizing: border-box;
+        border: none;
+    }
+   footer{
+        background: rgba(120, 240, 230, 0.4);
+        border-radius: 5px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+   }
+   img#logo-disclaimer{
+       width: 65px;
+       height: 65px;
+   }
+   h3#heading-footer{
+     text-align: left; 
+     margin: 5px 10px; 
+    
+    }
+
+    ul{
+        list-style-type: none;
+    }
+}
