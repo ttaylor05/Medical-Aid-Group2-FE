@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="nav-bar">
+    
         <nav>
             <span id="logo-navbar">
                 <img src="/imges/logo.svg" alt="logo" height="45px" width="45px">
@@ -24,7 +24,7 @@
             <a class="nav-bar"  href="#">FAQ</a>
         </nav>
         <!-- width="1372" height="739"-->
-    </div>
+    
     <div>
         <header>
             <div class="header-container">
@@ -52,21 +52,22 @@
                 <h2 id="services-heading">Services</h2>
                 <div class="service-img">
                     <img class="service-img" src="/imges/primary-care-services.png" alt="care service office lobby">
-        
+                    
                     <img class="service-img" src="/imges/Dentistry.png" alt="Dentist x-ray">
                     
-                    <img class="service-img" src="/imges/Pediactrics.png" alt="Pediactrics">
-                        
+                    <img class="service-img" src="/imges/Pediactrics.png" alt="Pediactrics">  
                 </div>
-                <div class="services-link">
-                    <a href="#" class="services-link">Primary Care Services</a>
-                    <a href="#" class="services-link">Dentistry</a>
-                    <a href="#" class="services-link">Pediactrics</a>
-                </div>
+              
+                   
+                    <div class="services-link">
+                    <a href="#" class="services-link" id="pcs" >Primary Care Services</a>
+                    <a href="#" class="services-link" id="dy" >Dentistry</a>
+                    <a href="#" class="services-link" id="ps" >Pediactrics</a>
+                    </div>
                 
             </div>
             <div class="sv" id="values">
-                <h2>Values</h2>
+                <h2 id="valuesh2" >Values</h2>
                 <div id="values-and-images">
                     <img src="/imges/logo.svg" alt="Logo" id="value-logo">
                     <ul class="list-values">
@@ -74,9 +75,10 @@
                         <li class="list-values" >We're in it together</li>
                         <li class="list-values" >We give a little extra</li>
                     </ul>
+                </div>
             </div>
-            <div id="founder-container">
-                <h2>Our Founder</h2>
+                <div id="founder-container">
+                <h2 id="h2founder" >Our Founder</h2>
                 <div class="our-founder">
                     <img src="/imges/founder.png" alt="Founder-image" class="our-founder" id="founder-img">
                     <p class="our-founder">
@@ -86,7 +88,7 @@
 
             </div>
             <div class="our-team-container">
-                <h2>Our Team</h2>
+                <h2 class="our-team">Our Team</h2>
                 <div class="our-team">
                     <p class="our-team">
                         With a team over 1000 employees, we take pride in our ever growing family and love to see new faces. Join our team now!  
@@ -95,13 +97,13 @@
                 </div>
             </div>
             <div class="Newsletter">
-                <h4 class="Newsletter">Subscribe to our <span id="underline">Newletter!</span></h4>
+                <h4 class="Newsletter">Subscribe to our <span id="underline">Newsletter!</span></h4>
                 <div clase="Newsletter" id="email-sign-up">
                     <input class="user-input" type="text" placeholder="Enter Name" name="user-name"><br>
                     <input class="user-input" type="text" placeholder="Enter Email" name="email"><br>
                     <input id="sign-up-btn" type="button" value="Sign Up" placeholder="Sign Up">
                 </div>
-        </div>
+           </div>
 
         </main>
     </div>
@@ -110,12 +112,21 @@
         <div class="location-disclaimer">
             <div class="logo-disclaimer-container">
                 <img id="logo-disclaimer" src="/imges/logo.svg" alt="logo">
-                <h3 id="heading-footer" ><strong>Empr Medical</strong></h3>
-                <span>
-                    200 1st Ave <br>
-                    New Orleans, LA 70124 <br>
-                </span>
-                <br>
+                <p  class="office-address" >
+                    <span class="office-address" id="empr-medical"> 
+                        <h3 class="office-address" >
+                            Empr Medical
+                        </h3>
+                        
+                    </span>
+                    <span class="office-address" >
+                        200 1st Ave
+                    </span>
+                </p>
+               <ul>
+                   <li> New Orleans, LA 70124</li>
+               </ul>
+                
                 <span>
                     Site Map
                 </span>
@@ -124,24 +135,24 @@
                 </span>
             </div>
         </div>
-        <div>
-          <ul>
-              <li>About</li>
-              <li>Patient Portal</li>
-              <li>News Room</li>
-              <li>Contact Us</li>
+        <div class="footer-contianer" >
+          <ul class="li-footer">
+              <li class="li-footer">About</li>
+              <li class="li-footer" >Patient Portal</li>
+              <li class="li-footer" >News Room</li>
+              <li class="li-footer" >Contact Us</li>
           </ul>
         </div>
-        <div>
-            <ul>
-                <li>Find A Provider</li>
-                <li>Empr Medical health</li>
-                <li>Locations</li>
-                <li>Careers</li>
+        <div class="footer-contianer" >
+            <ul class="li-footer">
+                <li class="li-footer" >Find A Provider</li>
+                <li class="li-footer" >Empr Medical health</li>
+                <li class="li-footer" >Locations</li>
+                <li class="li-footer" >Careers</li>
             </ul>
         </div>
-        <div>
-            <span>Notice of Privacy</span>
+        <div class="footer-contianer">
+            <ul id="privacy-footer" ><li>Notice of Privacy</li></span>
         </div>
 
         
