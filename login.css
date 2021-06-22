@@ -1,9 +1,16 @@
+.logo2-container {
+    display: flex;
+    align-items: center;
+}
+#a .nav-logo2, .logo2-text {
+    color: black;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
 .flex-container {
     display: flex;
 }
-/* .container {
-    display: flex;
-} */
 .image {
     padding-top: 5em;
     padding-left: 200px;
@@ -18,49 +25,53 @@
 }
 .email1 {
     background-color:   rgb(245, 241, 241);
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     padding-right: 175px;
     padding-left: 5px; 
     margin-bottom: 45px;
     border: 1px solid;
     border-color: rgb(223, 222, 222);
     border-radius: 7px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 17px;
     
 }
 .pwd {
-    background-color:   rgb(245, 241, 241);
-    padding-top: 10px;
-    padding-bottom: 20px;
+    background-color:   rgb(245, 241, 241); 
+    padding-bottom: 15px;
     padding-right: 175px;
     padding-left: 5px; 
     margin-bottom: 0px;
     border: 1px solid;
     border-color: rgb(223, 222, 222);
     border-radius: 7px;
-    
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 17px;
 }
 
 .psw {
     padding-left: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
 }
 
 .login {
     background-color: rgb(42, 199, 183);
-    padding-right: 55px;
-    padding-left: 55px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-right: 58px;
+    padding-left: 58px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border: none;
     margin-left: 100px;
     font-size: 14px;
     border-radius: 5%;
     font-weight: bold;
     margin-bottom: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    
 }
 .register {
-    padding-left: 27px;
+    padding-left: 58px;
 }
 @media only screen and (max-width: 375px) {
     .flex-container {
@@ -70,7 +81,7 @@
        margin-left: -25px;
     }
     .image {
-        margin-top: -50px;
+        margin-top: -70px;
         margin-left: 14px;
         width: 110%;
     }
@@ -90,7 +101,7 @@
     margin-left: 86px;
 }
 .register {
-    padding-left: 25px;
+    padding-left: 35px;
     
 }
  
