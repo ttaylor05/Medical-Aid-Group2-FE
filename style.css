@@ -1,1 +1,657 @@
- /* The landing page stylesheet here  */
+body{
+    overflow-x: hidden;
+    padding-left:116px;
+    padding-right:116px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 114px;
+    padding-right: 114px;
+    overflow: hidden;
+    background-color:white;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: inline-block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:16px;
+  }
+  
+  li a:hover {
+    background-color:#00c5b4;
+    color:white;
+  }
+  
+  .active {
+    background-color:#00c5b4;
+  }
+
+  .menu img{
+      height: 30px;
+      float:left;
+      padding-top:2px;
+
+  }
+
+.menu p{
+    float:left;
+    padding-left:18px;
+}
+
+
+.text{
+    position:absolute;
+    width:400px;
+    height:300px;
+    margin-top:100px;
+    margin-left:700px;
+    background: rgba(300, 243, 243, 0.5);
+    border-radius:15px;
+
+}
+
+.hero{
+    background-image:url(/photos/image1.svg);
+    background-repeat: no-repeat;
+    height:100vh;
+    margin-top:20px;
+}
+
+.text h1{
+    text-align:center;
+    padding-top:20px;
+}
+
+.text p{
+    text-align:left;
+    width:320px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.buttons{
+    text-align:center;
+    margin-top:70px;
+}
+
+.login{
+    background-color:#00c5b4;
+    width:100px;
+    padding:7px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.signup{
+    background-color: lightgray;
+    width:100px;
+    padding:7px;
+    border:none;
+    border-radius:6px;
+    margin-left:30px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+.grid-one{
+    display:grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-template-areas:
+    "image  text" 
+    ;
+}  
+
+.picture{
+    grid-area:image;
+    background-image: url(/photos/Rectangle\ 284\ \(2\).svg)  ;
+    background-repeat: no-repeat;
+    position:absolute;
+}
+
+.text-main {
+    grid-area:text;
+    width:380px;
+    padding-left:60px;
+    text-align:left;
+}
+
+.picture img{
+    width:400px;
+    margin-left:200px;
+}
+
+.text-main h1{
+    text-align:center;
+    text-decoration:underline;
+    text-decoration-color:#00c5b4;
+  text-decoration-style: solid;
+  text-decoration-thickness: 4px;
+}
+
+.learn-more{
+    float: right;
+    margin-top:40px;
+    margin-right:20px;
+}
+
+.text-main button{
+    background-color:#00c5b4;
+    width:100px;
+    padding:7px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+
+}
+
+.features{
+    text-align:center;
+    margin-top:100px;
+    text-decoration:underline;
+    text-decoration-color:#00c5b4;
+    text-decoration-thickness: 4px;
+    
+}
+
+
+.grid-two{
+    display:grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-template-areas:
+    "appointment location history" 
+    ;
+}  
+
+
+
+.appointments h3{
+ margin-left:100px;
+}
+
+.appointments p{
+    width:300px;
+    margin-left:100px;
+}
+
+.appointments img{
+    width:150px;
+    height:200px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;   
+}
+
+
+.locations h3{
+  margin-left:100px;
+}
+
+.locations p{
+    width:300px;
+    margin-left:100px;
+}
+
+.locations img{
+    width:150px;
+    height:200px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.medical-history h3{
+    margin-left:100px;
+}
+
+.medical-history p{
+    width:300px;
+    margin-left:100px;
+}
+
+.medical-history img{
+    width:150px;
+    height:200px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.benefits{
+    text-align:center;
+    margin-top:100px;
+    text-decoration:underline;
+    text-decoration-color:#00c5b4;
+    text-decoration-thickness: 4px;
+    
+}
+
+.grid3{
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-template-areas:
+    "image-benefits  text-benefits" 
+    ;
+
+}
+
+.map-photo img{
+    grid-area:image-benefits;
+    display:block;
+    margin-left:300px;
+    margin-top:50px;
+    width: 290px;   
+}
+
+.benefits-text{
+    grid-area:text-benefits;
+    width:380px;
+    margin-left:40px;
+}
+
+.benefits-text h1{
+    text-align:left;
+}
+
+.left-arrow{
+    margin-left:200px;
+   position:absolute;
+   margin-top:200px;
+}
+
+.right-arrow{
+    margin-left:400px;
+    position:absolute;
+    margin-top:200px;
+}
+
+.grid3 button{
+    background-color:#00c5b4;
+    width:40px;
+    height:30px;
+    cursor:pointer;
+    border:none;
+}
+
+.benefits-text button{
+    background-color:#00c5b4;
+    width:40px;
+    height:30px;
+    cursor:pointer;
+    border:none;
+}
+
+
+
+
+
+
+
+
+.reviews{
+    margin-top:200px;
+    margin-bottom:50px;
+    text-align:center;
+    text-decoration:underline;
+    text-decoration-color:#00c5b4;
+    text-decoration-thickness: 4px;
+}
+
+
+.grid4{
+   
+    display:grid;
+    margin-top:0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-template-areas:
+    "image-reviews  text-reviews"
+    ;
+
+}
+
+.profile-photo{
+ grid-area:"image-reviews";
+
+}
+
+.reviews-text{
+    grid-area:"text-reviews";
+    width:300px;
+    margin-left:40px;
+    margin-top:30px;
+
+}
+
+.profile-photo img{
+    grid-area:image-benefits;
+    display:block;
+    margin-left:380px;
+    width: 200px;
+}
+
+.grid4 button{
+    background-color:#00c5b4;
+    width:40px;
+    height:30px;
+    cursor:pointer;
+    border:none;
+    margin-left:200px;
+    position:absolute;
+    
+}
+
+.profile-photo button{
+    position:absolute;
+    margin-top:100px;
+}
+
+
+
+.reviews-text button{
+    margin-left:400px;
+    background-color:#00c5b4;
+    width:40px;
+    height:30px;
+    cursor:pointer;
+    border:none;
+    position:absolute;
+    margin-top:70px;
+}
+
+
+.grid5{
+
+display:grid;
+margin-top:100px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows:1fr;
+grid-template-areas:
+"image-iphone  download-section"
+;
+}
+
+.download-section{
+    width:400px;
+    margin-left:200px;
+    margin-top:80px;
+}
+
+.download-section p{
+        margin-left:auto;
+        margin-right:auto;
+}
+
+.image-iphone img{
+    margin-left:200px;
+}
+
+
+.download-section button{
+ padding-top:10px;
+ padding-bottom:20px;
+ padding-left:10px;
+ padding-right:10px;
+ cursor: pointer;
+ margin-top:20px;
+
+}
+.apple{
+   
+    border:none;
+    border-radius:3px;
+    height:30px;
+    background-color:#00c5b4;
+}
+
+.google{
+   
+    border:none;
+    border-radius:3px;
+    margin-left: 15px;
+    height:30px;
+    background-color:lightgrey;
+}
+
+.contact{
+    display:grid;
+    margin: top 00px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-template-areas:
+    "image-reviews  text-reviews"
+    ;
+}
+
+#fname{
+    width:120px;
+    padding:5px;
+}
+
+#last-name{
+    float:right;
+    margin-right:245px;
+    width:120px;
+    padding:5px;
+}
+
+#enter-email{
+    width:330px;
+    margin-top:10px;
+}
+
+#message{
+    margin-top:10px;
+    height:100px;
+    width:290px;
+}
+
+#submit{
+    margin-top:10px;
+    border:none;
+    border-radius:5px;
+}
+
+.contact-image img{
+width: 350px;
+height:350px;
+margin-left:200px;
+position:absolute;
+margin-top:100px;
+} 
+
+
+.form h1{
+    margin-left:100px;
+    text-decoration:underline;
+    text-decoration-color:#00c5b4;
+    text-decoration-thickness: 4px;
+}
+
+.form1{
+    margin-left:100px;
+    margin-top:30px;
+}
+
+.contact .form{
+    margin-top:100px;
+}
+
+#enter-email{
+    width:280px;
+    padding:5px;
+}
+
+.contact-form button{
+    background-color:#00c5b4;
+    border:none;
+    padding:5px;
+    width:100px;
+    margin-top:20px;
+    margin-left:100px;
+}
+
+.newsletter {
+    margin-top:160px;
+    height:300px;
+    
+}
+
+.newsletter h1{
+    text-align:center;
+}
+
+.newsletter h1 span{
+    text-decoration:underline;
+    text-decoration-color:#00c5b4;
+    text-decoration-thickness: 4px;
+}
+
+.newsletter input{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.newsletter button{
+    display:block;
+    margin:auto;
+    border:none;
+    border-radius: 5px;
+    padding:5px;
+    width:120px;
+    background-color: #00c5b4;
+    
+}
+
+.input-forms{
+    margin-top:50px;
+}
+
+.input-forms input{
+    display:block;
+    margin:auto;
+    padding:5px;
+    width:200px;
+}
+
+
+
+
+
+
+
+
+
+.icons{
+    display:grid;
+    grid-template-rows:1fr;
+    grid-template-areas:
+    "one two three four five six seven"
+    ;
+}
+
+.empr-logo{
+    margin-top:20px;
+    width:30px;
+    
+
+}
+
+.twitter{
+margin-top:20px;
+
+}
+
+.instagram{
+margin-top:20px;
+}
+
+.facebook{
+margin-top:20px;
+}
+
+.icons img{
+    display:block;
+    margin-left:50px;
+}
+
+.icons span{
+    margin-left:10px;
+}
+
+.logos{
+    display:grid;
+    margin-right:20px;
+    grid-template-rows:1fr;
+    grid-template-areas:
+    "twitter instagram facebook";
+}
+
+.icons h3{
+    margin-left:100px;
+}
+
+.footer{
+    background-color:#78F0E6;
+    height:310px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+.footer1 img{
+    width:100px;
+    margin-left:70px;
+    margin-top:26px;
+    
+}
+
+.footer h3,p{
+    margin-left:50px;
+}
+
+.footer2 {
+    margin-top:20px;
+    line-height:50px;
+}
+
+.footer3{
+    margin-top:20px;
+    line-height:50px;
+}
+
+.footer4{
+    margin-top:20px;
+}
+
+.follow-us{
+    text-decoration:underline;
+    text-decoration-color:#00c5b4;
+    text-decoration-thickness: 4px;
+}
+
+.phone-number{
+    text-decoration:underline;
+    text-decoration-color:#00c5b4;
+    text-decoration-thickness: 4px;
+}
