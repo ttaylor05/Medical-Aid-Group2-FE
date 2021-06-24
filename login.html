@@ -13,27 +13,31 @@
     <title>Login Page </title>
 </head>
 <body>
-    <nav class="logo2-container">
+
+    <div class="header">
         <span id="logo2">
-            <img src="./images/login-images/Group.svg" height="50px" width="50px">
+            <img class="a" src="./images/login-images/Group.svg">
         </span>
-        <div>
-        <a class="logo2-text" href="#" id="nav-logo2">Empr Medical</a>
+
+        <div class="text-only">
+            <a class="logo2-text" href="#" id="nav-logo2">Empr Medical</a>
+        </div>
+
     </div>
-    </nav>
 
 
     <div class="flex-container">
         <div class="image">
-            <img src="./images/login-images/Doctor 4.svg" style="width:100%">
+            <img class="doc2-img" src="./images/login-images/Doctor 4.svg">
+            
         </div>
 
         <div class="container">
+            <div class="login-heading">
+                <p>Login</p>
+            </div>
+            
             <form action="login.php">
-
-                <div class="header">
-                    <p>Login</p>
-                </div>
 
                 <input type="email" class="email1" name="email1" placeholder="Enter Email"><br>
                 <input type="password" class="pwd" name="pwd" placeholder="Enter Password"><br><br>
@@ -44,7 +48,7 @@
                 
                 <span class="psw"><a href="#" style="font-size: 17px;">Forget password?</a></span><br><br><br><br>
 
-                <button class="login">Login</button><br><br><br><br>
+                <button class="login-btn">Login</button><br><br><br><br>
                 
                 <div class="register">
                     <label for="cracct">Not register yet?</label>
