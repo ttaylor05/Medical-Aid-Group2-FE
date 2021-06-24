@@ -28,6 +28,13 @@
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 600;
 }
+*:focus {
+    outline: none;
+}
+input:focus{
+    background-color: rgb(178, 240, 226); 
+}
+
 .email1 {
     background-color:   rgb(245, 241, 241);
     padding-bottom: 15px;
@@ -42,11 +49,12 @@
     font-size: 17px;
 }
 input:focus{
-    background-color: rgb(166, 184, 5);
+    background-color:rgb(178, 240, 226);;
     
 }
 .email1:hover, .pwd:hover {
-    background-color: rgb(208, 230, 17);
+    background-color:rgb(178, 240, 226);;
+    
   }
 
 .pwd {
@@ -65,6 +73,9 @@ input:focus{
     margin-left: 86px;
     color: coral;
 }
+  .signup-btn:hover {
+    background-color:rgb(178, 240, 226);;
+  }
 
 .login-btn {
     background-color: rgb(42, 199, 183);
@@ -83,7 +94,8 @@ input:focus{
     font-weight: 700;
 }
 .login-btn:hover {
-    background-color: rgb(208, 230, 17);
+    background-color:rgb(178, 240, 226);
+    
   }
 .register {
     padding-left: 58px;
@@ -132,8 +144,8 @@ input:focus{
 .register {
     padding-left: 35px;
     margin-bottom: -10px;
-    margin-top: -15px;
+    margin-top: 0px;
 } 
- /*delete this*/
+
  }
  
