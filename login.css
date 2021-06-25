@@ -18,7 +18,8 @@
 }
 .img, .doc2-img {
     margin-top: 71px;
-    max-width: 100%;
+    margin-left: 100px; 
+    max-width: 80%;
     width: 100%;
 }
 .login-heading  {
@@ -53,7 +54,7 @@ input:focus{
     
 }
 .email1:hover, .pwd:hover {
-    background-color:rgb(178, 240, 226);;
+    background-color:rgb(178, 240, 226);
     
   }
 
@@ -71,10 +72,10 @@ input:focus{
 }
 .psw {
     margin-left: 86px;
-    color: coral;
 }
+
   .signup-btn:hover {
-    background-color:rgb(178, 240, 226);;
+    background-color:rgb(178, 240, 226);
   }
 
 .login-btn {
