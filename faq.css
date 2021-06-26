@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.img, .a {
+    display: inline;
+    vertical-align: middle;
+} 
+
+.menu {
+    display: flex;
+    padding-left: 2em;
+    /* align-items: center; */
+    /* padding-left: 20;
+    margin-right: 10px; */
+  }
+  .logo {
+      padding-right: 50px;
+      margin-right: 50px;
+  }
+.doctor-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 100%;
+    width: 100%;
+}
