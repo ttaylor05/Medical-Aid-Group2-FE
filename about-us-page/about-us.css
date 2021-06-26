@@ -41,14 +41,14 @@ body {
        width: 100%;
        height: 100px;
    }
-   
+   a.nav-select{
+      padding: 15px; 
+   }
 
    a.nav-select:hover{
         background-color: var(--buttonnav-color);
         border-radius: 5px;
-        width: 66px;
-        height: 30px;
-        padding: 15px;
+       
         text-align: center;
         color: var(--background-color);
         transition: background 1s linear 0.1s , color 0.5s linear 0s; 
@@ -60,12 +60,11 @@ body {
       justify-content: space-evenly;
       align-content: center;
       align-items: center;
-      padding: 0px;
+      padding: 10px;
       position: fixed;
       width: 100%;   /* == (50vw - (width of vertical scrollbar)) */
       height: 100px;  /* == (50vh - (height of horizontal scrollbar)) */
       margin: 0;   /* == (5vw - (width of vertical scrollbar)) */
-      padding: 0;  /* == (5vw - (width of vertical scrollbar)) */
       background: var(--background-color);
    }
    span#nav-logo{
@@ -383,10 +382,21 @@ ul#footer-menu2{
         flex-direction: column;
         align-items: center;
     }
+    ul#menu{
+        flex-wrap: wrap;
+    }
+   span#nav-logo{
+       width: 100%;
+       align-self: center;
+       justify-content: center;
+   }
+   img#nav-img{
+       max-width: 30px;
+       max-height: 30px;
+   }
     a.services-link{
         padding: 10px;
         text-align: center;
-        
     }
    
     li.services-flex{
@@ -398,7 +408,7 @@ ul#footer-menu2{
     }
 }
 
-@media screen and (min-width:599px) and (max-width:1800px) {
+@media screen and (min-width:599px)  {
     
     span#nav-logo{
         overflow: visible;
@@ -417,6 +427,7 @@ ul#footer-menu2{
         align-items: center;
         height: 100px;
         margin: 0px;
+        font-size: 21px;
     }
     div.header-container{
         background-size: 80% 500px;
