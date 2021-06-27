@@ -56,7 +56,7 @@ input:focus{
     padding-top: 14px;
     padding-bottom: 14px;
     padding-right: 20px;
-     margin-right: -20px; /*changed from -10px */
+     margin-right: -20px; /*changed from -10px for lname */
     margin-bottom: 20px;
 }
 .lname {
