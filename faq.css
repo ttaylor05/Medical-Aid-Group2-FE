@@ -9,18 +9,21 @@
     display: inline;
     vertical-align: middle;
 } 
-
 .menu {
     display: flex;
     padding-left: 2em;
-    /* align-items: center; */
-    /* padding-left: 20;
-    margin-right: 10px; */
+    padding-right: 4em;
+    margin-right: 750px;
+    justify-content: space-between;
   }
-  .logo {
-      padding-right: 50px;
-      margin-right: 50px;
+  .nav {
+      display: flex;
+      align-items: baseline;
   }
+.li .a {
+    display: inline;
+    float: right;
+}
 .doctor-image {
     display: block;
     margin-left: auto;
@@ -28,4 +31,29 @@
     margin-top: 50px;
     max-width: 100%;
     width: 100%;
+}
+.accordion {
+    background-color: cadetblue;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 93%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: cornflowerblue;
+}
+.panel {
+    padding: 0px 18px;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+}
+.footer-menu {
+    margin-top: 2em;
 }
