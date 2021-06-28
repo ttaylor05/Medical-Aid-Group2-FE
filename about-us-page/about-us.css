@@ -40,6 +40,9 @@ body {
    nav{
        width: 100%;
        height: 100px;
+       position: fixed;
+       top: 0px;
+       overflow:hidden;
    }
    a.nav-select{
       padding: 15px; 
@@ -48,7 +51,6 @@ body {
    a.nav-select:hover{
         background-color: var(--buttonnav-color);
         border-radius: 5px;
-       
         text-align: center;
         color: var(--background-color);
         transition: background 1s linear 0.1s , color 0.5s linear 0s; 
@@ -60,12 +62,13 @@ body {
       justify-content: space-evenly;
       align-content: center;
       align-items: center;
-      padding: 10px;
-      position: fixed;
-      width: 100%;   /* == (50vw - (width of vertical scrollbar)) */
-      height: 100px;  /* == (50vh - (height of horizontal scrollbar)) */
+      align-self: center;
+      /*position: fixed;*/
+      width:90%;  /* == (50vw - (width of vertical scrollbar)) */
+      height: 75px;  /* == (50vh - (height of horizontal scrollbar)) */
       margin: 0;   /* == (5vw - (width of vertical scrollbar)) */
       background: var(--background-color);
+      
    }
    span#nav-logo{
        display: flex;
@@ -147,8 +150,13 @@ body {
    justify-content: space-evenly;
   }
   img.service-img{
-     width: 45%;
-     height: 45%;
+     width:150px;
+     height: 150px;
+  }
+  h2#services-heading{
+      align-self:unset;
+      padding-left: 8%;
+      margin-bottom: 15px;
   }
  ul.services-container{
      display: flex;
@@ -160,6 +168,8 @@ body {
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     font-size: 21px;
+     margin-bottom: 15px;
  }
   
  li#primary{
@@ -186,14 +196,21 @@ div#values-and-images{
 img#value-logo{
     width: 50%;
     height: 50%;
-    margin: 0px 30% ;
+    margin-left: 30%;
     margin-top: 15px;
+    
+}
+h2#valuesh2{
+    padding-left: 6%;
 }
 ul.list-values{
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
+    font-size: 21px;
+    align-self: center;
+    padding-right: 8%;
     
 }
 
@@ -260,6 +277,7 @@ p.our-team{
 h2.Newsletter{
     text-decoration: none;
     text-align: center;
+    padding: 10px 0 8px 0;
 }
 
 div.Newsletter{
@@ -267,6 +285,7 @@ div.Newsletter{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin:15px 0 15px 0;
 }
 div#email-sign-up{
     display: flex;
@@ -279,7 +298,7 @@ div#email-sign-up{
 
 input.user-input{
     height: 1.75em;
-    width: 10em;
+    width: 16em;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 5px;
@@ -331,7 +350,7 @@ ul.map-copyright{
 h2#news-letter{
     font-size: 28px;
    text-decoration: underline var(--buttonnav-color) 6px;
-   
+   padding-left: 10px;
 }
 ul#footer-menu1{
     display: flex;
@@ -347,6 +366,29 @@ ul#footer-menu2{
     padding: 0px;
     line-height: 1.5;
 }
+a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}   
+
+h2{
+   font-size: 28px;
+   text-decoration: underline var(--buttonnav-color) 6px;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 21px;
+
+}
+ 
+ul{
+   list-style-type: none;
+}
+li
+{
+    list-style: none;
+}
 
 @media screen and (max-width:598px) {
     body{
@@ -354,6 +396,7 @@ ul#footer-menu2{
     }
     img#bg-image{
         width: 85%;
+      
     }
    
     div.about-content{
@@ -362,7 +405,14 @@ ul#footer-menu2{
         width: 98%;
         font-size: 14px;
         height: fit-content;
+        padding: 15px;
         
+    }
+    p.#collapse{
+        padding: 5px;
+    }
+    h2#news-letter{
+        padding-left: 8px;
     }
 }
 
@@ -426,18 +476,31 @@ ul#footer-menu2{
     span#nav-logo{
         padding: 15px;
     }
-    
+    nav#menu-container{
+        width: 100%;
+        height: 60px;
+        top: 0px;
+       
+    }
     ul#menu{
+        width: 100%;
         align-items: center;
-        height: 100px;
+        max-height: 60px;
         margin: 0px;
         font-size: 21px;
+        top: 0;
+        
     }
+    
+
+@media screen and (min-width: 599px){
     div.header-container{
-        background-size: 80% 500px;
+        background-size: 100% 500px;
         background-repeat: no-repeat;
         width: 100%;
         height: 500px;
+        margin-top: 15px;
+        padding-top: 30px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -445,6 +508,7 @@ ul#footer-menu2{
         display: grid;
         grid-template-columns:20px 1fr 1fr 1fr 1fr 1fr 20px ;
         grid-template-rows: 40px 2fr 1fr 1fr 10px ;
+   
     }
     div.about-content{
         width: 400px;
@@ -502,22 +566,29 @@ ul#footer-menu2{
     }
     div.our-founder{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items:center
     }
     img#founder-img{
-        height: 400px;
-        width: 400px;
+        height: 35%;
+        width: 35%;
     }
     p.our-founder{
         text-align: left;
         font-weight: normal;
+        font-size: 21px;
+        font-weight: normal;
+        text-align: left;
+        padding: 15px 20px 10px 20px;
+        line-height: 2;
+        width: 40%;
     }
     div.our-founder{
         margin: 5% 10px 8% 10px;
     }
     div.our-team{
         flex-direction: row;
+        justify-content: center;
         padding: 15px;
         padding-bottom: 10%;
     }
@@ -525,12 +596,14 @@ ul#footer-menu2{
         font-size: 21px;
         font-weight: normal;
         text-align: left;
-        padding: 15px 15% 10px 15%;
+        padding: 15px 20px 10px 10%;
         line-height: 2;
+       width: 40%S;
     }
     img#our-team-img{
-        width: 50%;
-        height: 50%;
+        width: 35%;
+        height: 35%;
+        padding-right: 10%;
     }
     h2.Newsletter{
         display: flex;
@@ -587,36 +660,4 @@ ul#footer-menu2{
     ul#notice-of-privacy{
         padding-bottom: 9%;
     }
-
-
 }
-
-
-
-
-   
-
-    
-
-
-
-a{
-    text-decoration: none;
-    color: var(--primary-text-color);
-}   
-
-h2{
-   font-size: 28px;
-   text-decoration: underline var(--buttonnav-color) 6px;
-}
-
-p{
-    line-height: 1.5;
-    font-size: 21px;
-
-}
- 
-ul{
-   list-style-type: none;
-}
- 
