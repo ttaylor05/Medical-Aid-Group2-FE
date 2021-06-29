@@ -27,6 +27,7 @@
     width: 100%;
 }
 .signup-heading  {
+    margin-top: -60px;
     margin-left: 3em;
     font-size: 40px;
     font-weight: bold;
@@ -55,7 +56,7 @@ input:focus{
     padding-top: 14px;
     padding-bottom: 14px;
     padding-right: 20px;
-    margin-right: -10px;
+     margin-right: -20px; /*changed from -10px for lname */
     margin-bottom: 20px;
 }
 .lname {
@@ -129,7 +130,7 @@ input:focus{
        padding-bottom: 0px;
     }
     .container {
-        padding-top: 0px;
+        padding-top: 50px;
         padding-left: 15px;
         /* margin-left:auto;
         margin-right: auto; */
@@ -171,4 +172,6 @@ input:focus{
        padding-bottom: 8px;
        padding-top: 8px;
     }
+    /*abc*/
+    
  }
