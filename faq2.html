@@ -17,22 +17,22 @@
 </head>
 
 <body>
-         <header class="menu">
-            <div class="logo">
-                <img src="./images/FAQ-images/Group.svg">
-                <h4>Empr Medical</h4>
-            </div>
 
-            <div class="nav-bar">
-              
-                <a href="home.html" class="active">Home</a>
-                <a href="about-us.html" class="topnav-right">About US</a>
-                <a href="services.html" class="topnav-right">Services</a>
-                <a href="careers.html" class="topnav-right">Careers</a>
-                <a href="faq.html" class="topnav-right">FAQ</a>    
-              
-            </div>
-        </header> 
+    <header class="header">
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <img src="./images/FAQ-images/Group.svg" style="width: 5;">&nbsp&nbsp
+            <span><h2>Empr Medical</h2></span>
+           
+         <nav class=nav-bar>
+            <a href="home.html" class="active">Home</a>
+            <a href="about us.html" class="top-nav">About Us</a>
+            <a href="services.html" class="top-nav">Services</a>
+            <a href="careers.html" class="top-nav">Careers</a>
+            <a href="FAQ" class="top-nav">FAQ</a>
+        </nav>
+         
+       
+    </header>
 
     <div class="doctor-image">
         <img src="./images/FAQ-images/Rectangle 284.svg" width="100%">
@@ -49,8 +49,16 @@
     
     <div class="search-box"> 
         <form>
-            <input type="search" id="search" name="search">
+            <div class="input-container">
+                <input class="input-field" type="search" name="searchbox">
+                <i class="fas fa-search"></i>
+              </div>
+            <!-- <input class="" type="search" id="search" name="search" placeholder="">
+            <i class="fas fas fa-search" style=color:black></i> -->
+           
           </form>
+
+          </div>
     </div>
 
 
@@ -102,31 +110,37 @@
                 </div>
         </div>
     </div>
+ 
 
-    <footer>
-        <div class="footer">
+    <footer class="footer">
 
             <div class="footer-top">
+
                 <div class="logo-bottom">
-                    <img src="./images/FAQ-images/Group.svg" width="50%">
-                   <h4>Empr Medical</h4>
+                    <img src="./images/FAQ-images/Group.svg" style="border: none;"> 
+                     <span><h4>Empr</h4></span>&nbsp;<h4>Medical</h4>
+                </div>  &nbsp;   &nbsp;   &nbsp; 
+                
+
+                <div class="top-text">
+                  <p>Schedule an Appointment:&nbsp <b>1-555-555-1111</b></p>
                 </div>
-                    <div class="top-text">
-                         <p>Schedule an Appointment: &nbsp <b>1-555-555-1111</b>&nbsp &nbsp &nbsp &nbsp Follow Us:</p>
-                    </div>
                 
                 <div class="socials">
+                    <p>Follow Us:</p>&nbsp
                     <a href="#"><i class="fab fab fa-twitter" style="color: #009578;"></i></i></a>
                     <a href="#"><i class="fab fab fa-instagram" style="color: #009578;"></i></i></a>
                     <a href="#"><i class="fab fa-facebook" style="color: #009578;"></i></i></a>
-            </div>
+                  </div>
              </div>
-                
+    </footer>     
+    
+    
              <div class="footer-content">
                 <div class="footer-section-about">
                     <img src="./images/FAQ-images/Group.svg" width="70%">
-                    <h1 class="logo-text"><span></span>EmprMedical</h1>
-                    <p></p>
+                    <h1 class="logo-text"><span>Empr&nbsp;</span>Medical</h1>
+                    
                     <div class="contact-address">
                         200 1st active<br>
                         New Orleans, LA 70124
@@ -157,11 +171,6 @@
         
                 </div>
 
-
-             </div>
-               
-        
-     </footer>
         
    <!-- 123 -->
 </body>
