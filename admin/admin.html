@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+    </style>
+    <link rel="manifest" href="/imges/site.webmanifest"> 
+    <link rel="stylesheet" href="admin.css"> 
+    <title>Admin Page</title>
+</head>
+<body>
+        <div id="top-container">
+            <div class="a-logo"  >
+                <span>
+                    <img src="/images/admin-images/logo.svg" alt="" class="a-logo">
+                </span>
+    
+                <div class="text-only">
+                    <a class="logo2-text" href="#" id="nav-logo2">Empr Medical</a>
+                </div>
+            </div>
+            <div class="search-box-container">
+                <form>
+                    <input  type="text" name="search-box" id="search-box" >
+                    
+                </form>
+                
+            </div>  
+            <div class="top-icons">
+               <a href="#"class="nav-btns"><img src="/images/admin-images/feedback.svg" alt="feedback-icon"></a>
+                <a href="#" class="nav-btns"><img src="/images/admin-images/notification-bel.svg" alt="notification-icon"></a>
+            </div>
+        </div>
+      
+    
+    <div class="left-container">
+        <div class="sidebar-top" id="top-content">
+          <ul class="top-menu-container">
+             <li>
+                 <div>
+                     <a href="#" class="sidebar-link">
+                        <img class="icon-leftcontainer" src="/images/admin-images/dashboard.svg" alt="dashboard"><span class="menu-selectionNames" >Dashboard</span>
+                     </a>
+                 </div>
+             </li>
+             <li>
+                <div>
+                    <a href="#" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/users.svg" alt="Users icon"><span class="menu-selectionNames" >Users</span>
+                    </a>
+                </div>
+             </li>
+             <li>
+                <div>
+                    <a href="#" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/requests.svg" alt="Requests icon"><span class="menu-selectionNames" >Requests</span>
+                    </a>
+                </div>
+             </li>
+             <li>
+                <div>
+                    <a href="#" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/pharmacies.svg" alt="Pharmacies and Clinics icon"><span class="menu-selectionNames" >Pharmacies & Clinics</span>
+                    </a>
+                </div>
+             </li>
+             <li>
+                <div>
+                    <a href="#" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/feedback.svg" alt="feedback & complaints icon"><span class="menu-selectionNames" >Feedback & Complaints</span>
+                    </a>
+                </div>
+             </li>
+             <li>
+                <div>
+                    <a href="#" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/settings.svg" alt="Settings icon"><spanclass="menu-selectionNames" >Settings</span>
+                    </a>
+                </div>
+             </li>
+          </ul>  
+        </div> <!--end of sidebar-top-->
+        <div class="sidebar-mid">
+            <ul class="support-faq-container">
+                <div>
+                    <li>
+                        <a href="#" class="sidebar-link">
+                            <img class="icon-leftcontainer" src="/images/admin-images/supporfaq.svg" alt="Support/FAQ"><span class="menu-selectionNames" >Support/FAQ</span>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div> <!--end of sidbar-mid-->
+        <div class="sidebar-bottom">
+            <ul class="logout-container">
+                <div>
+                    <li>
+                        <a href="#" class="sidebar-link" id="logout-container">
+                            <img class="icon-leftcontainer" src="/images/admin-images/logout.svg" alt="Log out icon"><span class="menu-selectionNames" >Logout</span>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div> <!--end of sidebar-bottom-->
+    </div>
+    <div class="middle-container">
+        <div class="welcome-container">
+            <h1>Welcome Back Trisha</h1>
+            <p>
+                Your last login was on <strong>6/22/21</strong>. There are <strong>3 new messages</strong> on the feedback board with <strong>2 application</strong> <br>
+                 <strong>requests pending.</strong>         
+            </p>
+        </div>
+      
+        <div class="user-analytics-cntnr" >
+            <div class="analytics-title">
+                <h2 id="analytics">Analytics</h2>
+            </div>
+            <div class="avg-resp-contnr">
+                <h3 class="analytics-headers">
+                    AVG Response <br>
+                     Time
+                </h3>
+                <p class="analytics-par">
+                    June 2021 <br>
+                </p>
+                <span class="italic-font">10 mins</span>
 
+
+            </div>
+            <div class="avg-wait-contnr">
+                <h3 class="analytics-headers"> AVG Wait Time</h3>
+                <p class="analytics-par">
+                    June 2021 
+                </p>
+                <span class="italic-font">2 minutes</span>
+    
+            </div>
+            <div class="pat-satifction-cntnr">
+                <h3 class="analytics-headers" id="pat-sat-title"> Patient Satisfaction</h3>
+                <div class="rating-content">
+                    <div class="score-container">
+                        <p>Overall Score</p>
+                        <h1>95%</h1>
+                    </div>
+                    <div class="rating-container">
+                        <p>AVG Patient Rating </p>
+                        <div>
+                            <img src="/images/admin-images/yellow-star.svg" alt="star-ratings" class="stars">
+                            <img src="/images/admin-images/yellow-star.svg" alt="star-ratings"  class="stars">
+                            <img src="/images/admin-images/yellow-star.svg" alt="star-ratings"  class="stars">
+                            <img src="/images/admin-images/yellow-star.svg" alt="star-ratings"  class="stars">
+                            <img src="/images/admin-images/nocolor-star.svg" alt="star-ratings"  class="stars">
+                        </div>
+                        <h1>4.98</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pat-refs-cntnr">
+
+        </div>
+
+
+    </div>
+    <div class="right-container">
+        <div class="my-profile-container">
+            <img src="/images/admin-images/profile-pic.jpg" alt="Profile-picture" height="100px" width="100px" class="profile-pic">
+            <h2>Trista Young</h2>
+               <span>My Profile</span>        
+        </div>
+        <div class="appointments-container">
+            <div class="apps-content" >
+                <h3 class="right-container-headers">Today's Appointments <br> 
+                    <span id="all-locations">All Locations</span></h3>
+            </div>
+            <div class="apps-content">
+                <span>40</span>
+            </div>
+           
+        </div>
+        <div class="cancelled-app-container">
+            <h3 class="right-container-headers">Cancelled Appointments</h3>
+            <h2>4/40</h2>
+        </div>
+        <div class="numVisits-container">
+            <h3 class="right-container-headers">Todays Visits:June 2021</h3>
+            <h2>520</h2>
+        </div>
+        <div class="notifications-contianer">
+            <h3 class="right-container-headers">Notifications</h3>
+            <ul class="bullet-list-style">
+                <li class="bullet-list-style">System Update-6/28/2021</li>
+                <li class="bullet-list-style">Update Contact Information</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
