@@ -19,7 +19,7 @@ body{
     margin: 0%;
     font-family: 'Red Hat Dislay';
     display: grid;
-    grid-template-columns: 25% 50% 20% 5%  ;
+    grid-template-columns: 30px 1fr 1fr 1fr 1fr 20px ;
     grid-template-rows: 100px 5% 15% 20% 40% 10%;
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -52,7 +52,7 @@ div.left-container{
     justify-content: space-around;
     padding-top: 0%;
     border-radius: var(--radius-border);
-    width: 75%;
+    width: 350px;
     height: 100%;
     font-size: 16px;
     font-weight: 500;
@@ -70,7 +70,6 @@ div.middle-container{
     align-items:center;
     width: 100%;
     height: 100%;
-    padding-top: 10%;
 }
 div.right-container{
     grid-column-start: 3 ;
@@ -79,7 +78,8 @@ div.right-container{
     grid-row-end: 5 ;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 258px;;
+
 }
 
 
@@ -100,7 +100,9 @@ ul.top-menu-container{
     justify-content: space-evenly;
     align-items: flex-start;
 }
-
+a.nav-btns{
+    margin: 0 10px;
+}
 a.sidebar-link{
     display: flex;
     flex-direction: row;
@@ -180,6 +182,7 @@ input#search-box{
     background-position-y: center;
     width: 450px ;
     height: 35px;
+    
 }
 div.a-logo{
     padding-left: 40px;
@@ -238,13 +241,20 @@ div.patients-doctors{
     height: 90px;
     margin-bottom: 20px;
 }
+div.middle-container h2{
+    text-align: left;
+    padding-right: 60%;
+}
 div#dr-container{
     margin-left: 20px;
 }
-a.underline{
-    
-    text-decoration: 4px underline #A8A8A8;
-    text-underline-offset: 1em;
+div#patients-container{border-bottom: 4px solid #A8A8A8;}
+div#dr-container{border-bottom: 4px solid #A8A8A8;}
+div#patients-container:hover{
+    border-bottom: 4px solid var(--sidebar-bg-color);
+}
+div#dr-container:hover{
+    border-bottom: 4px solid var(--sidebar-bg-color);
 }
 div.search-users{
     width: 450px;
@@ -254,14 +264,16 @@ div.search-users{
 input#user-searchbox{
     width: 450px;
     height: 40px;
-    
     background-image: url(/images/admin-images/search.svg);
     background-size: 15px;
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: right;
+    background-position-x: 98%;
     border-radius: 5px;
     border: 1px solid #A8A8A8;   
+}
+div.users-tablelist{
+    margin-bottom: 15%;
 }
 
 table{
@@ -270,6 +282,7 @@ table{
     border-collapse: collapse;
     font-size: 16px;
     font-style: normal;
+    
 }
 
 th{
@@ -286,6 +299,12 @@ tr, th {
     border-top: none;
 }
 
+tr:hover {background-color:var(--sidebar-bg-color);}
+tr#no-hover, th:hover {
+    background-color: white;
+}
+
+
 img.users-profile{
     width: 50px;
     height: 50px;
@@ -296,6 +315,33 @@ img#no-user{
     border-radius: 20px;
     margin-top: 10px;
 }
+
+div.nxt-pg{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div.previous-pg{
+    margin-right: 20%;
+}
+div.nextpage{
+    margin-left: 20%;
+}
+button{
+    font-weight: bold;
+    padding: 8px 2em;
+    background: #00C5B4;
+    border-radius: 5px;
+    border: none;
+    margin-top:15px;
+}
+
+
+
+
+
 
 
 
