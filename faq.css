@@ -45,7 +45,7 @@ a:hover, a.selected {
 .imageover-text {
   background-color: rgb(39, 196, 180, 0.7);
   padding: 2% 8%;
-  width: 90%;
+  width: auto;
   text-align: center;
   position: absolute;
   top:50%;
@@ -177,7 +177,7 @@ content: "-";
   display: flex;
   background: rgb(142, 230, 221);
   width: 100%;
-  margin-bottom: 20%;
+  /* margin-bottom: 20%; */
   padding-bottom: 1%;
 }
 
@@ -231,12 +231,12 @@ li {
     margin-left: -67px;
     padding-bottom: 12px;
   } 
-  /* nav .top-nav {
+  nav .top-nav {
     display: block;
     width: 100%;
     margin-left: -26px;
     padding-top: 5px;
-  } */
+  }
 .selected {
     margin-left: -26px;
   }
@@ -314,7 +314,7 @@ button {
   } 
     .footer-section-links3 {
       padding-left: 3.5em;
-      padding-top: 1em;
+      padding-top: 0;
       font-size: 16px;
       padding-bottom: 50px;
       margin-left: 19px;
