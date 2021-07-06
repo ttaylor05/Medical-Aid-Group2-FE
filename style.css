@@ -55,7 +55,7 @@ header {
 
   }
 
-  .section1 div{
+  .section1 div{ 
     position:absolute;
     width:350px;
     margin-left:690px;
@@ -67,8 +67,7 @@ header {
     background: rgba(300, 243, 243, 0.6);
     border-radius:6px;
     height:270px;
-
-  }
+  } 
 
 
   .section1 div, h1, p button {
@@ -77,11 +76,26 @@ header {
 
   .section1 button{
     width:100px;
-    padding:7px;
+    padding:10px;
     border:none;
-    border-radius:6px;
     cursor:pointer;
+    border-radius:6px;
     margin-top:30px;
+    font-size:16px;
+    font-weight: bold;
+    font-family: 'Red Hat Display', sans-serif;
+    
+  }
+
+
+  .section1 .login:hover{
+      background:#78F0E6;
+      transition: 0.5s;
+  }
+
+  .section1 .signup:hover{
+      background:lightgray;
+      transition: 0.5s;
   }
 
   .section1 .login{
@@ -115,6 +129,7 @@ header {
       margin-left:auto;
       margin-right:auto;
       width:400px;
+      
   }
 
   .section2 h3{
@@ -126,13 +141,21 @@ header {
 
   .section2 button{
     background-color:#00c5b4;
-    width:100px;
-    padding:7px;
+    width:110px;
+    padding:10px;
     border:none;
     border-radius:6px;
     cursor:pointer;
     margin-left:300px;
     margin-top:20px; 
+    font-size:16px;
+    font-weight:bold;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+
+  .section2 button:hover{
+      background-color: #78F0E6;
+      transition:0.5s;
   }
 
 
@@ -192,7 +215,19 @@ header {
     background-color:#00c5b4;
     border-style:none;
     width:30px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
 }
+
+.section4 button:hover{
+        background-color: #78F0E6;
+        transition:0.5s;
+    }
+
+
+
+
 
 .section4 .text h1{
     margin-right:300px;
@@ -231,8 +266,16 @@ header {
     margin-top:200px;
     width:30px;
     padding:5px;
+    cursor:pointer;
     background-color:#00c5b4;
     border-style:none;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.section5 button:hover{
+    background-color: #78F0E6;
+    transition:0.5s;
 }
 
 .section5 .text h3{
@@ -270,20 +313,42 @@ header {
     background-color:#00c5b4;
     cursor:pointer;
     border:none;
-    padding:7px;
+    padding:10px;
     border-radius: 5px;
     margin-top:20px;
-    
+    width:100px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight:bold;
+    font-size:16px;
+    width:fit-content;
+}
+
+
+.section6 .apple:hover{
+    background-color: #78F0E6;
+    transition:0.5s;
 }
 
 .section6 .google{
     background-color:#8a8a8a;
     cursor:pointer;
     border:none;
-    padding:7px;
+    padding:10px;
     border-radius: 5px;
     margin-left:20px;
+    width:fit-content;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight:bold;
+    font-size:16px;
+
 }
+
+.section6 .google:hover{
+        background-color:lightgray;
+        transition:0.5s;
+    }
+
+
 
 
 .section7{
@@ -337,12 +402,21 @@ header {
 .section7 button{
     margin-top:30px;
     background-color:#00c5b4;
-    padding:7px;
+    padding:10px;
     width:100px;
     cursor:pointer;
     border:none;
     border-radius:5px;
+    font-weight:bold;
+    font-size:16px;
+    font-family: 'Red Hat Display', sans-serif;
 }
+
+.section7 button:hover{
+        background-color: #78F0E6;
+        transition:0.5s;
+    }
+
 
 .section7 .contact{
     text-decoration:underline;
@@ -354,7 +428,7 @@ header {
 
 
 .section8{
-   
+
     height:200px;
     text-align: center;
     margin-top:100px;
@@ -367,11 +441,14 @@ header {
     text-decoration:underline;
     text-decoration-color:#00c5b4;
     text-decoration-thickness: 4px;
+    
 }
 
 .section8 h1{
-    text-align: center;
+    margin-left:70px;
 }
+
+
 
 
 #first-name{
@@ -387,14 +464,22 @@ header {
 
 .section8 button{
     margin-top:40px;
-    width:200px;
-    padding:5px;
+    width:100px;
+    padding:10px;
     border-radius: 5px;
     background-color: #00c5b4;
     border-style: none;
+    font-size:16px;
+    font-weight:bold;
+    font-family: 'Red Hat Display', sans-serif;
+    
 }
 
-
+.section8 button:hover{
+    cursor:pointer;
+    background-color: #78F0E6;
+    transition:0.5s;
+}
 
 
 .section9{
@@ -814,8 +899,10 @@ body{
     margin-right: 100px;
     flex-direction: column;
     width:400px;
-    font-size: 20px;
+    font-size: 20px; 
 }
+
+
 
 
 footer {
