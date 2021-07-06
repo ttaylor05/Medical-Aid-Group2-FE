@@ -15,9 +15,7 @@ justify-content: space-between;
 padding: 20px;
 background:rgb(245, 241, 241);
 }
-/* img {
-  width: 30px;
-} */
+
 h2 {
   margin-right: 600px;
 }
@@ -40,7 +38,7 @@ a:hover, a.selected {
   max-width: 100%;
   height: 700px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
   margin-top: 5px;
 }
@@ -70,8 +68,8 @@ a:hover, a.selected {
 }
 .search-box { 
   padding-left: 23.5em;
-  margin-top: 75px;
-  margin-bottom: 50px;
+  margin-top: -80px;
+  /* margin-bottom: 50px; */
 }
 
 .search-box input[type=search] {
@@ -102,7 +100,7 @@ button {
   margin-bottom: 19px;
   position: relative;
   top: 0;
-  font-size: 22px;    
+  font-size: 18px;    
 }
 
 .accordion__label {
@@ -145,10 +143,8 @@ content: "-";
    margin-bottom: 20px; /*spacing between sections*/
 } 
 
-/* footer */
 .footer * {
   color: #000000;
- 
 }
 .footer {
   display: flex;
@@ -176,15 +172,20 @@ content: "-";
   align-items: center;
 }
 /* entire container */
+
 .footer-content {
   display: flex;
   background: rgb(142, 230, 221);
   width: 100%;
-  margin-bottom: 20%;
+  /* margin-bottom: 20%; */
+  padding-bottom: 1%;
 }
-.footer-content a {
+
+
+.footer-content  a {
   font-weight: normal;
 }
+
 .footer-section-about {
   padding-left: 4em;
   padding-top: 1em;
@@ -198,21 +199,24 @@ content: "-";
   flex: 1; /* each section an equal amount of space */
   padding-left: 0%;
 }
+.no-bullets {
+  list-style-type:none;
+}
+li {
+  margin: 20px;
+  }
 .footer-section-links {
-  list-style-type: none;
-  padding-top: 1em;
-  font-size: 30px;
+  padding-top: 2em;
+  font-size: 20px;
 } 
 .footer-section-links2 {
-  list-style-type: none;
-  padding-top: 1em;
+  padding-top: 2em;
   padding-left: 2em;
-  font-size: 30px;
+  font-size: 20px;
   } 
 .footer-section-links3 {
-  list-style-type: none;
-  padding-top: 1em;
-  font-size: 30px;
+  padding-top: 2em;
+  font-size: 20px;
 }
 
 
@@ -236,11 +240,12 @@ content: "-";
 .selected {
     margin-left: -26px;
   }
-.doctor-image {
-  height: 350px;
-}
+  
+  .doctor-image {
+    height: 350px;
+  }
 .imageover-text {
-  top: 70%;
+font-size: 9px;
 }
 .search-box {
   padding-left: 87px;
@@ -248,10 +253,9 @@ content: "-";
     margin-right: 0px;
     margin-left: 0px;
     padding-top: 0px;
-    margin-top: -17px;
+    margin-top: -12em;
     margin-bottom: 0px;
 }
-
 .search-box input[type=search] {
     padding: 0px;
     padding: 10px;
@@ -261,7 +265,7 @@ button {
   padding: 3.5%;
 }
 .accordion__label, .accordion__content {
-  font-size: 19px;    
+  font-size: 16px;    
 }
 
 .footer, .footer-top {
@@ -282,9 +286,11 @@ button {
   }
   .footer-top {
     margin-top: 10px;
+    margin-left: 24px;
   }
   .footer-content {
      display: inline-block;
+     margin: 0px;
   }
   .footer-content a {
     margin: 0 !important;
@@ -296,19 +302,22 @@ button {
   }
     .footer-section-links{
       padding-left: 3.5em;
-      font-size: 20px;
+      font-size: 16px;
       padding-top: 1em;
+      margin-left: 19px;
   } 
     .footer-section-links2{
       padding-left: 3.5em;
       padding-top: 0em;
-      font-size: 20px;
+      font-size: 16px;
+      margin-left: 19px;
   } 
     .footer-section-links3 {
       padding-left: 3.5em;
-      padding-top: 1em;
-      font-size: 20px;
+      padding-top: 0;
+      font-size: 16px;
       padding-bottom: 50px;
+      margin-left: 19px;
   }
     
   
