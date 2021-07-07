@@ -35,15 +35,9 @@ div.body-Container{
     position: relative;
 }
 
-<<<<<<< HEAD
 header#top-container{
     grid-column-start: 2 ;
-    grid-column-end: 7 ;
-=======
-div#top-container{
-    grid-column-start: 2 ;
     grid-column-end:7 ;
->>>>>>> 4370ce56842c1ffd76119d9ea4d53796654e3f30
     grid-row-start: 1;
     grid-row-end: 2;
     width: 100%;
@@ -61,11 +55,7 @@ aside.left-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-<<<<<<< HEAD
-    padding-top: 10%;
-=======
     padding-top: 0%;
->>>>>>> 4370ce56842c1ffd76119d9ea4d53796654e3f30
     border-radius: var(--radius-border);
     width: 100%;
     height: 94%;
@@ -429,6 +419,8 @@ nav.navbar{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        grid-column-start: 3;
+        grid-column-end: 4;
         width: 100%;
     }
     div.top-icons{
@@ -669,7 +661,12 @@ nav.navbar{
         justify-content: space-around;
         position: fixed;
         top: 20px;
-        left: 15px;
+        left: 40px;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 5px;
+        -webkit-box-shadow: 5px 5px 11px 5px rgba(0,0,0,0.35); 
+        box-shadow: 5px 5px 11px 5px rgba(0,0,0,0.35);
     }
     .line{
         width: 100%;
