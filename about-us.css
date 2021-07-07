@@ -423,10 +423,16 @@ div.logo-bottom{
 }
 img.bottom-logo1{
     height:40%;
-    width:40%;
+    width: 50%;
     padding-right: 10px;
 }
-
+h4#empr-M {
+    color: #009578;
+    width: 80%;
+    text-align: center;
+    padding: 0%;
+    font-size: 18px;
+}
 .footer .footer-top {
     background: rgb(245, 243, 243);
     width: 100%;
@@ -625,6 +631,14 @@ h4{
     }
     ul.list-values{
         font-size: 21px;
+<<<<<<< HEAD
+=======
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+>>>>>>> 586a6cc6281a985af5641df6acf72acdfd994232
         line-height: 1;
         width: 100px;
     }
@@ -665,7 +679,7 @@ h4{
         text-align: left;
         padding: 15px 20px 10px 10%;
         line-height: 2;
-       width: 40%S;
+       width: 35%;
     }
     img#our-team-img{
         width: 35%;
@@ -784,7 +798,7 @@ h4{
 }
 
 .footer-top{
-    margin-top: 400px;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -799,10 +813,18 @@ div.logo-bottom{
     flex-direction: row;
     justify-content: center;
 }
+<<<<<<< HEAD
 
 .logo-bottom{
     
 }
+=======
+div.top-text{
+    padding-top: 20px;
+}
+
+
+>>>>>>> 586a6cc6281a985af5641df6acf72acdfd994232
 
 img.bottom-logo1{
     height: 45%;
@@ -825,9 +847,12 @@ logo-bottom, .img{
     align-items: center;
     padding-top: 1%;
 }
-.footer-content{
+div.footer-content{
+    padding: 0 20px;
     border:none;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .footer-section-about{
    
@@ -846,8 +871,14 @@ flex: 1;
     list-style-type: none;
     
     padding-top: 2em;
+<<<<<<< HEAD
     font-size: 16px;
+=======
+    font-size: 18px;
+    padding-bottom: 15px;
+>>>>>>> 586a6cc6281a985af5641df6acf72acdfd994232
 }
+
 .footer-section-links3{
     list-style-type:none;
     padding-left: 4em;
