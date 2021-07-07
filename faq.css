@@ -66,11 +66,11 @@ a:hover, a.selected {
   transform: translate(-50%, -50%);
   color: #fff;
   border-radius: 15px;
-  font-size: 35px;
+  font-size: 25px;
 }
 .imageover-text p {
   text-align: left;
-  font-size: 17px;
+  font-size: 14px;
   /* margin-left: 5%; */
 }
 
@@ -231,17 +231,7 @@ margin-top: 40px;
 .no-bullets {
   list-style-type:none;
 }
-.text-only {
-  list-style-type: none;
-  display: flex;
-  margin-right: 0px;
-  padding-right: 0px;
-  margin-top: -10px;
-  font-size: 15px;
-  padding-bottom: 0px;
-}
-
-li {
+.no-bullets li {
   margin: 20px;
   }
 .footer-section-links {
@@ -256,6 +246,13 @@ li {
 .footer-section-links3 {
   padding-top: 2em;
   font-size: 20px;
+}
+.text-only {
+  list-style-type: none;
+  display: flex;
+  margin-top: -55px;
+  font-size: 15px;
+  padding-left: 67px;
 }
 
 
@@ -360,9 +357,6 @@ button {
       margin-right: -23px; */
       margin-top: 10px;
   }
-  .text-only {
-    display: inline-block;
-  }
   .footer-section-about p {
       margin-top: 0;
       margin-right: 47px;
@@ -392,7 +386,12 @@ button {
       padding-bottom: 50px;
       margin-left: 19px;
   }
-    
+  .text-only {
+    padding-top: 0px;
+    padding-left: 62px;
+    margin-top: -20px;
+    margin-top: -35px;
+  }
   
 
 
