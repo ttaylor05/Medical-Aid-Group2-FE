@@ -1,0 +1,221 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+    </style>
+    <link rel="manifest" href="/imges/site.webmanifest"> 
+    <link rel="stylesheet" href="users.css"> 
+    <title>Admin Page</title>
+</head>
+<body>
+        <div id="top-container">
+            <div class="a-logo"  >
+                <span>
+                    <img src="/images/admin-images/logo.svg" alt="" class="a-logo">
+                </span>
+    
+                <div class="text-only">
+                    <a class="logo2-text" href="#" id="nav-logo2">Empr Medical</a>
+                </div>
+            </div>
+            <div class="search-box-container">
+                <form>
+                    <input  type="text" name="search-box" id="search-box" >
+                    
+                </form>
+                
+            </div>  
+            <div class="top-icons">
+                <div class="top-icons">
+                    <a href="#"class="nav-btns"><img src="/images/admin-images/feedback.svg" alt="feedback-icon"></a>
+                     <a href="#" class="nav-btns"><img src="/images/admin-images/notification-bel.svg" alt="notification-icon"></a>
+                 </div>
+            </div>
+        </div>
+      
+    
+    <div class="left-container">
+        <div class="sidebar-top" id="top-content">
+          <ul class="top-menu-container">
+             <li>
+                 <div>
+                     <a href="#" class="sidebar-link">
+                        <img class="icon-leftcontainer" src="/images/admin-images/dashboard.svg" alt="dashboard"><span class="menu-selectionNames" >Dashboard</span>
+                     </a>
+                 </div>
+             </li>
+             <li>
+                <div>
+                    <a href="#" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/users.svg" alt="Users icon"><span class="menu-selectionNames" >Users</span>
+                    </a>
+                </div>
+             </li>
+             <li>
+                <div>
+                    <a href="#" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/requests.svg" alt="Requests icon"><span class="menu-selectionNames" >Requests</span>
+                    </a>
+                </div>
+             </li>
+             <li>
+                <div>
+                    <a href="#" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/pharmacies.svg" alt="Pharmacies and Clinics icon"><span class="menu-selectionNames" >Pharmacies & Clinics</span>
+                    </a>
+                </div>
+             </li>
+             <li>
+                <div>
+                    <a href="#" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/feedback.svg" alt="feedback & complaints icon"><span class="menu-selectionNames" >Feedback & Complaints</span>
+                    </a>
+                </div>
+             </li>
+             <li>
+                <div>
+                    <a href="#" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/settings.svg" alt="Settings icon"><spanclass="menu-selectionNames" >Settings</span>
+                    </a>
+                </div>
+             </li>
+          </ul>  
+        </div> <!--end of sidebar-top-->
+        <div class="sidebar-mid">
+            <ul class="support-faq-container">
+                <div>
+                    <li>
+                        <a href="#" class="sidebar-link">
+                            <img class="icon-leftcontainer" src="/images/admin-images/supporfaq.svg" alt="Support/FAQ"><span class="menu-selectionNames" >Support/FAQ</span>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div> <!--end of sidbar-mid-->
+        <div class="sidebar-bottom">
+            <ul class="logout-container">
+                <div>
+                    <li>
+                        <a href="#" class="sidebar-link" id="logout-container">
+                            <img class="icon-leftcontainer" src="/images/admin-images/logout.svg" alt="Log out icon"><span class="menu-selectionNames" >Logout</span>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div> <!--end of sidebar-bottom-->
+    </div>
+    <div class="middle-container">
+        <h2 id="users-title">Users</h2>
+        <div class="patients-doctors">
+            <div id="patients-container">
+                 <a href="#" class="underline"><h3 class="underline">Patients</h3></a>
+            </div>
+            <div id="dr-container">
+                <a href="#"class="underline"><h3 class="underline">Doctors</h3></a>
+            </div>
+        </div>
+        <div class="search-users">
+            <form action="usersearch-box">
+                <input type="text" name="searchUser" placeholder="Enter Name" id="user-searchbox">
+            </form>
+        </div>
+        <div class="users-tablelist">
+            <table>
+                <tr id="no-hover">
+                    <th></th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>Patient ID</th>
+                    <th>Last visit</th>
+                </tr>
+                <tr>
+                    <td><img src="/images/admin-images/profile-pic1.svg" class="users-profile" alt="profile-pic"></td>
+                    <td>Robin</td>
+                    <td>Team</td>
+                    <td>F</td>
+                    <td>05/23/82</td>
+                    <td>POOOO19</td>
+                    <td>01/25/21</td>
+                </tr>
+                        <tr>
+                                <td><img src="/images/admin-images/profile-pic2.png" class="users-profile"alt="profile-pic"></td>
+                                <td>Ben</td> 
+                                <td>Socks</td>
+                                <td>M</td>
+                                <td>10/09/89</td>
+                                <td>POOOO34</td>
+                                <td>5/23/20</td>
+                        </tr>
+                    
+                <tr>
+                    <td><img src="/images/admin-images/no-user.svg" class="users-profile" id="no-user" alt=""></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="nxt-pg">
+            <div class="previous-pg">
+                <a href="#"> <img src="/images/admin-images/left-arrow.svg" alt=""> Previous Page</a>
+            </div>
+            <div class="nextpage" >
+                <a href="#"> Next Page <img src="/images/admin-images/right-arrow.svg" alt=""></a> <br>
+                <button> Enter</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="right-container">
+        <div class="my-profile-container">
+            <img src="/images/admin-images/profile-pic.jpg" alt="Profile-picture" height="100px" width="100px" class="profile-pic">
+            <h2>Trista Young</h2>
+               <span>My Profile</span>        
+        </div>
+        <div class="appointments-container">
+            <div class="apps-content" >
+                <h3 class="right-container-headers">Today's Appointments <br> 
+                    <span id="all-locations">All Locations</span></h3>
+            </div>
+            <div class="apps-content">
+                <span>40</span>
+            </div>
+           
+        </div>
+        <div class="cancelled-app-container">
+            <h3 class="right-container-headers">Cancelled Appointments</h3>
+            <h2>4/40</h2>
+        </div>
+        <div class="numVisits-container">
+            <h3 class="right-container-headers">Todays Visits:June 2021</h3>
+            <h2>520</h2>
+        </div>
+        <div class="notifications-contianer">
+            <h3 class="right-container-headers">Notifications</h3>
+            <ul class="bullet-list-style">
+                <li class="bullet-list-style">System Update-6/28/2021</li>
+                <li class="bullet-list-style">Update Contact Information</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
