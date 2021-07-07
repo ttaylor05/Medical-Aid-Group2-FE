@@ -35,9 +35,15 @@ div.body-Container{
     position: relative;
 }
 
+<<<<<<< HEAD
 header#top-container{
     grid-column-start: 2 ;
     grid-column-end: 7 ;
+=======
+div#top-container{
+    grid-column-start: 2 ;
+    grid-column-end:7 ;
+>>>>>>> 4370ce56842c1ffd76119d9ea4d53796654e3f30
     grid-row-start: 1;
     grid-row-end: 2;
     width: 100%;
@@ -55,7 +61,11 @@ aside.left-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+<<<<<<< HEAD
     padding-top: 10%;
+=======
+    padding-top: 0%;
+>>>>>>> 4370ce56842c1ffd76119d9ea4d53796654e3f30
     border-radius: var(--radius-border);
     width: 100%;
     height: 94%;
