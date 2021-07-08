@@ -17,13 +17,9 @@ background:rgb(245, 241, 241);
 }
 .logo-top {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   margin-left: -8em;
 }
-
-h2 {
-  margin-right: 600px;
-} */
 nav {
   font-size: 20px;
   width: 46%;
@@ -87,7 +83,6 @@ a:hover, a.selected {
 .search-box { 
   padding-left: 23.5em;
   margin-top: -20px;
-  /* margin-bottom: 50px; */
 }
 .search-box input[type=search] {
   max-width: 100%;
@@ -177,6 +172,7 @@ content: "-";
   width: 100%;
   align-content: center;
   font-size: 20px;
+  padding-left: 20px;
 }
 .logo-bottom {
   display: flex;
@@ -206,17 +202,18 @@ content: "-";
   padding-bottom: 1%;
 }
 .footer-section-about {
-  padding-left: 4em;
+  padding-left: 5em;
   padding-top: 1em;
   padding-right: 6em;
 }
 .footer-section-about p {
 margin-top: 40px;
 }
-.footer-top img {
-  width: 37%;
-  }
-
+.logo-end {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
 .contact-address {
   color: black;
   font-size: 20px;
@@ -224,9 +221,6 @@ margin-top: 40px;
 .footer .footer-content .footer-section .footer-section2 {
   flex: 1; /* each section an equal amount of space */
   padding-left: 0%;
-}
-.footer-section-about img {
-  width: 20%;
 }
 .no-bullets {
   list-style-type:none;
@@ -252,48 +246,64 @@ margin-top: 40px;
   display: flex;
   margin-top: -55px;
   font-size: 15px;
-  padding-left: 67px;
+  padding-left: 82px;
 }
 
 
 @media only screen and (max-width: 750px) {
   header {
-    display: inline-block;
-    padding-left: 11em;
-    width: 100%;
- 
+    display:flex;
+    /* padding-left: 11em;
+    width: 100%; */
+        max-width: 480px;
+        margin: auto;
+        height: 300px;
+        border-radius: 10px;
   }
   .logo-top {
-    display: inline-block;
-    margin-left: -24px;
+    /* display: inline-block;
+    margin-left: -24px; */
+    overflow: hidden;
+    position: relative;
+    margin-left: -2em;
+    margin-top: -12em;
+    align-items: center;
   }
   .logo-top img {
-    width: 56%;
+    width: 56%;         
   }
    h4 {
     width: 100%;
-  } 
-  nav {
-    font-size: 16px;
-    margin-top: 18px;
-  }
-  nav .top-nav {
-    display: block;
-    width: 100%;
-    margin-left: -26px;
-    padding-top: 5px;
-  }
-.selected {
-    margin-left: -26px;
   }
   
+  .nav-container {
+    margin-top: 80px;
+    padding: 20px;
+    font-size: 16px;
+    width: 0px;
+  }
+
+  .selected {
+    margin-left: -16em;
+    padding-top: 15px;
+  }
+  
+.top-nav {
+    display: block;
+    /* width: 100%; */
+    margin-left: -16em;
+    padding-top: 20px;
+    /* padding-bottom: 16px; */
+         /* margin-top: -20px;  */
+  } 
+
   .doctor-image {
     height: 350px;
   }
 .imageover-text {
   font-size: 9px;   
   width: 84%;
-  top: 52%;
+  top: 60%;
 }
 .search-box {
   padding-left: 87px;
@@ -307,15 +317,12 @@ margin-top: 40px;
 .search-box input[type=search] {
     padding: 0px;
     padding: 10px;
-}
-button {
-  width: 10%;
-  padding: 3.5%;
+    padding-right: 116px;
+    margin-left: -46px;
 }
 .accordion__label, .accordion__content {
   font-size: 16px;    
 }
-
 .footer {
   display: inline-block;
   width: 100%;
@@ -325,25 +332,31 @@ button {
   width: 90%;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-left: 0px;
 }
 .logo-bottom {
     /* padding-left: 12%; */
     padding-left: 32%;
     margin-left: -65px;
+    overflow: hidden;
+    position: relative;
+    /* margin-left: -2em;
+    margin-top: -12em; */
+    align-items: center;
   }
   .top-text {
-    width: 84%;
-    padding-left: 8%;
+    width: 90%;
+    padding-left: 14%;
     font-size: 13px;
     margin-top: -20px;
   }
   .socials {
-    margin-left: 25px;
+    padding-left: 14%;
     padding-bottom: 8px;
     font-size: 13px;
   }
-  .socials .a {
-    margin: -5px 0px 0px 80px;
+  .socials a {
+    margin: -5px 0px 0px 48px;
   }
   .footer-content {
      display: inline-block;
@@ -356,10 +369,18 @@ button {
       /* margin-left: 10px;
       margin-right: -23px; */
       margin-top: 10px;
+      width: 480px;
+      padding-left: 3em;
   }
   .footer-section-about p {
       margin-top: 0;
       margin-right: 47px;
+  }
+  .logo-end {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
   }
   .contact-address {
     font-size: 18px;
@@ -368,19 +389,19 @@ button {
     margin-right: 0px;
   }
     .footer-section-links{
-      padding-left: 1.4em;
+      padding-left: .5em;
       font-size: 16px;
       padding-top: 0;
       margin-left: 19px;
   } 
     .footer-section-links2{
-      padding-left: 1.4em;
+      padding-left: .5em;
       padding-top: 0em;
       font-size: 16px;
       margin-left: 19px;
   } 
     .footer-section-links3 {
-      padding-left: 1.4em;
+      padding-left: .5em;
       padding-top: 0;
       font-size: 16px;
       padding-bottom: 50px;
@@ -388,7 +409,7 @@ button {
   }
   .text-only {
     padding-top: 0px;
-    padding-left: 62px;
+    padding-left: 46px;
     margin-top: -20px;
     margin-top: -35px;
   }
