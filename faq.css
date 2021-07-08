@@ -38,9 +38,7 @@ a:hover, a.selected {
   padding: 8px;
   border-radius: 5px;
 }
-/* a.no-hover {
-  background-color: none;
-} */
+
 
 .doctor-image {
   background-image: url('./images/FAQ-images/Rectangle\ 284.svg');
@@ -373,7 +371,7 @@ margin-top: 40px;
       /* margin-left: 10px;
       margin-right: -23px; */
       margin-top: 10px;
-      width: 480px;
+      /* width: 480px; */
       padding-left: 3em;
   }
   .footer-section-about p {
