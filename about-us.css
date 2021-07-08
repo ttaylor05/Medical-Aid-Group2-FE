@@ -454,6 +454,47 @@ h4{
     color: #009578;
 }
 /*end of footer content*/
+/*Mobile Nave Bar Design*/
+@media screen and (max-width:597px){
+    header{
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+    nav#myLinks {
+        display: none;
+      }
+      a.selected{
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      a.selected:hover{
+        background-color: var(--buttonnav-color);
+        color: white;
+      }
+      .topnav a.icon {
+        background: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+     i.fa.fa-bars::before {
+       
+        position: relative;
+        right: 320px;
+        top: 15px;
+        
+    }
+}
+/*Mobile NavBar Design End*/
 
 @media screen and (max-width:598px) {
     body{
@@ -631,14 +672,6 @@ h4{
     }
     ul.list-values{
         font-size: 21px;
-<<<<<<< HEAD
-=======
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        text-align: left;
->>>>>>> 586a6cc6281a985af5641df6acf72acdfd994232
         line-height: 1;
         width: 100px;
     }
@@ -813,18 +846,8 @@ div.logo-bottom{
     flex-direction: row;
     justify-content: center;
 }
-<<<<<<< HEAD
-
-.logo-bottom{
-    
-}
-=======
-div.top-text{
-    padding-top: 20px;
-}
 
 
->>>>>>> 586a6cc6281a985af5641df6acf72acdfd994232
 
 img.bottom-logo1{
     height: 45%;
@@ -871,12 +894,7 @@ flex: 1;
     list-style-type: none;
     
     padding-top: 2em;
-<<<<<<< HEAD
     font-size: 16px;
-=======
-    font-size: 18px;
-    padding-bottom: 15px;
->>>>>>> 586a6cc6281a985af5641df6acf72acdfd994232
 }
 
 .footer-section-links3{
