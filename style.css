@@ -74,6 +74,8 @@ header {
     text-align: center;
   }
 
+  
+
   .section1 button{
     width:100px;
     padding:10px;
@@ -377,11 +379,14 @@ header {
 }
 
 .section7 input{
-    padding:6px;
+    padding:10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style:solid;
 }
 
 #fname, #last-name{
-    width:150px;
+    width:146px;
 }
 
 #enter-email{
@@ -454,12 +459,20 @@ header {
 #first-name{
     width:300px;
     padding:7px;
+    padding:10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style:solid;
 }
 
 #email{
     margin-top:10px;
     width:300px;
     padding:7px;
+    padding:10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style:solid;
 }
 
 .section8 button{
@@ -487,20 +500,34 @@ header {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    margin-left:50px;
-    margin-right:50px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:lightgray;
+    width: 1250px;
+
 }
 
 .section9 .empr-logo{
     width:30px;
+    margin-left:30px;
 }
 
+.section9 b:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
 
 
 
 
 .twitter, .instagram, .facebook{
     width:25px;
+    margin-right:30px;
+}
+
+.twitter:hover, .instagram:hover, .facebook:hover{
+    cursor: pointer;
+    
 }
 
 .last{
@@ -550,7 +577,24 @@ line-height:2.0;
 
 footer p{
     line-height:1.5;
+  
 }
+
+footer p:hover{
+    cursor:pointer;
+    transition:0.2s;
+    font-weight: bold;
+    
+}
+
+
+.section1 h1{
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
 
 
 
@@ -570,18 +614,30 @@ body{
    }
 
    header img{
+       margin-top:10px;
        width:50px;
+       margin-left:230px;
+   }
+
+   header h2{
+       font-size: 30px;
+       margin-left:150px;
+       width:400px;
    }
 
    header a {
-       width:80px;
+      
+       width:430px;
+       text-decoration:underline;
+       font-size: 20px;
+       margin-top:5px;
    }
 
 
    .section1 div {
     position: absolute;
     width: 300px;
-    margin-left: 30px;
+    margin-left: 50px;
     /* margin-right: auto; */
     background-color: white;
     /* padding-right: 20px; */
@@ -589,13 +645,15 @@ body{
     /* background-repeat: no-repeat; */
     background: rgba(300, 243, 243, 0.8);
     border-radius: 6px;
-    height: 270px;
+    height: 350px;
 
 }
 
 .section1 div h1{
-    margin-left:auto;
-    margin-right:auto;
+    font-size:30px;
+    
+   
+    
 }
 
 .section1 div p{
@@ -605,9 +663,10 @@ body{
 .section1 {
     width:450px;
     background-image: url(/images/landing-page/image1.svg);
-    background-size: 800px;
+    background-size: 900px;
+    background-position: center;
     background-repeat:no-repeat;
-    margin-left:0px;
+    margin-left:20px;
     
     margin-top:20px;
    
@@ -631,6 +690,7 @@ body{
 
 .section2 p{
     font-size:20px;
+    line-height:1.5;
 }
 
     .section2 button {
@@ -656,22 +716,24 @@ body{
 .features{
     margin-top:300px;
     font-size:40px;
-
+    
 }
 
 .section3 {
     grid:none;
-    
+
 }
+
+
 
 .section3 h3{
     font-size:20px;
-    
     
 }
 
 .section3 p{
     font-size:20px;
+    
 }
 
 
@@ -821,10 +883,21 @@ body{
     
 }
 
+#checkbox{
+    margin-top:30px;
+    width:fit-content;
+
+}
+
 .form1 h1{
     font-size:40px;
-    margin-right:30px;
     
+    
+}
+
+
+.section7{
+    height:120px;
 }
 
 
@@ -862,7 +935,9 @@ body{
 
 .section8{
     margin-left:30px;
-    height:500px;
+    height:400px;
+    
+    
 }
 
 .section8 #first-name, .section8 #email{
@@ -881,9 +956,7 @@ body{
 }
 
 .section8 h1{
-    height:200px;
-    margin-top:100px;
-    margin-left:30px;
+    margin-left:40px;
     width:300px;
     font-size: 40px;
     margin-top:200px;
@@ -895,13 +968,17 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-right: 100px;
     flex-direction: column;
-    width:400px;
+    width:450px;
     font-size: 20px; 
 }
 
+.section9 .logo{
+    margin-left:10px;
+    margin-right:40px;
+}
 
 
 
@@ -915,15 +992,15 @@ footer {
     grid-gap: 30px;
     margin-left: 20px;
     margin-right:auto;
-    width: 400px;
+    width: 450px;
     font-size:16px;
 }
 
 
+
+
 .footer1, .footer2, .footer3 .footer4{
-
     margin-top:10px;
-
 }
 
 .footer1{
@@ -938,7 +1015,116 @@ footer {
     margin-left:20px;
 }
 
+footer p:hover{
+    cursor:pointer;
+    text-decoration: underline;
+    transition:0.5s;
+}
 
+.features{
+    margin-top:300px;
+    font-size:40px;
+    margin-left:150px;
+   
+}
+
+.section5 h3{
+    margin-left:185px;
+    width:200px;
+}
+
+.section5 p{
+    width:500px;
+}
+
+.section4 p{
+    width:500px;
+}
+
+.section4 h1{
+    margin-left:150px;
+}
+
+
+
+.section6 {
+    
+    margin-left:3em;
+    margin-right:3em;
+    
+}
+
+.section6 button{
+    margin-left:auto;
+}
+
+.section6 .apple{
+ font-size:20px;
+ 
+ 
+
+
+}
+
+.section6 .google{
+    font-size:20px;
+    
+}
+
+
+
+
+.section7 .form{
+ margin-left:80px;
+}
+
+.section7 button{
+    margin-left:100px;
+    width:150px;
+}
+
+.section8 {
+    margin-top:150px;
+    margin-left:60px;
+}
+
+
+.section8 input{
+    margin-left:70px;
+}
+
+.section8 button{
+width:150px;
+
+}
+
+.section1 .login{
+    width:150px;
+    
+    
+}
+
+.section1 .signup{
+    width:150px;
+    margin-top:20px;
+    margin-right:30px;
+}
+
+.section1 div{
+    height:400px;
+}
+
+
+.section2 button{
+    margin-left:130px;
+}
+
+.section2 .text button{
+
+width:150px;
+margin-right:200px;
+padding:10px;
+}
 
 
 
