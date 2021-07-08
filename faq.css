@@ -38,8 +38,6 @@ a:hover, a.selected {
   padding: 8px;
   border-radius: 5px;
 }
-
-
 .doctor-image {
   background-image: url('./images/FAQ-images/Rectangle\ 284.svg');
   max-width: 100%;
