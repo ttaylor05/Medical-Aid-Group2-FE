@@ -38,8 +38,6 @@ a:hover, a.selected {
   padding: 8px;
   border-radius: 5px;
 }
-
-
 .doctor-image {
   background-image: url('./images/FAQ-images/Rectangle\ 284.svg');
   max-width: 100%;
@@ -65,7 +63,6 @@ a:hover, a.selected {
 .imageover-text p {
   text-align: left;
   font-size: 20px;
-  /* margin-left: 5%; */
 }
 
 #here {
@@ -207,12 +204,7 @@ content: "-";
 .footer-section-about p {
 margin-top: 40px;
 }
-/* .logo-end {
-    display: flex;
-    position: relative;
-    align-items: center;
-    border: 3px solid yellow;
-} */
+
 .contact-address {
   color: black;
   font-size: 20px;
@@ -289,11 +281,8 @@ margin-top: 40px;
   
 .top-nav {
     display: block;
-    /* width: 100%; */
     margin-left: -16em;
     padding-top: 20px;
-    /* padding-bottom: 16px; */
-         /* margin-top: -20px;  */
   } 
 
   .doctor-image {
@@ -305,6 +294,7 @@ margin-top: 40px;
   top: 60%;
 }
 .imageover-text p {
+  padding-top: 10px;
   font-size: 15px;
 }
 .search-box {
@@ -378,12 +368,7 @@ margin-top: 40px;
       margin-top: 0;
       margin-right: 47px;
   }
-  /* .logo-end {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-  } */
+
   .contact-address {
     font-size: 18px;
   }
