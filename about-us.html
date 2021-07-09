@@ -11,21 +11,31 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/about-us-images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/about-us-images/favicon-16x16.png">
     <link rel="manifest" href="images/about-us-images/site.webmanifest">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About Us</title>
 </head>
 <body>
    
           
-       <header>
+       <header class="topnav" >
            <img id="header-logo" src="/images/about-us-images/logo.svg" alt="logo">
            <h2 id="empr-medical"> Empr Medical </h2>
-           <nav>
+         
+           <nav class="navbar" id="myLinks">
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
                <a href="home.html" class="selected" >Home</a>
                <a href="about-us.html" class="selected">About Us</a>
                <a href="services.html" class="selected" >Services</a>
                <a href="careers.html" class="selected" >Careers</a>
                <a href="Faq.html" class="selected" >FAQ</a>
-           </nav>
+            </nav>
+              <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+           
+                <!--Hamburger menu end-->
        </header>   
             <div class="header-container">
                
@@ -161,5 +171,6 @@
         </div><!--footer-->
        
     </footer> 
+    <script src="about-us.js"></script>
 </body>
 </html>
