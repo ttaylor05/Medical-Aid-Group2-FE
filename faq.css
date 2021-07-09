@@ -100,10 +100,40 @@ button {
   border: none;
   background-color: rgb(245, 241, 241);
 }
+.accordion .squaretop-left {
+  position: absolute;
+  left: 34px;
+  bottom: -310px;
+}
+.accordion .squareone-right {
+  position: absolute;
+  right: 95px;
+  bottom: -236px;
+}
+.accordion .squaretwo-right {
+  position: absolute;
+  right: 5px;
+  bottom: -320px;
+}
+.accordion .squareone-left {
+  position: relative;
+  top: -76px;
+    left: -110px;
+}
+.accordion .squaretwo-left {
+  position: relative;
+    right: 126px;
+    top: 11px;
+}
+.squarebottom-right {
+  position:absolute;
+  top: 87em;
+  left: 87em;
+}
 /* ACCORDION */
 .accordion {
   margin: auto;
-  max-width: 88%;
+  max-width: 84%;
   border-radius: 5%;
   margin-bottom: 50px;
 }
@@ -123,6 +153,7 @@ button {
   transition: background 0.1s;
   background: rgb(39, 196, 180);
   border-radius: 6px;
+  opacity: .7;
 }
 
 .accordion__label:hover {
@@ -312,6 +343,29 @@ margin-top: 40px;
     padding-right: 116px;
     margin-left: -46px;
 }
+.accordion .squaretop-left {
+  display: none;
+}
+.accordion .squareone-right {
+  /* right: 60px;
+  bottom: -40px; */
+  display: none;
+}
+.accordion .squaretwo-right {
+  /* right: 8px;
+  bottom: -110px; */
+  display: none;
+}
+.accordion .squareone-left {
+  display: none;
+}
+.accordion .squaretwo-left {
+    display: none;
+}
+.accordion .squarebottom-right {
+  display:none
+}
+
 .accordion__label, .accordion__content {
   font-size: 16px;    
 }
@@ -353,6 +407,7 @@ margin-top: 40px;
   .footer-content {
      display: inline-block;
      margin: 0px;
+     zoom: 1;
   }
   .footer-content a {
     margin: 0 !important;
