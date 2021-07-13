@@ -92,10 +92,12 @@ input:focus{
     font-size: 20px;
 }
 .fname:hover, .lname:hover, .phone:hover, .email2:hover, .cpwd:hover {
-    background-color:rgb(178, 240, 226); ;
+    /* background-color:rgb(178, 240, 226); */
+    border-color: rgb(178, 240, 226);
   }
   .signup-btn:hover {
-    background-color: rgb(178, 240, 226); ;
+    background-color: rgb(178, 240, 226);
+   
   }
  .signup-btn  {
     background-color: rgb(42, 199, 183);
@@ -117,7 +119,7 @@ input:focus{
         margin-right: auto;
         margin-top: -12px;
         margin-bottom: -15px;
-        max-width: 38%;
+        max-width: 60%;
         width: 100%;
     } 
     .signup-heading  {
