@@ -13,6 +13,10 @@ header {
   background:rgb(245, 241, 241);
   padding: 0.8em 4em;
 }
+.logo {
+  display: flex;
+  align-items: center;
+}
 .dropdown {
   display: none;
 }
@@ -21,11 +25,12 @@ header {
 }
 img{
   width:30px;
-  padding-left: 5px;
 }
 h2{
   display: inline-block;
-  font-size: 15px;
+  font-size: 18px;
+  padding-left: 8px;
+
 }
 
 a {
@@ -46,7 +51,7 @@ a:hover, a.selected {
 a.selected, a {
   border-radius: 7px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
 }
 .container-docimage {
