@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="clinics-pharmacies.css">
+    <link rel="stylesheet" href="requests-page.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
     <link rel="icon" href="/images/admin-images/logo.svg">
-    <title>Pharmacies and Clinics</title>
+    <title>Requests</title>
 </head>
 <body>
     <div class="body-Container">
@@ -92,7 +92,7 @@
                 </li>
                 <li>
                    <div>
-                       <a href="#" class="sidebar-link">
+                       <a href="/admin/requests-page.html" class="sidebar-link">
                           <img class="icon-leftcontainer" src="/images/admin-images/requests.svg" alt="Requests icon"><span class="menu-selectionNames" >Requests</span>
                        </a>
                    </div>
@@ -120,7 +120,7 @@
                 </li>
                 <li> 
                    <div>
-                      <a href="#" class="sidebar-link">
+                      <a href="/Faq.html" class="sidebar-link">
                           <img class="icon-leftcontainer" src="/images/admin-images/supporfaq.svg" alt="Support/FAQ"><span class="menu-selectionNames">Support/FAQ</span> 
                        </a>
                    </div>
@@ -138,44 +138,43 @@
     </aside><!--end of sidebar-->
     <main class="middle-container"><!--Main-->
        
-            <h2 id="clinics-title">Clinic/Pharmcacies</h2><!--users-title-->
+            <h2 id="requests-title">Requests</h2><!--clinics-title-->
     
-            <div class="pharmacies-clinics"><!--patients-doctors-->
-                <div id="pharmacies">
-                     <a href="#" class="underline"><h3 class="underline">Pharmacies</h3></a>
-                </div>
-                <div id="clinics">
-                    <a href="#"class="underline"><h3 class="underline">Clinics</h3></a>
-                </div>
-            </div>
-            <div class="search-clinics"> <!--.search-users-->
-                <form action="usersearch-box">
-                    <input type="search" name="searchUser" placeholder="Enter Name" id="clinics-searchbox" autocomplete="off"> <!--#user-searchbox-->
+            <div class="search-requests"> <!--.search-users-->
+                <form action="requests-box">
+                    <label for="dr-searchbox" class="displayNone-mobile">Dr.Name</label>                                          <!--requests-searchbox-->
+                    <input type="search" name="searchDoctor" placeholder="Doctor Name" id="dr-searchbox" autocomplete="off"> 
+                    <label for="speciality-searchbox" class="displayNone-mobile">Speciality</label>
+                    <input type="search" name="searchSpeciality " placeholder="Speciality"id="speciality-searchbox">
+                    <input type="button" value="Search" id="search-button" class="displayNone-mobile" >
+                 <a href="#" class="displayNone-dsktp" id="search-icon"><img src="/images/admin-images/requests-searchicon.svg" class="displayNone-dsktp"></a>   
+                    <!--#user-searchbox-->
                 </form>
             </div>
-            <div class="clinics-tablelist"> <!--user-tablelist-->
+            <div class="requests-tablelist"> <!--user-tablelist-->
                 <table>
                     <tr id="no-hover">
                         
                         <th class="displayNone-mobile"> </th>
-                        <th>Name</th>
-                        <th >Address</th>
-                        <th class="displayNone-mobile" >City</th>
-                        <th class="displayNone-mobile" >State</th>
-                        <th class="displayNone-dsktp" >City,ST</th>
-                        <th>Zip</th>
+                        <th class="displayNone-mobile">First Name</th>
+                        <th class="displayNone-mobile">Last Name</th>
+                        <th class="displayNone-dsktp" > Doctor Name</th>
+                        <th >Speciality</th>
+                        <th class="displayNone-mobile" >Email</th>
+                        <th class="displayNone-mobile" >Date of Appliaction </th>
+                        <th class="displayNone-dsktp">Application Date</th>
                     </tr>
                     <tr>
-                        <td class="displayNone-mobile" ><img src="/images/admin-images/emp-pharmacy.svg" class="users-profile" alt="profile-pic"></td>
-                        <td>EMP Pharmacy</td>
-                        <td>3531 Main Ave</td>
-                        <td class="displayNone-mobile" >New Orleans</td>
-                        <td class="displayNone-mobile">LA</td>
-                        <td class="displayNone-dsktp"  >New Orleans, LA</td>
+                        <td class="displayNone-mobile" ><img src="/images/admin-images/doctor1.svg" class="users-profile" alt="profile-pic"></td>
+                        <td>Tish</td>
+                        <td>Smith</td>
+                        <td class="displayNone-mobile" >General Medicine</td>
+                        <td class="displayNone-mobile">tishsmith@gmail.com</td>
+                        <td class="displayNone-dsktp"  >1/12/2021</td>
                         <td>70112</td>
                     </tr>
                     <tr>
-                        <td class="displayNone-mobile" ><img src="/images/admin-images/broadway-pharmacy.svg" class="users-profile" alt="profile-pic"></td>
+                        <td class="displayNone-mobile" ><img src="/images/admin-images/doctor2.svg" class="users-profile" alt="profile-pic"></td>
                         <td>Broadway Pharm</td>
                         <td>2525 Broadway Ave</td>
                         <td class="displayNone-mobile" >New Orleans</td>
@@ -184,7 +183,7 @@
                         <td>70112</td>
                     </tr>
                     <tr>
-                        <td class="displayNone-mobile" ><img src="/images/admin-images/algin-pharmacy.svg" class="users-profile" alt="profile-pic"></td>
+                        <td class="displayNone-mobile" ><img src="/images/admin-images/doctor2.svg" class="users-profile" alt="profile-pic"></td>
                         <td>Algin Pharmacy</td>
                         <td>2525 Veterans Blvd</td>
                         <td class="displayNone-mobile" >New Orleans</td>
@@ -206,16 +205,18 @@
             </div>
             <div class="nxt-pg">
                 <div class="previous-pg">
-                    <a href="#"> <img src="/images/admin-images/left-arrow.svg" alt=""> Previous Page</a>
+                    <a href="#"> <img src="/images/admin-images/left-arrow.svg" alt="" class="displayNone-mobile"><img src="/images/admin-images/left-line-arrow.svg" class="displayNone-dsktp" alt=""> Previous Page</a>
                 </div>
                 <div class="nextpage" >
-                    <a href="#"> Next Page <img src="/images/admin-images/right-arrow.svg" alt=""></a><br>
+                    <a href="#"> Next Page <img src="/images/admin-images/right-arrow.svg" alt="" class="displayNone-mobile"><img src="/images/admin-images/right-line-arrow.svg" class="displayNone-dsktp" alt=""></a>
+
                 </div>
             </div> 
            
                 <div class="buttons-container">
-                    <button id="blue"  > Add Clinic</button>
-                    <button id="grey" >Add Pharmacy</button>
+                    <button id="blue" class="displayNone-dsktp" >Search</button>
+                    <button id="blue" class="displayNone-mobile" > Add Clinic</button>
+                    <button id="grey" class="displayNone-mobile" >Add Pharmacy</button>
                    </div>
     </main><!--Main end-->
     <aside class="right-container"> <!--right-container-->
