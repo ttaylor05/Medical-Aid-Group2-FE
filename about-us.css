@@ -10,7 +10,8 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap'); */
 html{
     font-family: 'Red Hat Display', sans-serif;
@@ -63,6 +64,7 @@ header {
     display: inline-block;
     font-size: 18px;
     padding-left: 8px;
+    text-decoration: none;
 }
 a {
     color: #000000;
@@ -93,12 +95,12 @@ div.a {
    div.header-container{
       background-image: url(images/about-us-images/about.svg);
       background-size: 100%;
-      height: 500px;
+      height: 700px;
       background-position: contain;
       background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      /* justify-content: center; */
       align-items: center;
       width: 100%;
       /* display: grid; */
@@ -111,12 +113,13 @@ div.a {
    div.about-content{
       background-color: var(--trasnparent-background);
       width: 200%;
-      height: 375px;
+      height: 275px;
       color: var(--background-color);
       border-radius: 15px;
       padding: 10px;
-      width: 400px;
-      height: 280px;
+      margin-left: 500px;
+      /* width: 400px;
+      height: 280px; */
       /* grid-row-start:1 ;
       grid-row-end: 2;
       grid-column-start: 2;
@@ -125,7 +128,7 @@ div.a {
    }
    img#bg-image{
       width: 98%;
-      height: 400px;
+      height: 900px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -137,8 +140,14 @@ div.a {
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     padding: 15px 20px;
+     padding: 0px 20px;
+     font-size: 18px;
      
+  }
+  h2 {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #00C5B4;
   }
    p.mission-statement{
        text-align: center;
@@ -324,6 +333,9 @@ input#sign-up-btn{
     font-weight: bold;
     box-sizing: border-box;
 }
+#sign-up-btn:hover {
+    background-color:rgb(178, 240, 226);
+  }
 input{
     border-style: none;
     border-radius: 4px;
@@ -357,11 +369,11 @@ ul.map-copyright{
     font-size: 16px;
     font-weight: normal;
 }
-/* h2#news-letter{
-    font-size: 28px;
-   text-decoration: underline var(--buttonnav-color) 6px;
+h2#news-letter{
+    font-size: 24px;
+   /* text-decoration: underline var(--buttonnav-color) 6px; */
    padding-left: 10px;
-} */
+}
 ul#footer-menu1{
     display: flex;
     flex-direction: column;
@@ -591,7 +603,7 @@ li
       
     }
    
-    div.about-content{
+    /* div.about-content{
         grid-column-start: 1;
         grid-column-end: 6;
         width: 90%;
@@ -599,7 +611,7 @@ li
         height: fit-content;
         padding: 15px;
         
-    }
+    } */
     p#collapse {
         padding: 5px;
     }
@@ -613,6 +625,13 @@ li
         /* margin-top: 22%; */
         height: 667px;
       
+    }
+    div.about-content {
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+        height: 1200px;
+
     }
     p#collapse{
         font-size: 18px;
@@ -715,25 +734,35 @@ li
     }
     div.about-content{
         display: block;
-        margin-right: auto;
-        margin-left: auto;
-        width: 500px;
-        height: 360px; /*change here*/
+        /* margin-right: auto;
+        margin-left: auto; */
+        margin-right: 139px;
+        margin-top: 78px;
+        /* width: 570px; */
+      
+        width: 36%;
         /* grid-row-start:2 ;
         grid-row-end: 3;
         grid-column-start: 4;
         grid-column-end: 6; */
-    }
-    h1.about-content{
+    } */
+  
+    h1{
         font-size: 28px;
     }
+    h1#empr-medical-title.about-content {
+        margin-left: 10px;
+    }
     p.about-content{
-        font-size: 17px;
+        font-size: 15px;
         font-weight: normal;
+        padding-right: 10px;
+        padding-left: 10px;
+        line-height: 1.5;
     }
     div.mission-statement{
         height: 300px;
-        padding-top: 60px;
+        /* padding-top: 60px; */
         padding-bottom: 60px;
     }
     p.mission-statement{

@@ -1,5 +1,6 @@
 .header {
     padding-left: 1em;
+    padding-top: 1em;
 }
 .img, .a {
     display: inline;
@@ -12,7 +13,7 @@
 #a .nav-logo, .logo-text {  
     color: black;
     font-family: 'Red Hat Display', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
 }
 /* heading */
@@ -21,25 +22,20 @@
     display: flex;
 }
 .img, .doc-img {
-    margin-top: 88px;
-    max-width: 70%;
+    margin-top: 76px;
+    max-width: 80%;
     margin-left: 110px;
     width: 100%;
 }
 .signup-heading  {
-    margin-top: -60px;
+    /* margin-top: -60px; */
     margin-left: 3em;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 600;
 }
-*:focus {
-    outline: none;
-}
-input:focus{
-    background-color: rgb(178, 240, 226); 
-}
+
 .name-container {
     display: flex;
     font-family: 'Red Hat Display', sans-serif;
@@ -52,7 +48,7 @@ input:focus{
     font-size: 15px;
 }
 .fname {
-    padding-left: 6px; 
+    padding-left: 10px; 
     padding-top: 14px;
     padding-bottom: 14px;
     padding-right: 20px;
@@ -69,7 +65,7 @@ input:focus{
 .lname {
     padding-top: 14px;
     padding-bottom: 14px;
-    padding-left: 5px; 
+    padding-left: 10px; 
     padding-right: 20px;
     margin-left: 58px;
     margin-bottom: 20px;
@@ -80,7 +76,7 @@ input:focus{
     padding-top: 14px;
     padding-bottom: 14px;
     padding-right: 280px;
-    padding-left: 5px; 
+    padding-left: 10px; 
     margin-bottom: 20px;
     border: 1px solid;
     border-color: rgb(223, 222, 222);
@@ -91,9 +87,9 @@ input:focus{
 .pass, .check-box{
     font-size: 20px;
 }
-.fname:hover, .lname:hover, .phone:hover, .email2:hover, .cpwd:hover {
+/* .fname:hover, .lname:hover, .phone:hover, .email2:hover, .cpwd:hover {
     background-color:rgb(178, 240, 226); ;
-  }
+  } */
   .signup-btn:hover {
     background-color: rgb(178, 240, 226); ;
   }
@@ -111,18 +107,24 @@ input:focus{
     font-size: 17px;
 }
 @media only screen and (max-width: 1024px) {
+    html,body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
     .img, .doc-img {
         display: block;
         margin-left:auto;
         margin-right: auto;
         margin-top: -12px;
         margin-bottom: -15px;
-        max-width: 38%;
-        width: 100%;
-    } 
+        max-width: 50%;
+    }
     .signup-heading  {
         margin-left: 6.5em;
         font-size: 20px;
+        margin-top: -16px;
+        margin-bottom: -16px;
     } 
     .flex-container {
        flex-direction: column;
@@ -130,10 +132,10 @@ input:focus{
        padding-bottom: 0px;
     }
     .container {
-        padding-top: 50px;
-        padding-left: 15px;
-        /* margin-left:auto;
-        margin-right: auto; */
+        /* padding-top: 50px; */
+        /* padding-left: 15px; */
+        margin-left:auto;
+        margin-right: auto;
      }
      .name-container {
          display: block;
@@ -167,7 +169,7 @@ input:focus{
         margin-bottom: -10px;
     }
     .signup-btn  {
-       margin-bottom: 14px;
+       /* margin-bottom: 14px; */
        margin-left: 85px;
        padding-bottom: 8px;
        padding-top: 8px;
