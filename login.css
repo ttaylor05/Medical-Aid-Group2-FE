@@ -76,13 +76,13 @@
 .psw {
     margin-left: 86px;
 }
-
+/* rgb(178, 240, 226) */
   .signup-btn:hover {
-    background-color:rgb(178, 240, 226);
+    background-color: lightgrey;
   }
 
 .login-btn {
-    background-color: rgb(42, 199, 183);
+    background-color: rgb(0,197,180);
     padding-right: 58px;
     padding-left: 58px;
     padding-bottom: 10px;

@@ -86,6 +86,7 @@ a.selected, a {
     font-size: 16px;
     font-weight: 900;
 }
+
 div.a {
     font-weight: bold;
 }
@@ -404,8 +405,7 @@ a {
 
 p{
     line-height: 2.5;
-    font-size: 21px;
-
+    font-size: 16px;
 }
  
 ul{
@@ -436,10 +436,10 @@ li
   }
   
   .section-bottom .empr-logo {
-    width: 40px;
-    /* margin-left: 30px; */
+    width: 30px;
+    margin-left: 30px;
   }
-  
+
   .logo h3 {
     margin-left: 10px;
     font-size: 20px;
@@ -470,6 +470,7 @@ li
      font-weight: normal;
      line-height: 2.5;
    }
+   
    .footer1 p {
        font-size: 16px;
        line-height: 1;
@@ -565,9 +566,9 @@ li
     .change .line-3{
         transform: rotate(45deg) translate(-8px, -6px);
     }
-    a.selected{
+    /* a.selected{
         font-size: 21px;
-    }
+    } */
     a.selected:hover{
         color: white;
         background-color: var(--buttonnav-color);
@@ -580,7 +581,7 @@ li
         display: inline-block;
         margin-top: 20px;
         width: 100%;
-      }
+      } 
       .section-bottom p {
         font-size: 16px;
         margin-left: 5%;

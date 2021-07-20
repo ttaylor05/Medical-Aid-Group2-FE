@@ -45,12 +45,13 @@ header {
     margin: 0 0 0 32px;
     transition: color 0.5s;
     font-family: 'Red Hat Display', sans-serif;
+    font-weight: normal;
     padding: 3px;
   }
   /* .no-dropdown a {
      font-weight: bold;
   } */
-  a:hover, a.selected {
+  header a:hover, header a.selected {
     background-color: #00c5b4;
     color: white;
   }
@@ -383,7 +384,8 @@ header {
 
 
 .section6 .apple:hover{
-    background-color: #8a8a8a;
+    /* background-color: #8a8a8a; */
+    background-color: lightgrey;
     transition:0.5s;
 }
 
@@ -404,7 +406,7 @@ header {
 }
 
 .section6 .google:hover{
-        background-color:lightgray;
+        background-color:lightgrey;
         transition:0.5s;
     }
 
@@ -560,7 +562,7 @@ header {
     justify-content:space-between;
     margin-left:auto;
     margin-right:auto;
-    background-color:lightgray;
+    background-color: rgb(245, 241, 241);
     width: 1250px;
 
 }
@@ -569,11 +571,14 @@ header {
     width:30px;
     margin-left:30px;
 }
+.section9 h3 {
+    font-size: 20px;
+}
 
-.section9 b:hover{
+/* .section9 b:hover{
     cursor:pointer;
     text-decoration: underline;
-}
+} */
 
 
 
@@ -590,9 +595,6 @@ header {
     
     cursor: pointer;
     background-color:white;
-
-    
-    
 }
 
 .last{
