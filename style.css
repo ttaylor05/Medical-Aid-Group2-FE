@@ -5,11 +5,12 @@
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 16px;
 	color: #000000;
-	margin-top: 20px;
-    margin-left:auto;
+	/* margin-top: 20px; */
+    /* margin-left:auto;
     margin-right:auto;
-	width: 1250px;
-	
+	width: 1250px; */
+	margin: 0em;
+    padding: 0em;
 }
 
 header {
@@ -104,20 +105,23 @@ header {
       max-width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
+      position: relative;
   }
 
   .section1 div{ 
     position:absolute;
     width:350px;
-    margin-left:690px;
+    /* margin-left:690px; */
     background-color:white;
-    margin-top:110px;
+    /* margin-top:110px; */
     padding-right:20px;
     padding-left:20px;
     background-repeat:no-repeat;
     background: rgba(300, 243, 243, 0.6);
     border-radius:6px;
     height:270px;
+    right: 150px;
+    top: 100px;
   } 
 
 
@@ -563,7 +567,7 @@ header {
     margin-left:auto;
     margin-right:auto;
     background-color: rgb(245, 241, 241);
-    width: 1250px;
+    /* width: 1250px; */
 
 }
 
@@ -583,7 +587,7 @@ header {
 
 
 
-.twitter, .instagram, .facebook{
+/* .twitter, .instagram, .facebook{
     margin-top:8px;
     width:30px;
     height:30px;
@@ -595,14 +599,14 @@ header {
     
     cursor: pointer;
     background-color:white;
-}
+} */
 
 .last{
     display:flex;
-
+    width: 22%;
+    align-items: center;
 }
-
-.last p{
+/* .last p{
     margin-right:30px;
 }
 
@@ -612,7 +616,7 @@ header {
 
 .last .instagram{
     margin-right:10px;
-}
+} */
 
 .logo{
     display:flex;
@@ -1215,7 +1219,7 @@ html,body {
     font-size: 40px;
 }
 
-
+/*
 .twitter, .instagram, .facebook {
     margin-top: 8px;
     width: 30px;
@@ -1234,7 +1238,7 @@ html,body {
 
 .instagram{
     width:60px;
-}
+} */
 
 footer {
     padding:0px;

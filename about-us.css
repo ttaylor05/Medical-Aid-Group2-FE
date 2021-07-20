@@ -84,7 +84,7 @@ a.selected, a {
     border-radius: 7px;
     padding: 10px;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 div.a {
