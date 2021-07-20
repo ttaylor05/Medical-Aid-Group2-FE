@@ -1,5 +1,6 @@
 .header {
     padding-left: 1em;
+    padding-top: 1em;
 }
 .img, .a-logo  {
     display: inline;
@@ -12,7 +13,7 @@
 #a .nav-logo2, .logo2-text {  
     color: black;
     font-family: 'Red Hat Display', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
 }
 /* heading */
@@ -32,18 +33,17 @@
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 600;
 }
-*:focus {
-    outline: none;
-}
-input:focus{
+
+/* input:focus{
     background-color: rgb(178, 240, 226); 
-}
+} */
 
 .email1 {
     background-color:   rgb(245, 241, 241);
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     padding-right: 175px;
-    padding-left: 5px; 
+    padding-left: 10px; 
     margin-bottom: 42px;
     margin-top: 4px;
     border: 1px solid;                                      
@@ -52,20 +52,20 @@ input:focus{
     font-family: 'Red Hat Display', sans-serif;
     font-size: 17px;
 }
-input:focus{
+/* input:focus{
     background-color:rgb(178, 240, 226);;
     
-}
-.email1:hover, .pwd:hover {
-    background-color:rgb(178, 240, 226);
-    
-  }
+} */
+
+
+
 
 .pwd {
     background-color:   rgb(245, 241, 241); 
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     padding-right: 175px;
-    padding-left: 5px; 
+    padding-left: 10px; 
     margin-bottom: 0px;
     border: 1px solid;
     border-color: rgb(223, 222, 222);
@@ -126,7 +126,7 @@ input:focus{
         font-size: 20px;
     }
     .email1, .pwd {
-        margin-left: 11px;
+        margin-left: 5px;
         padding-right: 105px;
     }
 .container {

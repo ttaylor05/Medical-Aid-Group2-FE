@@ -355,6 +355,10 @@ tr, th {
     border-top: none;
     text-align: center;
 }
+.no-user-row{
+    height: 70px
+    
+}
 
 tr:hover {background-color:var(--sidebar-bg-color);}
 tr#no-hover, th:hover {
@@ -371,6 +375,7 @@ img#no-user{
     background-color: #EEEEEE;
     border-radius: 20px;
     margin-top: 10px;
+
 }
 
 div.nxt-pg{
@@ -378,6 +383,7 @@ div.nxt-pg{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 100px;
 }
 div.previous-pg{
     width: 40%;
@@ -513,9 +519,14 @@ nav.navbar{
         flex-direction: column;
         justify-content: space-around;
         position: fixed;
-        top: 110px;
-        left: 10%;
+        top: 30px;
+        left: 5%;
     }
+    .change > .hamburger-menu{
+        top: 10px;
+        left: 200px;
+    }
+    
     .line{
         width: 100%;
         height: 3px;
@@ -550,7 +561,9 @@ nav.navbar{
         align-items: center;
         justify-content: space-around;
         padding: 15px;
+        
     }
+
  
     /*Display None Desktop HTML*/
     aside.left-container{
@@ -591,8 +604,13 @@ nav.navbar{
         box-sizing: border-box;
         border-radius: 5px;
     }
+    .no-user-row{
+        height: 50px
+        
+    }
     .search-requests{
-        width: 100%;
+        width: 90%;
+        height: 60px;
     }
     #search-icon{
         padding: 5px;
@@ -672,8 +690,6 @@ nav.navbar{
             padding: 8px;
             height: 45px;
             width: 100px;
-            position: relative;
-            left: 18%;
             font-style: normal;
             font-weight: bold;
             font-size: 16px;
@@ -686,9 +702,10 @@ nav.navbar{
         header#top-container{
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            width: 86%;
-            margin-left: 31%;
+            justify-content: space-between;
+            width: 65%;
+            align-self: flex-end;
+            
            
         }
         div.top-icons{
