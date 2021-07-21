@@ -212,7 +212,7 @@ content: "-";
   justify-content: space-between;
   margin-right: 100px;
   width:100%;
-  font-size: 18px; 
+  /* font-size: 16px;  */
   /* background-color: lightgray; */
   background:rgb(245, 241, 241);
 }
@@ -225,8 +225,8 @@ content: "-";
 }
 
 .section-bottom .empr-logo {
-  width: 40px;
-  /* margin-left: 30px; */
+  width: 30px;
+  margin-left: 30px;
 }
 
 .logo h3 {
