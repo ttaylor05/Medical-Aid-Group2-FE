@@ -345,7 +345,7 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
 }
-
+/* beginning of responsiveness */
 @media screen and (max-width:780px) {
   html,body {
     margin:0;
@@ -396,7 +396,6 @@ header {
     width: 96%;
     margin-left: -23px;
 }
-
 .appointments {
     padding: 0px;
     padding-bottom: 20px;
