@@ -192,6 +192,7 @@ input#search-box{
     background-position-y: center;
     width: 450px ;
     height: 35px;
+    /**/
 }
 #message-content{
     display: flex;

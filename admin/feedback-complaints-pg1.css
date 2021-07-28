@@ -9,9 +9,8 @@
     --text-color: #333333;
     --radius-border:15px;
     --searchbox-bg-color:#8A8A8A66;
-
 }
-
+/**/
 body{
     width: 100%;
     height: 100vh;
