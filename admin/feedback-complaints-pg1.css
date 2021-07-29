@@ -53,13 +53,14 @@ aside.left-container{
     justify-content: flex-start;
     padding-top: 0%;
     border-radius: var(--radius-border);
-    width: 100%;
+    width: 20%;
     height: 94%;
     font-size: 16px;
     font-weight: 500;
     position: fixed;
     top:10%;
     left:0%;
+    padding-top: 5%;
   
 }
 main.middle-container{
@@ -71,8 +72,8 @@ main.middle-container{
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    align-items:center;
-    width: 100%;
+    align-items:flex-end;
+    width: 90%;
     height: 100%;
     margin-left: 10px;
 }
@@ -120,8 +121,6 @@ a.sidebar-link{
     justify-content:flex-start;
     align-items: center;
     padding-bottom: 3.4em;
-    font-size: 21px;
-    
 }
 
 
@@ -209,7 +208,7 @@ div.a-logo{
     align-items: center;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 28px;
 }
 div.a-logo:hover{
@@ -241,6 +240,25 @@ a.nav-btns img:hover {
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
     background-color: #00C5B4;
 }
+a.sidebar-link:hover{
+    color: black;
+    font-weight: bold;
+}
+input#search-button:hover {
+    font-weight: bold;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21); 
+   color: white;
+    background-color: #00C5B4;
+}
+button#grey:hover{
+    font-weight: bold;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
+}
+button#blue:hover{
+    
+    font-weight: bold;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
+}
 .right-container-headers{
     font-style: normal;
     font-weight:500;
@@ -270,49 +288,78 @@ li.bullet-list-style{
    list-style-image:url(/images/admin-images/list-style.svg);
 
 }
-div.patients-doctors{
+
+main.middle-container h2{
+    text-align: left;
+    padding-right: 40%;
+}
+
+
+.search-requests{
+    height: 13%;
+    width: 90%;
+    background: rgba(120, 240, 230, 0.4);
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 180px;
-    height: 90px;
-    margin-bottom: 20px;
 }
-main.middle-container h2{
-    text-align: left;
-    padding-right: 60%;
+.dateSearch-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
 }
-div#dr-container{
-    margin-left: 20px;
+.radio-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
-div#patients-container{border-bottom: 4px solid #A8A8A8;}
-div#dr-container{border-bottom: 4px solid #A8A8A8;}
-div#patients-container:hover{
-    border-bottom: 4px solid var(--sidebar-bg-color);
+form{
+    width: 100%;
+    height: 70%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
-div#dr-container:hover{
-    border-bottom: 4px solid var(--sidebar-bg-color);
+.date-searchbox{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap:20px;
 }
-div.search-users{
-    width: 450px;
-    height: 40px;
-    margin-bottom: 20px;
-}
-input#user-searchbox{
-    width: 450px;
-    height: 40px;
+input#date-searchbox{
+    width: 75%;
+    height: 30px;
     padding: 8px;
-    background-image: url(/images/admin-images/search.svg);
-    background-size: 15px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 98%;
+    background: #FFFFFF;
     border-radius: 5px;
-    border: 1px solid #A8A8A8;   
+    border:none;
 }
-div.users-tablelist{
-    margin-bottom: 15%;
+#date-searchbox > label {
+    text-align: center;
+
+}
+input#search-button{
+    width: 11%;
+    height: 32px;
+    background: #00C5B4;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+div.requests-tablelist{
+    margin-bottom: 5%;
+    width: 90%;
 }
 
 table{
@@ -336,6 +383,11 @@ th{
 }
 tr, th {
     border-top: none;
+    text-align: center;
+}
+.no-user-row{
+    height: 70px
+    
 }
 
 tr:hover {background-color:var(--sidebar-bg-color);}
@@ -353,28 +405,57 @@ img#no-user{
     background-color: #EEEEEE;
     border-radius: 20px;
     margin-top: 10px;
+
 }
 
 div.nxt-pg{
-    width: 80%;
-    height: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 100px;
 }
 div.previous-pg{
-    margin-right: 20%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 div.nextpage{
-    margin-left: 20%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.buttons-container{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+    column-gap: 40px;
 }
 button{
+    text-align: center;
+    font-family: 'Red Hat Display';
     font-weight: bold;
     padding: 8px 2em;
     background: #00C5B4;
     border-radius: 5px;
     border: none;
     margin-top:15px;
+}
+#blue{
+    background: #00C5B4;
+    border-radius: 5px;
+    color: white;
+}
+#grey{
+    background: #EAEAEA;
+    border-radius: 5px;
 }
 /*Mobile Design Hiddens HTML DISPLAY*/
 .displayNone-dsktp{
@@ -403,12 +484,14 @@ nav.navbar{
           grid-column-end: 6 ;
           
         }
+         h2#clinics-title{
+            padding-right: 40%;
+        }
       aside.right-container{
          display: none;
         }
         div.nxt-pg{
-          
-            width: 500px;
+            width: 90%;
         }
       /*Hamburger Styling*/
       nav.navbar{
@@ -426,10 +509,8 @@ nav.navbar{
         justify-content:right;
         padding-right: 0%;
     }
-    div.a-logo{
-        padding-right: 5%;
-        padding-left: 0%;
-    }
+  
+   
     a.nav-btns{
         margin: 0%;
     }
@@ -468,9 +549,14 @@ nav.navbar{
         flex-direction: column;
         justify-content: space-around;
         position: fixed;
-        top: 110px;
-        left: 45px;
+        top: 30px;
+        left: 5%;
     }
+    .change > .hamburger-menu{
+        top: 10px;
+        left: 200px;
+    }
+    
     .line{
         width: 100%;
         height: 3px;
@@ -504,8 +590,8 @@ nav.navbar{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding: 15px;
     }
+
  
     /*Display None Desktop HTML*/
     aside.left-container{
@@ -535,165 +621,223 @@ nav.navbar{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 100%;
     }
-    /*Flex-Order*/
-    h2#users-title{
-        order:1 ;
-        padding-right: 70%;
+    main.middle-container h2{
+        padding-right: 0%;
     }
-    div.search-users{
-        order: 2;
-        width: 90%;
+    div.requests-tablelist{
+        width: 100%;
+        margin-top: 33px;
     }
-    div.patients-doctors{
-        order:3;
+    input#dr-searchbox,
+    input#speciality-searchbox{
+        background: #EEEEEE;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
     }
-    div.users-tablelist{
-        order: 4;
+    input#date-searchbox{
+        width: 100%;
+        background: #EEEEEE;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-image: url(/images/admin-images/search-feedback.svg);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: right;
+        background-origin: content-box;
+        padding: 5px;
     }
-    div.nxt-pg{
-        order: 5;
+    .feedback-complaints{
+        background-color: white;
+        border: none;
+        font-size: 16px;
+        border-bottom: white solid 5px;
+        font-weight: lighter;
+        
+    }
+    .feedback-complaints:hover{
+       border-bottom:  5px solid rgba(0, 197, 180, 0.5);
+       font-weight: bold;
+    }
+    #feedback-complaints-container{
+        border-bottom: grey 1px solid;
+        width: 100%;
+        height: 50px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
+        align-items: flex-end;
     }
     
-/*Flex-order End*/
-    #users-title{
-        text-align: left;
+    .search-requests{
+        width: 90%;
+        height: 60px;
+        background-color: white;
+    }
+    #search-icon{
+        padding: 5px;
+    }
+    #search-icon:hover{
+        background: #00C5B4;
+        border-radius: 5px;
+       
+    }
+    #search-icon::after{
+        background-color: none;
+    }
+    .buttons-container{
+        height: 12%;
+    }
+    /*Flex-Order*/
+   
+    div.nxt-pg{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .previous-pg>a{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .nextpage >a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    #feedbacksandcomplaints-title{
         font-style: normal;
         font-weight: 500;
+        width: 90%;
 
-    }
-    input#user-searchbox {
-        width: 100%;
-        background-color:  #EEEEEE;
     }
         
     th{
         font-weight: normal;
         text-align: center;
+        font-size: 18px;
+    }
+    td {
+        font-size: 16px;
     }
     tr, td {
         text-align: center;
     }
-    div.a-logo{
-       position: relative;
-       right: 8%; 
-    }
-    /*NXT PAGE FLEX Position*/
-    .previous-pg{
-        width:30%
+        /*NXT PAGE FLEX Position*/
+        .previous-pg{
+            width:30%  
+        }
+        .nextpage{width: 30%;}
+       
+        button{
+            padding: 8px;
+            height: 45px;
+            width: 100px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+        }
         
-    }
-    .nextpage{width: 30%;}
-    div.agreement-container{
-        width: 90%;
-        margin: 0%;
-        padding: 0%;
-    }
-    button{
-        padding: 8px;
-        height: 45px;
-        width: 100px;
-        position: relative;
-        left: 18%;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-    }
+        /*hamburger styling*/
+        nav.navbar{
+            display: block;
+        }
+        header#top-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 65%;
+            align-self: flex-end;
+            
+           
+        }
+        div.top-icons{
+            justify-content:right;
+            padding-right: 0%;
+        }
+        
     
-    /*hamburger styling*/
-    nav.navbar{
-        display: block;
-    }
-    header#top-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        justify-content: space-around;
-        width: 70%;
-        padding-left: 30%;
-        margin-left: 15%;
-    }
-    div.top-icons{
-        justify-content:right;
-        padding-right: 0%;
-    }
-    
-
-    a.nav-btns{
-        margin: 0%;
-    }
-    .navbar{
-        width: 300px;
-        height: 100%;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 8px;
-        position: fixed;
-        top: 0;
-        left: -300px;
-    }
-    .change{
-        padding: 8px;
-        left: 0;
-        background: #00C5B4;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        height: 80%;
-    }
-    .nav-item{
-        padding-bottom: 35px;
-    }
-    .hamburger-menu{
-        width: 28px;
-        height: 28px;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        position: fixed;
-        top: 20px;
-        left: 40px;
-        border-radius: 8px;
-        padding: 5px;
+        a.nav-btns{
+            margin: 0%;
+        }
+        .navbar{
+            width: 300px;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            position: fixed;
+            top: 0;
+            left: -300px;
+        }
+        .change{
+            padding: 8px;
+            left: 0;
+            background: #00C5B4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            height: 80%;
+        }
+        .nav-item{
+            padding-bottom: 35px;
+        }
+        .hamburger-menu{
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: fixed;
+            top: 20px;
+            left: 40px;
+            border-radius: 8px;
+            padding: 5px;
+          
+        }
+        .hamburger-menu::after{
+            left: 230px;
+        }
+        .line{
+            width: 100%;
+            height: 2px;
+            background-color:black;
+            transition: all 0.8s;
+        }
+        .change .line-1{
+            transform: rotate(-44deg) translate(-7px, 6px);
+        }
+        .change .line-2{
+           opacity: 0;
+        }
+        .change .line-3{
+            transform: rotate(45deg) translate(-8px, -6px);
+        }
       
-    }
-    .line{
-        width: 100%;
-        height: 2px;
-        background-color:black;
-        transition: all 0.8s;
-    }
-    .change .line-1{
-        transform: rotate(-45deg) translate(-8px, 6px);
-    }
-    .change .line-2{
-       opacity: 0;
-    }
-    .change .line-3{
-        transform: rotate(45deg) translate(-8px, -6px);
-    }
-  
-    .nav-list{
-        text-align: left;
-    }
-    .nav-item{
-        font-size: 21px;
-    }
+        .nav-list{
+            text-align: left;
+        }
+        .nav-item{
+            font-size: 21px;
+        }
+        .change > .hamburger-menu{
+            left: 230px;
+        }
    
-
-
-
-}
+    }/*Mobile Design end*/
 
 
 

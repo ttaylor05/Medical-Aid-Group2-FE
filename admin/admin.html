@@ -15,7 +15,47 @@
     <title>Admin Page</title>
 </head>
 <body>
-        <div id="top-container">
+    <div class="body-Container">
+        <header id="top-container"><!--Header-->
+                            <!--Hamburger Menu-->
+                            <nav class="navbar">
+                                <div class="hamburger-menu">
+                                    <div class="line line-1"></div>
+                                    <div class="line line-2"></div>
+                                    <div class="line line-3"></div>
+                                </div>
+                                <ul class="nav-list">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"> <img src="/images/admin-images/dashboard.svg" alt=""> Dashboard</a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a href="#" class="nav-link"> <img src="/images/admin-images/users.svg" alt=""> Users</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a href="#" class="nav-link"> <img src="/images/admin-images/requests.svg" alt=""> Requests</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a href="#" class="nav-link"> <img src="/images/admin-images/pharmacies.svg" alt=""> Pharmacies & Clinics</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a href="#" class="nav-link"> <img src="/images/admin-images/" alt=""> Feedback & Complaints</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a href="#" class="nav-link"> <img src="/images/admin-images/settings.svg" alt=""> Settings</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a href="#" class="nav-link"> <img src="/images/admin-images/supporfaq.svg" alt=""> Support/FAQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"> <img src="/images/admin-images/logout.svg" alt=""> Logout</a>
+                                    </li>
+           
+                                </ul>
+           
+                            </nav>
+                        <!--Hamburger Menu-->
+
+
             <div class="a-logo"  >
                 <span>
                     <img src="/images/admin-images/logo.svg" alt="" class="a-logo">
@@ -27,7 +67,7 @@
             </div>
             <div class="search-box-container">
                 <form>
-                    <input  type="text" name="search-box" id="search-box" >
+                    <input  type="text" name="search-box" id="search-box" autocomplete="off">
                     
                 </form>
                 
@@ -36,10 +76,10 @@
                <a href="#"class="nav-btns"><img src="/images/admin-images/feedback.svg" alt="feedback-icon"></a>
                 <a href="#" class="nav-btns"><img src="/images/admin-images/notification-bel.svg" alt="notification-icon"></a>
             </div>
-        </div>
+        </header><!--Header END-->
       
     
-    <div class="left-container">
+    <aside class="left-container"><!--Sidebar-->
         <div class="sidebar-top" id="top-content">
           <ul class="top-menu-container">
              <li>
@@ -80,7 +120,7 @@
              <li>
                 <div>
                     <a href="#" class="sidebar-link">
-                       <img class="icon-leftcontainer" src="/images/admin-images/settings.svg" alt="Settings icon"><spanclass="menu-selectionNames" >Settings</span>
+                       <img class="icon-leftcontainer" src="/images/admin-images/settings.svg" alt="Settings icon"><span class="menu-selectionNames" >Settings</span>
                     </a>
                 </div>
              </li>
@@ -101,8 +141,8 @@
             
           </ul> <!--Top Menu Container-->  
         </div> <!--End of Sidebar Top-->
-    </div>
-    <div class="middle-container">
+    </aside><!--Sidebar End-->
+    <main class="middle-container"><!--Main-->
         <div class="welcome-container">
             <h1>Welcome Back Trisha</h1>
             <p>
@@ -162,8 +202,8 @@
         </div>
 
 
-    </div>
-    <div class="right-container">
+    </main><!--End Of Main-->
+    <aside class="right-container"><!--Aside Right Container-->
         <div class="my-profile-container">
             <img src="/images/admin-images/profile-pic.jpg" alt="Profile-picture" height="100px" width="100px" class="profile-pic">
             <h2>Trista Young</h2>
@@ -195,6 +235,10 @@
             </ul>
         </div>
 
+    </aside><!--End of Aside End-->
+    </div> <!--Body-container End-->
+    <script src="/admin/users.js"></script>
+</body> 
     </div>
         <!--Mobile HTML-->
         <div class="body-container">
