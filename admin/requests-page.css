@@ -102,6 +102,12 @@ a{
     text-decoration-line: none;
     color: var(--text-color);
 }
+.nxt-pg a:hover{
+    color: #00C5B4;
+    cursor: pointer;
+}
+
+
 div.top-menu-container{
     display: flex;
     flex-direction: column;
@@ -211,12 +217,9 @@ div.a-logo{
     font-size: 28px;
     line-height: 28px;
 }
-div.a-logo:hover{
-    background-color: var(--sidebar-bg-color);
-   border-radius: 5px;
-   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
-  
+.menu-selectionNames:hover{
+    color: white;
+    font-weight: bold;
 }
 img.a-logo{
     width: 50px;
