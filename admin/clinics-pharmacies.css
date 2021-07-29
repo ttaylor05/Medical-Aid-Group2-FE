@@ -344,7 +344,10 @@ tr:hover {background-color:var(--sidebar-bg-color);}
 tr#no-hover, th:hover {
     background-color: white;
 }
-
+.menu-selectionNames:hover{
+    color: white;
+    font-weight: bold;
+}
 
 img.users-profile{
     width: 50px;
