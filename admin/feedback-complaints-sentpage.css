@@ -51,7 +51,7 @@ aside.left-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 0%;
+    padding-top: 5%;
     border-radius: var(--radius-border);
     width: 20%;
     height: 94%;
@@ -361,7 +361,7 @@ button > a:hover  {
 #blue{
     background: #00C5B4;
     border-radius: 5px;
-    color: white;
+    color: black;
 }
 
 /*Mobile Design Hiddens HTML DISPLAY*/
@@ -463,8 +463,8 @@ nav.navbar{
         left: 5%;
     }
     .change > .hamburger-menu{
-        top: 10px;
-        left: 200px;
+        top: 9px;
+        left: 230px;
     }
     
     .line{
@@ -646,8 +646,13 @@ nav.navbar{
             text-align: left;
         }
         .nav-item{
-            font-size: 21px;
+            font-size: 18px;
         }
+        a.nav-link:hover{
+            color: white;
+            font-weight: bold;
+        }
+
         .change > .hamburger-menu{
             left: 230px;
         }
