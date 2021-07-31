@@ -121,7 +121,7 @@ a.sidebar-link{
     justify-content:flex-start;
     align-items: center;
     padding-bottom: 3.4em;
-    font-size: 21px;
+    font-size: 16px;
     
 }
 
@@ -360,6 +360,10 @@ div.nxt-pg{
     flex-direction: row;
     justify-content: space-around;
 }
+.nxt-pg a:hover{
+    color: #00C5B4;
+    cursor: pointer;
+}
 div.previous-pg{
     width: 40%;
     display: flex;
@@ -383,6 +387,8 @@ div.nextpage{
     padding: 10px;
     column-gap: 40px;
 }
+
+
 button{
     font-weight: bold;
     padding: 8px 2em;
@@ -394,12 +400,21 @@ button{
 #blue{
     background: #00C5B4;
     border-radius: 5px;
-    color: white;
+    color:black;
 }
 #grey{
     background: #EAEAEA;
     border-radius: 5px;
 }
+button:hover{
+    color: white;
+    font-weight: bolder;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgb(0 0 0 / 21%);
+}
+#blue:hover{
+    color: white;
+}
+
 /*Mobile Design Hiddens HTML DISPLAY*/
 .displayNone-dsktp{
     display: none;
@@ -439,6 +454,7 @@ nav.navbar{
       /*Hamburger Styling*/
       nav.navbar{
         display: block;
+        height: 50%;
     }
     header#top-container{
         display: flex;
@@ -495,6 +511,10 @@ nav.navbar{
         top: 110px;
         left: 10%;
     }
+    .change > .hamburger-menu{
+        top: 9px;
+        left: 230px;
+    }
     .line{
         width: 100%;
         height: 3px;
@@ -515,7 +535,11 @@ nav.navbar{
         text-align: left;
     }
     .nav-item{
-        font-size: 21px;
+        font-size: 18px;
+    }
+    .nav-link:hover {
+        color: white;
+        font-weight: bold;
     }
       /*Hamburger Styling END*/
     
@@ -714,6 +738,10 @@ nav.navbar{
         }
         .nav-item{
             font-size: 21px;
+        }
+        .nav-link:hover {
+            color: white;
+            font-weight: bold;
         }
         .change > .hamburger-menu{
             left: 230px;
