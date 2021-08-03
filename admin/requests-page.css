@@ -57,7 +57,7 @@ aside.left-container{
     padding-top: 0%;
     border-radius: var(--radius-border);
     width: 20%;
-    height: 70%;
+    height: 80%;
     font-size: 16px;
     font-weight: 500;
     position: fixed;
@@ -106,6 +106,12 @@ a{
     text-decoration-line: none;
     color: var(--text-color);
 }
+.nxt-pg a:hover{
+    color: #00C5B4;
+    cursor: pointer;
+}
+
+
 div.top-menu-container{
     display: flex;
     flex-direction: column;
@@ -125,6 +131,7 @@ a.sidebar-link{
     justify-content:flex-start;
     align-items: center;
     padding-bottom: 3.4em;
+    font-size:21px
 }
 
 
@@ -217,6 +224,10 @@ div.a-logo{
     line-height: 28px;
 }
 
+ a .menu-selectionNames:hover{
+    color: white;
+    font-weight: bold;
+} 
 img.a-logo{
     width: 50px;
     margin-right: 10px;
@@ -239,10 +250,7 @@ a.nav-btns img:hover {
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
     background-color: #00C5B4;
 }
-a.sidebar-link:hover{
-    color: black;
-    font-weight: bold;
-}
+
 input#search-button:hover {
     font-weight: bold;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21); 
