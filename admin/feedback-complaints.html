@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="feedback-complaints-pg1.css">
+    <link rel="stylesheet" href="feedback-complaints.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
     <link rel="icon" href="/images/admin-images/logo.svg">
@@ -33,7 +33,7 @@
                                    <a href="/admin/clinics-pharmacies.html" class="nav-link"> <img src="/images/admin-images/pharmacies.svg" alt=""> Pharmacies & Clinics</a>
                                </li>
                                <li class="nav-item">
-                                   <a href="/admin/feedback-complaints-pg1.css" class="nav-link"> <img src="/images/admin-images/" alt=""> Feedback & Complaints</a>
+                                   <a href="/admin/feedback-complaints-pg1.css" class="nav-link"> <img src="/images/admin-images/feedback.svg" alt=""> Feedback & Complaints</a>
                                </li>
                                <li class="nav-item">
                                    <a href="#" class="nav-link"> <img src="/images/admin-images/settings.svg" alt=""> Settings</a>
@@ -49,7 +49,7 @@
        
                         </nav>
                     <!--Hamburger Menu-->
-               
+                   <!---->
             <div class="a-logo"  >
                 <span>
                     <img src="/images/admin-images/logo.svg" alt="" class="a-logo">
@@ -114,7 +114,7 @@
                 <li>
                    <div>
                        <a href="#" class="sidebar-link">
-                          <img class="icon-leftcontainer" src="/images/admin-images/settings.svg" alt="Settings icon"><spanclass="menu-selectionNames" >Settings</span>
+                          <img class="icon-leftcontainer" src="/images/admin-images/settings.svg" alt="Settings icon"><span class="menu-selectionNames" >Settings</span>
                        </a>
                    </div>
                 </li>
@@ -151,10 +151,14 @@
                    
                 </div>
                  <div class="radio-buttons" class="displayNone-mobile" >
-                     <label for="complaint-radio" class="displayNone-mobile" >Complaint</label>
-                    <input type="radio" name="radiobutton"  id="complaint-radio" class="radio displayNone-mobile">
-                    <label for="feedback-radio" class="displayNone-mobile">Feedback</label>
+                     <div><label for="complaint-radio" class="displayNone-mobile" >Complaint</label>
+                        <input type="radio" name="radiobutton"  id="complaint-radio" class="radio displayNone-mobile">
+                    </div>
+                     <div>
+                        <label for="feedback-radio" class="displayNone-mobile">Feedback</label>
                     <input type="radio" name="radiobutton"  id="feedback-radio" class="radio displayNone-mobile">
+                     </div>
+                     
                  </div>
                  <div class="displayNone-dsktp" id="feedback-complaints-container" >
                      <input type="button" value="Feedback" class="feedback-complaints" >
@@ -186,14 +190,6 @@
                         <td>Scheduling</td>
                         <td  >#44445</td>
                         <td>New Case</td>                  
-                    </tr>
-                    <tr class="no-user-row" >
-                        <td><img src="/images/admin-images/no-user.svg" class="displayNone-mobile" id="no-user" alt=""></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="displayNone-mobile" ></td>
-                    
                     </tr>
                 </table>
             </div>
