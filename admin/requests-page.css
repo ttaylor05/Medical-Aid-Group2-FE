@@ -36,6 +36,7 @@ div.body-Container{
 }
 
 header#top-container{
+    background-color: white;
     grid-column-start: 2 ;
     grid-column-end:7 ;
     grid-row-start: 1;
@@ -130,8 +131,8 @@ a.sidebar-link{
     flex-direction: row;
     justify-content:flex-start;
     align-items: center;
-    padding-bottom: 3.4em;
-    font-size:21px
+    padding-bottom: 3em;
+    font-size:14px
 }
 
 
