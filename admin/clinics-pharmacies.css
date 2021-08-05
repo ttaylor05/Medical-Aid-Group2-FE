@@ -21,7 +21,7 @@ body{
 }
 
 div.body-Container{
-    width: 100%;
+    width: 70%;
     height: 100vh;
     display: grid;
     grid-template-columns: 30px 1fr 2fr 1fr 1fr 20px ;
@@ -36,15 +36,13 @@ div.body-Container{
 }
 
 header#top-container{
-    grid-column-start: 2 ;
-    grid-column-end:7 ;
-    grid-row-start: 1;
-    grid-row-end: 2;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    font-family: 'Red Hat Display', sans-serif;
 }
 aside.left-container{
     background-color: var(--sidebar-bg-color);
@@ -54,7 +52,6 @@ aside.left-container{
     padding-top: 0%;
     border-radius: var(--radius-border);
     width: 20%;
-    height: 94%;
     font-size: 16px;
     font-weight: 500;
     position: fixed;
@@ -213,13 +210,7 @@ div.a-logo{
     font-size: 30px;
     line-height: 28px;
 }
-div.a-logo:hover{
-    background-color: var(--sidebar-bg-color);
-   border-radius: 5px;
-   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
-  
-}
+
 img.a-logo{
     width: 50px;
     margin-right: 10px;
@@ -405,6 +396,7 @@ button{
 }
 a.sidebar-link:hover{
     font-weight: bold;
+    color:white;
 }
 /*Mobile Design Hiddens HTML DISPLAY*/
 .displayNone-dsktp{
@@ -484,7 +476,7 @@ nav.navbar{
         justify-content: center;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        height: 80%;
+        height: 50%;
     }
     .change > .hamburger-menu {
         
@@ -682,7 +674,7 @@ nav.navbar{
             justify-content: center;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
-            height: 80%;
+            height: 50%;
         }
         .nav-item{
             padding-bottom: 35px;
