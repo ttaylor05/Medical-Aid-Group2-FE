@@ -31,30 +31,34 @@ body{
 }
 
 div#top-container{
-    grid-column-start: 2 ;
-    grid-column-end:7 ;
+    padding: 1em 0em;
+    grid-column-start: 2;
+    grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 2;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    background-color: white;
+    z-index: 1;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 div.left-container{
     background-color: var(--sidebar-bg-color);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 10%;
+    padding-top: 0%;
     border-radius: var(--radius-border);
-    height: 80%;
     width: 20%;
+    height: 94%;
     font-size: 16px;
     font-weight: 500;
     position: fixed;
     top: 10%;
     left: 0%;
+    padding-top: 5%;
 }
 div.middle-container{
     background-color: white;
@@ -97,14 +101,22 @@ ul.top-menu-container{
 }
 
 a.sidebar-link{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content:flex-start;
     align-items: center;
-    padding-bottom: 1em;
+    padding-bottom: 1em; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 3.4em;
 }
 
-
+a.sidebar-link:hover{
+    color: white;
+    font-weight: bold;
+}
 div.my-profile-container{
     display: flex;
     flex-direction: column;
@@ -283,7 +295,7 @@ div.avg-resp-contnr{
     border: 1px solid #A8A8AA;
     box-sizing: border-box;
     border-radius: 10px;
-    width: 177px;
+    padding: 0em 1em;
     height: 212px;
     display: flex;
     flex-direction: column;
@@ -295,7 +307,7 @@ div.avg-wait-contnr{
     border: 1px solid #A8A8AA;
     box-sizing: border-box;
     border-radius: 10px;
-    width: 177px;
+    padding: 0em 1em;
     height: 212px;
     display: flex;
     flex-direction: column;
@@ -307,7 +319,7 @@ div.pat-satifction-cntnr{
     border: 1px solid #00C5B4;
     box-sizing: border-box;
     border-radius: 10px;
-    width: 275px;
+    width: 290px;
     height: 215px;
     flex-direction: column;
     justify-content: flex-start;
@@ -355,7 +367,7 @@ h1.percent-Num-rtng{
 .body-container{
     display: none;
 }
-nav.navbar#hamburger{
+nav.navbar{
     display: none;
 }
 @media screen and (min-width:601px) and (max-width:1330px){
@@ -381,8 +393,8 @@ nav.navbar#hamburger{
         display: none;
     }
     /*Hamburger Styling*/
-    nav.navbar#hamburger{
-        display:block;
+    nav.navbar{
+        display: block;
     }
 
 header#top-container{
@@ -495,8 +507,8 @@ a.nav-btns{
     div#top-container{
         display: none;
     }
-    nav.navbar#hamburger{
-        display:block;
+    nav.navbar{
+        display: block;
     }
 /*Display None Desktop CSS End*/
 p{
@@ -514,9 +526,7 @@ main{
     align-items: center;
 }
 /*Hamburger Styling*/
-main nav.navbar#hamburger{
-    
-}
+
 header#top-container{
     display: flex;
     flex-direction: row;
@@ -559,7 +569,9 @@ a.nav-btns{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     height: 80%;
+    z-index: 1;
 }
+
 .nav-item{
     padding-bottom: 35px;
 }
@@ -571,11 +583,14 @@ a.nav-btns{
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
-    top: 2px;
-    left: 10px;
+    top: 20px;
+    left: 40px;
     border-radius: 8px;
     padding: 5px;
   
+}
+.hamburger-menu::after{
+    left: 230px;
 }
 .line{
     width: 100%;
