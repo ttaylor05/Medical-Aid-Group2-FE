@@ -475,6 +475,7 @@ nav.navbar{
       nav.navbar{
         display: block;
     }
+    
     header#top-container{
         display: flex;
         flex-direction: row;
