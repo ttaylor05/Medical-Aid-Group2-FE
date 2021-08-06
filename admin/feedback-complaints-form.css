@@ -21,7 +21,6 @@ body{
 
 div.body-Container{
     width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-columns: 30px 1fr 2fr 1fr 1fr 20px ;
     grid-template-rows: 100px 5% 15% 20% 40% 10%;
@@ -35,6 +34,7 @@ div.body-Container{
 }
 
 header#top-container{
+    background-color: white;
     grid-column-start: 2 ;
     grid-column-end:7 ;
     grid-row-start: 1;
@@ -44,6 +44,10 @@ header#top-container{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
+    position: fixed;
+    padding: 1em 0em;
+    font-family: 'Red Hat Display', sans-serif;
 }
 aside.left-container{
     background-color: var(--sidebar-bg-color);
@@ -53,14 +57,14 @@ aside.left-container{
     padding-top: 5%;
     border-radius: var(--radius-border);
     width: 20%;
-    height: 94%;
+    height: 80%;
     font-size: 16px;
     font-weight: 500;
     position: fixed;
     top:10%;
     left:0%;
     padding-top: 5%;
-  
+    z-index: 1;
 }
 main.middle-container{
     background-color: white;
@@ -343,6 +347,8 @@ section{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 .left {
     width: 50%;
@@ -350,8 +356,8 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-end;
-    
+    align-items:flex-end;
+    margin: 1em 0px;
 }
 .right{
     margin-top: 10px;
@@ -405,18 +411,27 @@ textarea{
 }
 /*input type text styling */
 
-span > input{
+div > label {
+    margin-right: 1em;
+}
+div > input{
     background: #FFFFFF;
     border-radius: 4px;
-    width: 70%;
-    height: 30px;
-    display: inline-block;
+    height: 35px;
+    width: 235px;
     border: none;
 }
-#date{
-    margin-left: 12px;
-}
 
+#date {
+    height: 35px;
+    width: 235px;
+}
+.align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .right >input {
     width: 50%;
     height: 96%;
@@ -424,9 +439,7 @@ span > input{
     text-align: top ;
 }
 
-.left > label {
-    background-color: blue;
-    width: 40%;
+
 }
 .left > span {
    display: flex;
@@ -496,6 +509,10 @@ nav.navbar{
         grid-column-start: 3;
         grid-column-end: 4;
         width: 100%;
+        position: fixed;
+        background-color: white;
+        z-index: 1;
+        font-family: 'red hat display', sans-serif;    
     }
     div.top-icons{
         justify-content:right;
@@ -780,7 +797,11 @@ nav.navbar{
             flex-direction: row;
             justify-content: space-between;
             width: 65%;
-            align-self: flex-end;
+              width: 65%;
+    margin-left: auto;
+    position: relative;
+    align-self: flex-end;
+
             
            
         }
