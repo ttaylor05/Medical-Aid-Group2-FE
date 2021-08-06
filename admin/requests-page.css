@@ -65,7 +65,7 @@ aside.left-container{
     top:10%;
     left:0%;
     padding-top: 5%;
-    z-index: -1;
+    z-index: 1;
   
 }
 main.middle-container{
@@ -258,15 +258,7 @@ input#search-button:hover {
    color: white;
     background-color: #00C5B4;
 }
-button#grey:hover{
-    font-weight: bold;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
-}
-button#blue:hover{
-    
-    font-weight: bold;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
-}
+
 .right-container-headers{
     font-style: normal;
     font-weight:500;
@@ -565,6 +557,10 @@ nav.navbar{
     .nav-item{
         font-size: 21px;
     }
+    .nav-link:hover{
+        color: white;
+        font-weight: bold;
+    }
       /*Hamburger Styling END*/
     
 }
@@ -803,6 +799,10 @@ nav.navbar{
         }
         .change > .hamburger-menu{
             left: 230px;
+        }
+        .nav-link:hover{
+            color: white;
+            font-weight: bold;
         }
    
     }/*Mobile Design end*/
