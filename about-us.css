@@ -871,7 +871,10 @@ li
 
   }
 
-  
+  .section-bottom p {
+    line-height:0;
+ 
+}
 
   footer {
 
