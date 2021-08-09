@@ -404,11 +404,22 @@ button:hover{
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
 } 
 #grey:hover{
+    color: black;
+    font-weight: bold;
+}
+#blue:hover{
+    font-weight: bold;
     color: white;
 }
 a.sidebar-link:hover{
     font-weight: bold;
     color:white;
+}
+.previous-pg > a:hover{
+    color: #00C5B4;
+}
+.nextpage > a:hover{
+    color: #00C5B4;
 }
 /*Mobile Design Hiddens HTML DISPLAY*/
 .displayNone-dsktp{
@@ -535,6 +546,10 @@ nav.navbar{
     }
     .nav-item{
         font-size: 21px;
+    }
+    .nav-link:hover{
+        font-weight: bold;
+        color: white;
     }
       /*Hamburger Styling END*/
     
@@ -740,7 +755,10 @@ nav.navbar{
         .change > .hamburger-menu{
             left: 230px;
         }
-   
+        .nav-link:hover{
+            font-weight: bold;
+            color: white;
+        }
     }/*Mobile Design end*/
 
 
