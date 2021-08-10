@@ -1,1 +1,293 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/admin-images/logo.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="patient.css"> 
+    <title>Patient Dashboard</title>
+</head>
+<body>
+    <header id="top-container"> <!--Header-->
+        <!--Hamburger Menu-->
+            <nav class="navbar">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> <img src="/images/admin-images/dashboard.svg" alt=""> Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                       <a href="#" class="nav-link"> <img src="/images/admin-images/users.svg" alt=""> Users</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav-link"> <img src="/images/admin-images/requests.svg" alt=""> Requests</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav-link"> <img src="/images/admin-images/pharmacies.svg" alt=""> Pharmacies & Clinics</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav-link"> <img src="/images/admin-images/" alt=""> Feedback & Complaints</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav-link"> <img src="/images/admin-images/settings.svg" alt=""> Settings</a>
+                   </li>
+                   <li class="nav-item">
+                        <a href="#" class="nav-link"> <img src="/images/admin-images/supporfaq.svg" alt=""> Support/FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> <img src="/images/admin-images/logout.svg" alt=""> Logout</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        <!--Hamburger Menu-->
+   
+<div class="a-logo"  >
+    <span>
+        <img src="/images/admin-images/logo.svg" alt="" class="a-logo">
+    </span>
+
+    <div class="displayNone-mobile">
+        <a  href="#" id="nav-logo2">Empr Medical</a>
+    </div>
+</div>
+<div class="search-box-container">
+    <form>
+        <input  type="search" name="search-box" id="search-box" autocomplete="off" >
+        
+    </form>
+    
+</div>  
+<div class="top-icons">
+    <div class="top-icons">
+        <a href="#"class="nav-btns"><img src="/images/admin-images/feedback.svg" alt="feedback-icon"></a>
+         <a href="#" class="nav-btns"><img src="/images/admin-images/notification-bel.svg" alt="notification-icon"></a>
+     </div>
+</div>
+</header><!--Header End -->
+
+<div class="body-Container">
+<aside class="left-container"><!--Sidebar-->
+    <div class="sidebar-top" id="top-content">
+        <ul class="top-menu-container">
+            <li>
+                <div>
+                    <a href="#" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/dashboard.svg" alt="dashboard"><span class="menu-selectionNames" >Dashboard</span>
+                    </a>
+            </li>
+            <li>
+               <div>
+                   <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/users.svg" alt="Users icon"><span class="menu-selectionNames" >Users</span>
+                   </a>
+               </div>
+            </li>
+            <li>
+               <div>
+                   <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/requests.svg" alt="Requests icon"><span class="menu-selectionNames" >Requests</span>
+                   </a>
+               </div>
+            </li>
+            <li>
+               <div>
+                   <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/pharmacies.svg" alt="Pharmacies and Clinics icon"><span class="menu-selectionNames" >Pharmacies & Clinics</span>
+                   </a>
+               </div>
+            </li>
+            <li>
+               <div>
+                   <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/feedback.svg" alt="feedback & complaints icon"><span class="menu-selectionNames" >Feedback & Complaints</span>
+                   </a>
+               </div>
+            </li>
+            <li>
+               <div>
+                   <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/settings.svg" alt="Settings icon"><span class="menu-selectionNames" >Settings</span>
+                   </a>
+               </div>
+            </li>
+            <li> 
+               <div>
+                  <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/supporfaq.svg" alt="Support/FAQ"><span class="menu-selectionNames">Support/FAQ</span> 
+                   </a>
+               </div>
+           </li>
+           <li>
+               <div>
+                  <a href="#" class="sidebar-link" id="logout-container">
+                      <img class="icon-leftcontainer" src="/images/admin-images/logout.svg" alt="Log out icon"><span class="menu-selectionNames" >Logout</span>
+                  </a>
+               </div>
+          </li>  
+         </ul><!--Top Menu Container-->  
+
+    </div>
+</aside><!--end of sidebar-->
+<main class="middle-container"><!--Main-->
+<section class="first-sect" >
+<h1 class="displayNone-mobile" >Hello Robin!</h1>
+<div class="displayNone-mobile">
+    <p>Welcome to the Empr Medical App! Your last login was on <strong>6/22/21</strong> . Your most recent appointment was on <strong>5/28/21</strong> with <strong>Dr. Jean Lewis (Primary Care Visit)</strong>. </p>
+
+</div>
+<div class="header-mobile displayNone-dsktp">
+        <h1>Hi Robin</h1> 
+        <p><a href="#">Edit Profile</a></p>
+</div>
+<div class="balance-medications-cont">
+    <div class="balance-meds">
+        <h5><img src="" alt="">Balance</h5>
+        <p>$150.34</p>
+    </div>
+    <div class="balance-meds">
+        <h5><img src="" alt="">Current Medications</h5>
+        <p>Vitamin C 25 MLL</p>
+    </div>
+</div>
+</section>
+<section class="second-sect" >
+    <h2>
+      <img src="" alt="">  Upcoming Appointments
+    </h2>
+    <div class="appointments physical">
+        <h3>Physical </h3>
+        <ul>
+            <li>Type of Visit: <strong>General</strong> </li>
+            <li><strong>Doctor</strong>: Jean Lewis MD </li>
+            <li><strong>Date</strong>:6/30/21</li>
+        </ul>
+    </div>
+    
+    <div class="appointments tooth-cleaning">
+        <h3>Tooth Cleaning </h3>
+        <ul>
+            <li>Type of Visit: <strong>Dentistry</strong></li>
+            <li><strong>Doctor</strong>: Marie Dunn MD </li>
+            <li><strong>Date</strong>: 7/15/21   </li>
+        </ul>
+
+    </div>
+    <h4><img src="" alt="">Upcoming Appointments</h4>
+    <div class="appointments virtual">
+        <h3>Virtual</h3>
+        <ul>
+            <li>Follow Up: Dentist visit with Dr. Kevin Grant </li>
+        </ul>
+    </div>
+    <div class="appointments physical-mobile">
+        <h3>Physical</h3>
+        <ul>
+            <li>General Check-Up with Dr. Tia Smith</li>
+            <li>12:00pm - 1:00 pm</li>
+        </ul>
+    </div>
+</section>
+<section class="third-sect displayNone-mobile" >
+    <div class="box one">
+        <h3><a href="#">Current Balance</a></h3>
+        <p>$150.34</p>
+        <a href="#"class="view-button" id="pay-balance"><button>Pay Balance</button></a>
+    </div>
+    <div class="box two">
+        <h3><a href="#">View Documents</a></h3>
+        <p>4 New Docs Added</p>
+        <a href="#" class="view-button"><button>View
+        </button></a>
+    </div>
+    <div class="box three">
+        <h3><a href="#">View Lab Results</a></h3>
+        <p>Date: 6/30/21</p>
+        <a href="#" class="view-button"><button>View</button></a>
+    </div>
+    <div class="box four">
+        <h3><a href="#">Current Medications</a></h3>
+        <p>Vitamin D 25 ML </p>
+        <a href="#" class="view-button"><button>View</button></a>
+    </div>
+
+</section>
+<section class="fourth-sect displayNone-dsktp"> 
+<div class="documents-container" >
+    <h4><img src="" alt="">Documents</h4>
+    <p><a href="#">Show All</a></p>
+</div>
+<div>
+    <div class="labs">
+        Lab Results <br>
+        4/29/21
+    </div>
+    <div class="labs">
+        Patient Release Form
+    </div>
+    <div class="labs">
+        Lab Results <br>
+        6/15/21
+    </div>
+</div>
+<div class="doctor-pharmacies">
+<div class="dr-clinics">
+    <h4>Talk to Doctor</h4>
+</div>
+<div class="dr-clinics">
+    <h4>Pharmacies & Clinics</h4>
+</div>
+</div>
+</section>
+        
+</main><!--Main end-->
+<aside class="right-container"> <!--right-container-->
+    <div class="right-container">
+        <div class="my-profile-container">
+            <img src="/images/patient-images/Ellipse 132.svg" alt="Profile-picture" height="100px" width="100px" class="profile-pic">
+            <h2>Robin Team</h2>
+               <span>My Profile</span>        
+        </div>
+        <div class="heart-rate-cont">
+            <div class="heart-rate" >
+                <h3 class="right-container-headers">Heart Rate</h3>
+                <h2 id="heart-rate-number">119/24</h2>
+            </div>
+           
+        </div>
+        <div class="height-container">
+            <h3 class="right-container-headers">Height</h3>
+            <h2>5 ft 5 in</h2>
+        </div>
+        <div class="weight-container">
+            <h3 class="right-container-headers">Weight
+            </h3>
+            <h2>140 lbs</h2>
+        </div>
+        <div class="notifications-contianer">
+            <h3 class="right-container-headers">Notifications</h3>
+            <ul class="bullet-list-style">
+                <li class="bullet-list-style"> Update billing infomation</li>
+            </ul>
+        </div>
+
+    </div>
+</aside><!--Right Container End-->
+</div> <!--Body Container End-->
+
+<script src="/admin/users.js"></script>
+</body>
+</html>
+
