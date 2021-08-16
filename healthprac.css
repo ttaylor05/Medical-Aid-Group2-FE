@@ -352,6 +352,7 @@ ul li::before {
     padding:0;
     overflow-x:hidden;
 }
+body { min-height: 100vw; }
 header {  
     flex-direction: column;
     justify-content: space-around;
