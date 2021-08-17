@@ -341,72 +341,81 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
 }
-/* beginning of responsiveness*/
-@media screen and (max-width:780px){
-    html,body {
-        margin:0;
-        padding:0;
-        overflow-x:hidden;
-    }
-    header {
-        flex-wrap: wrap;
-    }
-    .search-box {
-        margin-left: 10px;
-    }
-    .search-box input[type=search] {
-        padding: 1em 7em;
-    }
-    .header-icons {
-     display: none;
-    }
-    .dashboard-container {
-            display: none;
-    }
-    .welcome-container {
-            width: 100%;
-    }
-    .welcome-container h1 {
-        font-size: 37px;
-    }
-   
-    .middle-container {
-        margin-left: 20px;
-        flex-direction: column;
-        width: 90%;
-    }
-    .analytics-heading h1 {
-        text-align: center;
-    }
-    .section1, .section2 {
-        width: 72%;
-        margin-right: 0px;
-    }
-    .appointments {
-        padding-bottom: 4px;
-    }
+/* beginning of responsiveness */
+@media screen and (max-width:780px) {
+  html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+body { min-height: 100vw; }
+header {  
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 5px;
+  }
+  .search-box input[type=search] {
+    padding: 1em 8em;
+}
+.header-icons {
+    position: absolute;
+    margin-left: 300px;
+    display: inherit;
+}
+.dashboard-container {
+    flex-direction: column;
+}
+.dashboard {
+    height: 500px;
+    width: 100%;
+}
+.dash-support, .dash-logout {
+    margin-top: 0px;
+}
+.welcome-container {
+    width: 93%;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.main-content {
+    align-items: flex-start;
+}
+.cards {
+    flex-direction: column;
+    margin-left: -10px;
+}
+.section1, .section2 {
+    margin-bottom: 20px;
+    width: 210px;
+}
+.section3 {
+    width: 96%;
+    margin-left: -23px;
+}
+.appointments {
+    padding: 0px;
+    padding-bottom: 20px;
+    width: 94%;
+    margin-left: -25px;
+}
+.section4, .section5, .section6 {
+    margin-bottom: 20px;
+}
+
+.card-content2 h1 {
+    margin-left: 9px;
+}
+.stars {
+    margin-left: 25px;
+}
+
+
+.section7 img {
+    width: 100%;
+    margin-top: 10%;
+}
   
-    .cards {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-    }
-    .column {
-        flex-direction: column;
-        align-items: center;
-    }
-    .column h1 {
-        margin-bottom: 0px;
-    }
-    .section1, .section2, 
-    .section4, .section5 {
-        margin-bottom: 5px;
-    }
-    
-    /* .section3 {
-        width: 56%;
-    } */
-   
     .signup-btn {
         margin-left: 100px;
     }
