@@ -59,6 +59,7 @@ div.left-container{
     top: 10%;
     left: 0%;
     padding-top: 5%;
+    z-index: -1;
 }
 div.middle-container{
     background-color: white;
