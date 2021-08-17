@@ -53,14 +53,14 @@ header {
 } */
 
 
-.main {
+.main-container {
     display: flex;
+    margin: 0 auto;
+    max-width: fit-content;
 }
 .dashboard-container {
-    /* display: flex;
-    flex-direction: column; */
-    /* margin-right: 50px; */
-    position: sticky;
+
+    /* position: sticky; */
     align-content: center;
     justify-content: space-around;
     background: var(--seagreen);
@@ -68,12 +68,7 @@ header {
     padding-right: 140px;
     /* width: 100%; */
 }
-/* .dashboard {   
-    background: var(--seagreen);
-    border-radius: 10px; 
-    padding-right: 70px;
-    width: 100%;
-} */
+
 .dash-image img, 
 .dash-support img, 
 .dash-logout img {
@@ -101,6 +96,7 @@ a {
 
 .middle-container {
     display: flex;
+    flex-basis: 30%;
     margin-left: 50px;
     width: 70%;
 }
