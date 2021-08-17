@@ -397,7 +397,15 @@ div.nextpage{
     flex-direction: row;
     justify-content: flex-end;
 }
-
+.nxt-pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+.nxt-pages a:hover{
+    color: var(--text-hover);
+}
 .buttons-container{
     width: 70%;
     height: 40%;
