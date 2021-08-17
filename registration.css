@@ -5,6 +5,7 @@ body {
     margin: 0px;
     width: 100%;
     height: 100vh;
+    overflow-x:hidden;
 }
 
 
@@ -40,14 +41,16 @@ body {
   }
   .logo {
       display: flex;
+      align-items: center;
   }
   img{
     width:30px;
-    padding-left: 5px;
+    /* padding-left: 5px; */
   }
   h2{
     display: inline-block;
-    font-size: 21px;
+    font-size: 18px;
+    padding-left: 8px;
   }
   
   a {
@@ -56,7 +59,6 @@ body {
     margin: 0 0 0 32px;
     transition: color 0.5s;
     font-family: 'Red Hat Display', sans-serif;
-   
     padding: 3px;
   }
   /* .no-dropdown a {
@@ -71,6 +73,7 @@ body {
     border-radius: 7px;
     padding: 10px;
     margin-right: 1em;
+    font-weight: bold;
   }
 /* heading */
 .tab-switch {
@@ -121,18 +124,21 @@ body {
     display: flex;
 }
 .img, .doc-img {
-    margin-top: 88px;
-    max-width: 70%;
-    margin-left: 110px;
+    margin-top: 55px;
+    max-width: 88%;
+    margin-left: 50px;
     width: 100%;
 }
 .signup-heading  {
-    margin-top: -30px;
+    margin-top: -25px;
     margin-left: 3em;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 600;
+}
+.form-container   {
+    margin-right: 20px;
 }
 *:focus {
     outline: none;
@@ -213,21 +219,19 @@ input:focus{
     font-size: 17px;
 }
 @media only screen and (max-width: 768px) {
-    .img, .doc-img {
-        display: block;
-        margin-left:auto;
-        margin-right: auto;
-        margin-top: -12px;
-        margin-bottom: -15px;
-         max-width: 60%; /*90% */
-        width: 100%;
-    } 
+    html,body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
+   
     header {  
         display: flex;
         width: 100%;
         margin-left: 0px;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: baseline;
+        padding: 0.8em 0em;
       }
       header .dropdown {
        display: inline;
@@ -242,14 +246,15 @@ input:focus{
    .dropdown-content {
      display: none;
      position: absolute;
-     width: 300px;
-     height: 360px;
+     width: 100%;
+     /* height: 360px; */
      font-size: 22px;
      font-weight: none;
      border-radius: 15px;
      background-color: #fff;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     box-shadow: 0px 8px 16px 0px rgba(135, 107, 107, 0.2);
      z-index: 1;
+     left: 0;
    }
    /* Links inside the dropdown */
    .dropdown-content a {
@@ -289,17 +294,17 @@ input:focus{
    
    
      
-      header img{
+      /* header img{
           margin-top: 20px;
-          /* width:40px; */
+    
           margin-left: 146px;
-      }
+      } */
    
       header h2{
-          margin-left: 10px;
+          /* margin-left: 10px;
           margin-right: 0px;
           margin-top: 28px;
-          margin-bottom: auto;
+          margin-bottom: auto; */
           font-size: 16px;
    
       }
@@ -315,6 +320,15 @@ input:focus{
    .tab-wrapper {
        display: none;
    }
+   .img, .doc-img {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: -12px;
+    margin-bottom: -15px;
+     max-width: 60%; /*90% */
+    width: 100%;
+} 
     .signup-heading  {
         margin-left: 6.5em;
         font-size: 20px;
