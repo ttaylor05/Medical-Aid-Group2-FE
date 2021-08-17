@@ -22,7 +22,6 @@ body{
 
 div.body-Container{
     width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-columns: 30px 1fr 2fr 1fr 1fr 20px ;
     grid-template-rows: 100px 5% 15% 20% 40% 10%;
@@ -45,6 +44,12 @@ header#top-container{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    padding: 1em 0em;
+
 }
 aside.left-container{
     background-color: var(--sidebar-bg-color);
@@ -414,6 +419,11 @@ nav.navbar{
         grid-column-start: 3;
         grid-column-end: 4;
         width: 100%;
+        position: fixed;
+        background-color: white;
+        z-index: 1;
+        font-family: 'red hat display', sans-serif;
+    
     }
     div.top-icons{
         justify-content:right;
@@ -488,6 +498,10 @@ nav.navbar{
     }
     .nav-item{
         font-size: 21px;
+    }
+    .nav-link:hover{
+        color: white;
+        font-weight: bold;
     }
       /*Hamburger Styling END*/
     
@@ -572,6 +586,8 @@ nav.navbar{
             flex-direction: row;
             justify-content: space-between;
             width: 65%;
+            margin-left: auto;
+            position: relative;
             align-self: flex-end;
         }
         div.top-icons{
