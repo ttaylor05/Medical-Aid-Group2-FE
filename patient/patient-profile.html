@@ -1,0 +1,347 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/admin-images/logo.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="patient-profile.css"> 
+    <title>Patient Profile</title>
+</head>
+<body>
+    <header id="top-container"> <!--Header-->
+        <!--Hamburger Menu-->
+            <nav class="navbar">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="patient.html" class="nav-link"> <img src="/images/admin-images/dashboard.svg" alt=""> Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                       <a href="#" class="nav-link" id="users"> <img src="/images/admin-images/users.svg" alt=""> Users</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav-link"> <img src="/images/admin-images/requests.svg" alt=""> Requests</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav-link"> <img src="/images/admin-images/pharmacies.svg" alt=""> Pharmacies & Clinics</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav-link"> <img src="/images/admin-images/feedback.svg" alt=""> Feedback & Complaints</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav-link"> <img src="/images/admin-images/settings.svg" alt=""> Settings</a>
+                   </li>
+                   <li class="nav-item">
+                        <a href="#" class="nav-link"> <img src="/images/admin-images/supporfaq.svg" alt=""> Support/FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> <img src="/images/admin-images/logout.svg" alt=""> Logout</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        <!--Hamburger Menu-->
+   
+<div class="a-logo"  >
+    <span>
+        <img src="/images/admin-images/logo.svg" alt="" class="a-logo">
+    </span>
+
+    <div class="displayNone-mobile">
+        <a  href="#" id="nav-logo2">Empr Medical</a>
+    </div>
+</div>
+<div class="search-box-container">
+    <form>
+        <input  type="search" name="search-box" id="search-box" autocomplete="off" >
+        
+    </form>
+    
+</div>  
+<div class="top-icons">
+    <div class="top-icons">
+        <a href="#"class="nav-btns"><img src="/images/admin-images/feedback.svg" alt="feedback-icon"></a>
+         <a href="#" class="nav-btns"><img src="/images/admin-images/notification-bel.svg" alt="notification-icon"></a>
+     </div>
+</div>
+</header><!--Header End -->
+
+<div class="body-Container">
+<aside class="left-container"><!--Sidebar-->
+    <div class="sidebar-top" id="top-content">
+        <ul class="top-menu-container">
+            <li>
+                <div>
+                    <a href="/patient/patient.html" class="sidebar-link">
+                       <img class="icon-leftcontainer" src="/images/admin-images/dashboard.svg" alt="dashboard"><span class="menu-selectionNames" >Dashboard</span>
+                    </a>
+            </li>
+            <li>
+               <div>
+                   <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/users.svg" alt="Users icon"><span class="menu-selectionNames" >Users</span>
+                   </a>
+               </div>
+            </li>
+            <li>
+               <div>
+                   <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/requests.svg" alt="Requests icon"><span class="menu-selectionNames" >Requests</span>
+                   </a>
+               </div>
+            </li>
+            <li>
+               <div>
+                   <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/pharmacies.svg" alt="Pharmacies and Clinics icon"><span class="menu-selectionNames" >Pharmacies & Clinics</span>
+                   </a>
+               </div>
+            </li>
+            <li>
+               <div>
+                   <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/feedback.svg" alt="feedback & complaints icon"><span class="menu-selectionNames" >Feedback & Complaints</span>
+                   </a>
+               </div>
+            </li>
+            <li>
+               <div>
+                   <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/settings.svg" alt="Settings icon"><span class="menu-selectionNames" >Settings</span>
+                   </a>
+               </div>
+            </li>
+            <li> 
+               <div>
+                  <a href="#" class="sidebar-link">
+                      <img class="icon-leftcontainer" src="/images/admin-images/supporfaq.svg" alt="Support/FAQ"><span class="menu-selectionNames">Support/FAQ</span> 
+                   </a>
+               </div>
+           </li>
+           <li>
+               <div>
+                  <a href="#" class="sidebar-link" id="logout-container">
+                      <img class="icon-leftcontainer" src="/images/admin-images/logout.svg" alt="Log out icon"><span class="menu-selectionNames" >Logout</span>
+                  </a>
+               </div>
+          </li>  
+         </ul><!--Top Menu Container-->  
+
+    </div>
+</aside><!--end of sidebar-->
+<main class="middle-container"><!--Main-->
+    <form action="/form" autocomplete="off">
+        <section class="first-section">
+            <img src="/images/patient-images/profile-img.svg" alt="">
+            <div class="Profile-contianer">
+                <h1>Patient Name</h1>
+                <a href="#" id="edit-profile">Edit Profile</a>
+        
+            </div>
+        </section>
+        <section class="second-section">
+            <div class="personal details">
+                
+                    <h2 id="personal-details">PERSONAL DETAILS</h2>
+                    <div class="align-inputs">
+                        <div>
+                            <div class="label-name">
+                                <label for="name">Name</label>
+                            </div>
+                            <input type="text" name="name" class="displayNone-mobile" id="name" autocomplete="off">
+                        </div>
+                        <div class="names displayNone-dsktp">
+                            <input type="text" name="f-name" id="first-name" placeholder="First Name">
+                            <input type="text" name="l-name" id="last-name" placeholder="Last Name">
+                        </div>
+                        <div>
+                           <div class="label-name">
+                            <label for="maritial-status">Maritial Status</label>
+                           </div>
+            
+                            <select id="marital-status" name="marital-status">
+                                <option value="none" id="holder-name">Marital Status</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="divorced">Divorced</option>
+                                <option value="separated">Separated</option>
+                              </select>
+                        </div>
+                        <div class="date-gender">
+                            <div>
+                                <div class="label-name">
+                                    <label>Date of Birth</label>
+                                </div>
+                                <input type="date"id="date">
+                            </div>
+                            <div>
+                               <div class="label-name">
+                                <label for="gender">Gender</label>
+                               </div>
+                                <select name="gender" id="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">other</option>
+                                    <option value="no-answer">Prefer not to answer</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                
+            </div>
+                <div class="address details">
+                        <h2>ADDRESS DETAILS</h2>
+                        <div class="align-inputs" id="address-details">
+                            <div>
+                                <div class="label-name">
+                                    <label for="address-one">Address 1*</label>
+                                </div>
+                                <input type="text" name="address-one" id="addres-one" autocomplete="off" placeholder="Address 1">
+                            </div>
+                            <div>
+                                <div class="label-name">
+                                    <label for="address-two">Address 2*</label>
+                                </div>
+                                <input type="text" name="address-2" id="address-2" autocomplete="off" placeholder="Address 2">
+                            </div>
+                            <div>
+                                <div class="label-name">
+                                    <label for="city">City</label>
+                                </div>
+                                <input type="text" name="city" id="city" autocomplete="off" placeholder="City">
+                            </div>
+                            <div class="zip-state">
+                                <label for="state">State</label>
+                                <input type="text" name="state" id="state" autocomplete="off" maxlength="2" size="2" placeholder="ST">
+                                <label for="zip-code">Zip</label>
+                                <input type="number" name="zip-code" id="zip-code" maxlength="5" size="5" autocomplete="off" placeholder="Zip">
+                            </div>
+                        </div>              
+                </div>
+        </section>
+        <section class="third-section">
+                <div class="contact details">
+                    <h2>Contact Details</h2>
+                    <div class="align-inputs">
+                        <div>
+                            <div class="label-name">
+                                <label for="home-phone">Home Phone*</label>
+                            </div>
+                            <input type="tel" name="phone-number" id="home-phone" autocomplete="off" placeholder="Home Phone">
+                        </div>
+                        <div>
+                           <div class="label-name">
+                            <label for="work-phone">Work Phone*</label>
+                           </div>
+                            <input type="tel" name="work-phone" id="work-phone" autocomplete="off" placeholder="Work Phone">
+                        </div>
+                        <div>
+                            <div class="label-name">
+                                <label for="cell-phone">Cell Phone*</label>
+                            </div>
+                            <input type="tel" id="cell-phone" autocomplete="off" placeholder="Mobile Phone">
+                        </div>
+                        <div>
+                           <div class="label-name">
+                            <label for="email">Email*</label>
+                           </div>
+                            <input type="email" id="email" autocomplete="off" placeholder="Email Address">
+                        </div>
+                    </div>
+                </div>
+            <div class=" emergency details">
+                <h2>Emergency Details</h2>
+                    <div class="align-inputs">
+                        <div class="displayNone-mobile">
+                            <div class="label-name">
+                             <label for="first-name">First Name*</label>
+                            </div>
+                             <input type="text" name="first-name" id="first-name" autocomplete="off" placeholder="First Name">
+                         </div>
+                         <div class="displayNone-mobile">
+                             <div class="label-name">
+                                 <label for="last-name">Last Name*</label>
+                             </div>
+                             <input type="text" name="last-name" id="last-name" autocomplete="off" placeholder="Last Name">
+                         </div>
+                         <div class="displayNone-dsktp">
+                                <input type="text" name="full-name" id="full-name" placeholder="Name">
+                         </div>
+                         <div>
+                            <div class="label-name">
+                             <label for="emergency-phone">Phone Number*</label>
+                            </div>
+                             <input type="tel" name="emergency-phone" id="emergency-phone" autocomplete="off" placeholder="Phone Number">
+                         </div>
+                         <div>
+                             <div class="label-name">
+                                 <label for="emergency-email">Email*</label>
+                             </div>
+                             <input type="email" id="emergency-email" autocomplete="off" placeholder="Email Address">
+                         </div>
+                    </div>   
+            </div>
+        </section>
+        <div class="bttns container">
+            <div>
+                <a href="#" id="back"><img id="arrow" src="/images/patient-images/Vector.svg" alt="">Back</a>
+            </div>
+            <div class="cancel-update">
+                <input type="button" value="Update" id="update">
+            <input type="button" value="Cancel" id="cancel">
+            </div>
+        </div>
+    </form>
+</main><!--Main end-->
+<aside class="right-container"> <!--right-container-->
+    <div class="right-container">
+        <div class="my-profile-container">
+            <img src="/images/patient-images/profile-img.svg" alt="Profile-picture" height="100px" width="100px" class="profile-pic">
+            <h2>Robin Team</h2>
+               <span>My Profile</span>        
+        </div>
+        <div class="heart-rate-cont">
+            <div class="heart-rate" >
+                <h3 class="right-container-headers">Heart Rate</h3>
+                <h2 id="heart-rate-number">119/24</h2>
+            </div>
+           
+        </div>
+        <div class="height-container">
+            <h3 class="right-container-headers">Height</h3>
+            <h2>5 ft 5 in</h2>
+        </div>
+        <div class="weight-container">
+            <h3 class="right-container-headers">Weight
+            </h3>
+            <h2>140 lbs</h2>
+        </div>
+        <div class="notifications-contianer">
+            <h3 class="right-container-headers">Notifications</h3>
+            <ul class="bullet-list-style">
+                <li class="bullet-list-style"> Update billing infomation</li>
+            </ul>
+        </div>
+
+    </div>
+</aside><!--Right Container End-->
+</div> <!--Body Container End-->
+
+<script src="/admin/users.js"></script>
+</body>
+</html>
+
