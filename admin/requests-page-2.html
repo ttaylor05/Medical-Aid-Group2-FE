@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="clinics-pharmacies.css">
+    <link rel="stylesheet" href="requests-page-2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
     <link rel="icon" href="/images/admin-images/logo.svg">
-    <title>Pharmacies and Clinics</title>
+    <title>Location Profile</title>
 </head>
 <body>
     <div class="body-Container">
@@ -24,16 +24,16 @@
                                     <a href="admin.html" class="nav-link"> <img src="/images/admin-images/dashboard.svg" alt=""> Dashboard</a>
                                 </li>
                                 <li class="nav-item">
-                                   <a href="/admin/users.html" class="nav-link"> <img src="/images/admin-images/users.svg" alt=""> Users</a>
+                                   <a href="users.html" class="nav-link"> <img src="/images/admin-images/users.svg" alt=""> Users</a>
                                </li>
                                <li class="nav-item">
-                                   <a href="/admin/requests-page.html" class="nav-link"> <img src="/images/admin-images/requests.svg" alt=""> Requests</a>
+                                   <a href="requests-page.html" class="nav-link"> <img src="/images/admin-images/requests.svg" alt=""> Requests</a>
                                </li>
                                <li class="nav-item">
-                                   <a href="/admin/clinics-pharmacies.html" class="nav-link"> <img src="/images/admin-images/pharmacies.svg" alt=""> Pharmacies & Clinics</a>
+                                   <a href="clinics-pharmacies.html" class="nav-link"> <img src="/images/admin-images/pharmacies.svg" alt=""> Pharmacies & Clinics</a>
                                </li>
                                <li class="nav-item">
-                                   <a href="feedback-complaints.html" class="nav-link"> <img src="/images/admin-images/feedback.svg" alt=""> Feedback & Complaints</a>
+                                   <a href="feedback-complaints-pg1.html" class="nav-link"> <img src="/images/admin-images/" alt=""> Feedback & Complaints</a>
                                </li>
                                <li class="nav-item">
                                    <a href="#" class="nav-link"> <img src="/images/admin-images/settings.svg" alt=""> Settings</a>
@@ -106,7 +106,7 @@
                 </li>
                 <li>
                    <div>
-                       <a href="/admin/feedback-complaints.html" class="sidebar-link">
+                       <a href="#" class="sidebar-link">
                           <img class="icon-leftcontainer" src="/images/admin-images/feedback.svg" alt="feedback & complaints icon"><span class="menu-selectionNames" >Feedback & Complaints</span>
                        </a>
                    </div>
@@ -114,7 +114,7 @@
                 <li>
                    <div>
                        <a href="#" class="sidebar-link">
-                          <img class="icon-leftcontainer" src="/images/admin-images/settings.svg" alt="Settings icon"><span class="menu-selectionNames" >Settings</span>
+                          <img class="icon-leftcontainer" src="/images/admin-images/settings.svg" alt="Settings icon"><spanclass="menu-selectionNames" >Settings</span>
                        </a>
                    </div>
                 </li>
@@ -138,75 +138,75 @@
     </aside><!--end of sidebar-->
     <main class="middle-container"><!--Main-->
        
-            <h2 id="clinics-title">Clinic/Pharmcacies</h2><!--users-title-->
+            <h2 id="requests-title">Application Profile</h2><!--clinics-title-->
+            <section class="first-section">
+                <div class="profile-container">
+                    
+                        <img class="dr-profile" src="/images/admin-images/michael-braun.svg" alt="profile picture">
+                    
+                    <div class="middle-profile-container" >
+                        <div>
+                            <h2>Michael Braun</h2>
+                        </div>
+                        <div>
+                            <p>
+                                <span>Speciality : General Medicine</span> <span>Date of Application:  3/21/2021</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>Date of Review: 3/28/2021</p>
+                        </div>
+
+                    </div>
+                    <div class="accept-decline" >
+                        <button class="application-buttons accept"><a href="#">Accept </a></button> 
+                        <button class="application-buttons decline"><a href="#">Decline </a></button> 
+                    </div>
+                </div>
+            </section>
+            <section class="middle-section">
+              <form action="contact-details" class="contact-details">
+                  <h2>Contact Details</h2>
+                  <div class="contact-input" >
+                     <span> 
+                         <label for="primary-number"  >Primary <br> Number</label>
+                        <input type="text" name="number" class="firstrow inpt" id="primary-number">
+                    </span>
+
+                    <span>
+                    <label for="fax">Address</label>
+                    <input type="text" name="fax" class="firstrow inpt" id="fax">
+                    </span>
+
+                    <span>
+                    <label for="Website">Website</label>
+                    <input type="text" name="Website" class="secondrow inpt" id="website">
+                    </span>
+
+                    <span>
+                    <label for="other">Email</label>
+                    <input type="text" name="other" class="secondrow inpt" id="other">
+                    </span>
+                  </div>
+              </form>
+            </section>
+            <section class="last-section">
+                <div class="left section-last">
+                    <div class="box top-left" ><a href="#"class="application-boxes">Resume/CV</a></div>
+                    <div class="box top-right" ><a href="#" class="application-boxes" >Professional References</a></div>
+                    <div class="box bottom-left"><a href="#" class="application-boxes">Other Submissions</a></div>
+                    <div class="box bottom-right"><a href="#" class="application-boxes">Application Notes</a></div>
+                </div>
+                <div class="right section-last">
+                    <button class="interview-notes" id="lab-results">
+                        <a href="#">Interview Notes</a>
+                    </button>  
+                </div>
+        
+            </section>
+            <a href="#" id="return-requests" ><button> <img src="/images/admin-images/left-line-arrow.svg" alt=""> Return Requests</button></a>
     
-            <div class="pharmacies-clinics"><!--patients-doctors-->
-                <div id="pharmacies">
-                     <a href="#" class="underline"><h3 class="underline">Pharmacies</h3></a>
-                </div>
-                <div id="clinics">
-                    <a href="#"class="underline"><h3 class="underline">Clinics</h3></a>
-                </div>
-            </div>
-            <div class="search-clinics"> <!--.search-users-->
-                <form action="usersearch-box">
-                    <input type="search" name="searchUser" placeholder="Enter Name" id="clinics-searchbox" autocomplete="off"> <!--#user-searchbox-->
-                </form>
-            </div>
-            <div class="clinics-tablelist"> <!--user-tablelist-->
-                <table>
-                    <tr id="no-hover">
-                        
-                        <th class="displayNone-mobile"> </th>
-                        <th>Name</th>
-                        <th >Address</th>
-                        <th class="displayNone-mobile" >City</th>
-                        <th class="displayNone-mobile" >State</th>
-                        <th class="displayNone-dsktp" >City,ST</th>
-                        <th>Zip</th>
-                    </tr>
-                    <tr>
-                        <td class="displayNone-mobile" ><img src="/images/admin-images/emp-pharmacy.svg" class="users-profile" alt="profile-pic"></td>
-                        <td>EMP Pharmacy</td>
-                        <td>3531 Main Ave</td>
-                        <td class="displayNone-mobile" >New Orleans</td>
-                        <td class="displayNone-mobile">LA</td>
-                        <td class="displayNone-dsktp"  >New Orleans, LA</td>
-                        <td>70112</td>
-                    </tr>
-                    <tr>
-                        <td class="displayNone-mobile" ><img src="/images/admin-images/broadway-pharmacy.svg" class="users-profile" alt="profile-pic"></td>
-                        <td>Broadway Pharm</td>
-                        <td>2525 Broadway Ave</td>
-                        <td class="displayNone-mobile" >New Orleans</td>
-                        <td class="displayNone-mobile">LA</td>
-                        <td class="displayNone-dsktp"  >New Orleans, LA</td>
-                        <td>70112</td>
-                    </tr>
-                    <tr>
-                        <td class="displayNone-mobile" ><img src="/images/admin-images/algin-pharmacy.svg" class="users-profile" alt="profile-pic"></td>
-                        <td>Algin Pharmacy</td>
-                        <td>2525 Veterans Blvd</td>
-                        <td class="displayNone-mobile" >New Orleans</td>
-                        <td class="displayNone-mobile">LA</td>
-                        <td class="displayNone-dsktp"  >New Orleans, LA</td>
-                        <td>70124</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="nxt-pg">
-                <div class="previous-pg">
-                    <a href="#"> <img src="/images/admin-images/left-arrow.svg" alt=""> Previous Page</a>
-                </div>
-                <div class="nextpage" >
-                    <a href="#"> Next Page <img src="/images/admin-images/right-arrow.svg" alt=""></a><br>
-                </div>
-            </div> 
-           
-                <div class="buttons-container">
-                    <button id="blue"  > Add Clinic</button>
-                    <button id="grey" >Add Pharmacy</button>
-                   </div>
+            
     </main><!--Main end-->
     <aside class="right-container"> <!--right-container-->
         <div class="right-container">
