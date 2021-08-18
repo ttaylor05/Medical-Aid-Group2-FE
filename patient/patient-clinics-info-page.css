@@ -284,120 +284,66 @@ li.bullet-list-style{
 
 }
 /*Main Middle Styling */
-form{
-    width: 100%;
+.page-title{
+    width: 80%;
 }
-.first-section {
-    background: linear-gradient(265.38deg, rgba(0, 197, 180, 0.4) 2.8%, rgba(0, 197, 180, 0.16) 11.94%, rgba(145, 230, 223, 0.296421) 20.61%, rgba(255, 255, 255, 0.4) 49.02%);
-    border-radius: 5px;
-    box-sizing: border-box;
-    border:none;
+#title{
     width: 100%;
-    padding: 15px;
+    font-size: 28px;
+    text-align: left;
+}
+.first-section{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
 }
-
-.second-section{
-    background: rgba(168, 168, 168, 0.4);
-    border-radius: 5px;
-    box-sizing: border-box;
-    border: none;
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; 
+.last-section{
+    width: 80%;
 }
-
-.third-section{
-    background: rgba(168, 168, 168, 0.4);
-    border-radius: 5px;
-    box-sizing: border-box;
-    border: none;
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; 
+.last-section > ul {
+    padding: 0px;
+    margin:0px;
 }
-#edit-profile:hover{
+.last-section ul > li{
+    margin:0px;
+    padding: 0px;
+}
+.last-section ul > li img{
+    margin-right: 10px;
+}
+.pharm-links:hover{
     color: var(--text-hover);
 }
-.label-name {
-    width: 77px;
-    display: inline-block;
+.pharm-titles{
+    margin: 5px;
 }
-.align-inputs{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    gap: 10px;
+.address-dsktp{
+    margin-bottom: 10px;
 }
-div > input {
-    background: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 4px;
-    height: 36px;
+#phone {
+    margin: 0px;
 }
-.zip-state{
-    padding-left: 15px;
+.address{
+    margin: 0px;
 }
-#zip-code {
-    width: 80px;
+.spacing-change{
+    margin: 0px;
 }
 
- select{
-    background: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 4px;
-    height: 36px;
-}
-.bttns{
-    margin-top: 15px;
-}
-.bttns {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 10px;
-}
-.cancel-update{
+.days{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    gap: 15px;
+    justify-content: space-between;
+    width: 164px;
 }
-#back:hover{
-    color: var(--text-hover);
+.days > p {
+    margin: 0px;
 }
-
-.cancel-update > input[type=button]{
-    width: 100px;
-
+.address-mobile{
+    display: none;
 }
-input[type=button]{
-    font-weight: bold;
-    padding: 5px 1em;
-}
-#update{
-    background: var(--sidebar-bg-color);
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-#cancel{
-    background: #EAEAEA;
-    border-radius: 5px; 
-    box-sizing: border-box;
-}
-
-
-
-
 /*Main Middle Styling End*/
 
 
@@ -589,14 +535,110 @@ nav.navbar{
     .displayNone-dsktp{
         display: block;
     }
-   
+
+    .address-mobile{
+        display: block;
+    }
 
     
     /*Display None Desktop HTML END */
 
      /*middle section styling*/
-   
-
+     main.middle-container{
+         width: 99%;
+     }
+     .page-title{
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+     }
+     #title{
+         margin: 0px;
+     }
+     #back-link {
+         width: 60px;
+     }
+     #back-link:hover{
+         color: var(--text-hover);
+     }
+    .first-section {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 87%;
+    }
+    #emp-pharmacy {
+        position: relative;
+        bottom: 132px;
+        left: 70px;
+        background: rgba(0, 197, 180, 0.7);
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        width: 200px;
+        height: 80px;
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #address-info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    #address-info > h4 {
+        text-align: center;
+        width: 100%;
+        margin: 0px 5px;
+    }
+    .rating-info{
+        background: rgba(0, 197, 180, 0.5);
+        border-radius: 5px;
+        width: 140px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .rating-info > h3{
+        margin:0px;
+    }
+    .Hours-info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .contact-info > h4{
+        margin: 0px;
+    }
+    .contact-info > p {
+        margin: 0px;
+    }
+    .blue-text{
+        color: var(--text-hover);
+    }
+    .btns-ctnr{
+        padding-top: 15px;
+        padding-left: 50%;
+        padding-bottom: 15px;
+    }
+    #search-again{
+        color: white;
+        font-weight: bold;
+        width: 130px;
+        padding: 5px;
+    }
    /*middle section styling END*/
     div.a-logo{
        position: relative;
