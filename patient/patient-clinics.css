@@ -9,7 +9,7 @@
     --text-color: #333333;
     --radius-border:15px;
     --searchbox-bg-color:#8A8A8A66;
-
+    --text-hover:#00C5B4;
 }
 
 body{
@@ -22,7 +22,6 @@ body{
 
 div.body-Container{
     width: 100%;
-    
     display: grid;
     grid-template-columns: 30px 1fr 2fr 1fr 1fr 20px ;
     grid-template-rows: 100px 5% 15% 20% 40% 10%;
@@ -36,17 +35,20 @@ div.body-Container{
 }
 
 header#top-container{
+    background-color: white;
+    grid-column-start: 2 ;
+    grid-column-end:7 ;
+    grid-row-start: 1;
+    grid-row-end: 2;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    font-family: 'Red Hat Display', sans-serif;
     z-index: 1;
     position: fixed;
     padding: 1em 0em;
-    background: white;
+    font-family: 'Red Hat Display', sans-serif;
 
 }
 aside.left-container{
@@ -57,6 +59,7 @@ aside.left-container{
     padding-top: 0%;
     border-radius: var(--radius-border);
     width: 20%;
+    height: 94%;
     font-size: 16px;
     font-weight: 500;
     position: fixed;
@@ -64,7 +67,7 @@ aside.left-container{
     left:0%;
     padding-top: 5%;
     z-index: -1;
-  
+
 }
 main.middle-container{
     background-color: white;
@@ -76,9 +79,10 @@ main.middle-container{
     flex-direction: column;
     justify-content:flex-start;
     align-items:center;
-    width: 100%;
+    width: 90%;
     height: 100%;
-    margin-left: 10px;
+    margin: 0px 8px;
+    gap: 20px;
 }
 aside.right-container{
     grid-column-start: 5 ;
@@ -137,35 +141,35 @@ div.my-profile-container{
     margin-bottom: 15px;
     height: 125px;
 }
-div.appointments-container{
+div.heart-rate-cont{
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
-    border-radius: 5px;
-    background-color: var(--appointments-bg-color);
+    background: linear-gradient(244.85deg, #FFB26B 0%, rgba(255, 169, 107, 0) 35.06%);
+    border-radius: 10px;
     margin-bottom: 15px;
     height: 125px;
     
 }
 
-div.cancelled-app-container{
+div.height-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 5px;
-    background-color: var(--cancelled-app-bg-color);
+    background: linear-gradient(252.71deg, rgba(0, 197, 180, 0.4) -7.24%, rgba(179, 222, 219, 0) 33.06%);
+    border-radius: 10px;
     margin-bottom: 15px;
     height: 125px;
 }
-div.numVisits-container{
+div.weight-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background: linear-gradient(241.45deg, rgba(120, 219, 240, 0.26) 14.55%, rgba(120, 240, 230, 0) 67.62%);
     border-radius: 5px;
-    background-color: var(--total-visits-bg-color);
     margin-bottom: 8px;
     height: 125px;
 }
@@ -174,8 +178,10 @@ div.notifications-contianer{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 5px;
-    background-color: var(--notifications-bg-color);
+    background: #FFFFFF;
+    border: 1px solid #A8A8A8;
+    box-sizing: border-box;
+    border-radius: 10px;
     height: 200px;
 }
 img.profile-pic{
@@ -216,7 +222,20 @@ div.a-logo{
     font-size: 30px;
     line-height: 28px;
 }
-
+.menu-selectionNames:hover{
+    color: white;
+    font-weight: bold;
+}
+.nxt-pg a:hover{
+    color: #00C5B4;
+    cursor: pointer;
+}
+button:hover{
+     font-weight: bold;
+     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21); 
+       color: white;
+        background-color: #00C5B4;
+}
 img.a-logo{
     width: 50px;
     margin-right: 10px;
@@ -245,12 +264,8 @@ a.nav-btns img:hover {
     font-size: 21px;
     line-height: 20px;
 }
-span#all-locations{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-div.apps-content{
+
+div.heart-rate{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -268,43 +283,101 @@ li.bullet-list-style{
    list-style-image:url(/images/admin-images/list-style.svg);
 
 }
-div.pharmacies-clinics{
+/*Main Middle Styling */
+.middle-container > h2{
+    width: 80%;
+    text-align: left;
+}
+.pharmacies-clinics{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 180px;
-    height: 90px;
-    margin-bottom: 20px;
 }
-main.middle-container h2{
-    text-align: left;
-    padding-right: 60%;
+div#clinics{
+    margin-left: 20px;
 }
-
+div#pharmacies{border-bottom: 4px solid #A8A8A8;}
+div#clinics{border-bottom: 4px solid #A8A8A8;}
+div#pharmacies:hover{
+    border-bottom: 4px solid var(--sidebar-bg-color);
+}
+div#clinics:hover{
+    border-bottom: 4px solid var(--sidebar-bg-color);
+}
 div.search-clinics{
     width: 450px;
     height: 40px;
     margin-bottom: 20px;
 }
-/*MIDDLE SECTION STYLING*/
-.first-sect {
+input#clinics-searchbox{
+    width: 450px;
+    height: 40px;
+    padding: 8px;
+    background-image: url(/images/admin-images/search.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 98%;
+    border-radius: 5px;
+    border: 1px solid #A8A8A8;   
+}
+div.clinics-tablelist{
+    margin-bottom: 5%;
     width: 90%;
-    background-color: red;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    font-style: normal;
+    
+}
+
+th{
+    text-align: left;
+    padding: 8px;
+    
+}
+ tr, td {
+    border-top: 1px solid rgba(168, 168, 168, 0.5);
+    border-bottom: 1px solid rgba(168, 168, 168, 0.5);
+    padding: 8px;
+}
+tr, th {
+    border-top: none;
+}
+
+tr:hover {background-color:var(--sidebar-bg-color);}
+tr#no-hover, th:hover {
+    background-color: white;
+}
+.checkbox{
+    width: 90%;
+}
+.checkbox > form{
     display: flex;
     flex-direction: row;
-}
-.second-sect{
-    width: 90%;
-    background-color: blue;
+    justify-content: flex-start;
+    width: 100%;
 }
 
-.third-sect {
-    width: 90%;
-    background-color: green;
+#permissions{
+    background: #F9F9F9;
+    border: 3px solid #333333;
+    box-sizing: border-box;
 }
 
-/*MIDDLE SECTION STYLING END*/
+img.users-profile{
+    width: 50px;
+    height: 50px;
+}
+
+img#no-user{
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    margin-top: 10px;
+}
 
 div.nxt-pg{
     width: 100%;
@@ -324,7 +397,15 @@ div.nextpage{
     flex-direction: row;
     justify-content: flex-end;
 }
-
+.nxt-pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+.nxt-pages a:hover{
+    color: var(--text-hover);
+}
 .buttons-container{
     width: 70%;
     height: 40%;
@@ -356,23 +437,24 @@ button:hover{
     font-weight: bold;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
 } 
-#grey:hover{
-    color: black;
+
+
+
+/*Main Middle Styling End*/
+
+img.users-profile{
+    width: 50px;
+    height: 50px;
+}
+
+
+button{
     font-weight: bold;
-}
-#blue:hover{
-    font-weight: bold;
-    color: white;
-}
-a.sidebar-link:hover{
-    font-weight: bold;
-    color:white;
-}
-.previous-pg > a:hover{
-    color: #00C5B4;
-}
-.nextpage > a:hover{
-    color: #00C5B4;
+    padding: 8px 2em;
+    background: #00C5B4;
+    border-radius: 5px;
+    border: none;
+    margin-top:15px;
 }
 /*Mobile Design Hiddens HTML DISPLAY*/
 .displayNone-dsktp{
@@ -401,14 +483,12 @@ nav.navbar{
           grid-column-end: 6 ;
           
         }
-         h2#clinics-title{
-            padding-right: 40%;
-        }
       aside.right-container{
          display: none;
         }
         div.nxt-pg{
-            width: 90%;
+          
+            width: 500px;
         }
       /*Hamburger Styling*/
       nav.navbar{
@@ -425,13 +505,20 @@ nav.navbar{
         background-color: white;
         z-index: 1;
         font-family: 'red hat display', sans-serif;
+    
+    }
+   
+    input#search-box{
+        width: 250px;
     }
     div.top-icons{
         justify-content:right;
         padding-right: 0%;
     }
-  
-   
+    div.a-logo{
+        padding-right: 5%;
+        padding-left: 0%;
+    }
     a.nav-btns{
         margin: 0%;
     }
@@ -459,10 +546,10 @@ nav.navbar{
         height: 80%;
     }
     .change > .hamburger-menu {
-        
-        top: 10px;
-        left: 220px ;
+        top: 11px;
+        left: 230px;
     }
+    
     .nav-item{
         padding-bottom: 35px;
     }
@@ -475,8 +562,8 @@ nav.navbar{
         flex-direction: column;
         justify-content: space-around;
         position: fixed;
-        top: 105px;
-        left: 9%;
+        top: 28px;
+        left: 45px;
     }
     .line{
         width: 100%;
@@ -485,7 +572,7 @@ nav.navbar{
         transition: all 0.8s;
     }
     .change .line-1{
-        transform: rotate(-45deg) translate(-8px, 5px);
+        transform: rotate(-45deg) translate(-8px, 6px);
     }
     .change .line-2{
        opacity: 0;
@@ -501,8 +588,8 @@ nav.navbar{
         font-size: 21px;
     }
     .nav-link:hover{
-        font-weight: bold;
         color: white;
+        font-weight: bold;
     }
       /*Hamburger Styling END*/
     
@@ -515,7 +602,6 @@ nav.navbar{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding: 15px;
     }
  
     /*Display None Desktop HTML*/
@@ -540,179 +626,233 @@ nav.navbar{
     .displayNone-dsktp{
         display: block;
     }
+   
+
     
     /*Display None Desktop HTML END */
+
+     /*middle section styling*/
     main.middle-container{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 100%;
     }
-    main.middle-container h2{
-        padding-right: 0%;
+    h1{
+        font-size: 16px;
+        font-weight: normal;
     }
-    /*Flex-Order*/
-    h2#clinics-title{
-        order:1 ;
+    #edit-profile{
+        font-size: 13px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .details h2 {
+        display: none;
+    }
+    .label-name{
+        display: none;
+    }
+    label {
+        display: none;
     }
     div.search-clinics{
-        order: 2;
+        width: 80%;
+    }
+    input#clinics-searchbox{
+        width: 285px;
+    }
+    .permissions{
+        display: inline-block;
+    }
+    div input {
+        background: #EEEEEE;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: 200px;
+        height: 40px;
+    }
+    div select {
+        background: #EEEEEE;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .names{
+        width: 100%;
+    }
+    .names > input {
+        width: 130px;
+    }
+  .second-section{
+      display: flex;
+      flex-direction: column;
+      background: white;
+
+  }
+  .third-section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+  }
+  .nxt-pages{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
         width: 90%;
     }
-    div.pharmacies-clinics{
-        order:3;
+    .nxt-pages > a:hover{
+        color: var(--text-hover);
     }
-    div.clinics-tablelist{
-        order: 4;
+
+  .checkbox{
+      width: 77%;
+  }
+  input#permissions {
+    width: 20px;
+    background: #F9F9F9;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .permissions{
+      width: 290px;
+      margin-left: 10px;
+  }
+  
+    
+    
+    
+  
+
+
+
+
+   /*middle section styling END*/
+    div.a-logo{
+       position: relative;
+       right: 8%; 
+       z-index: -1;
     }
-    div.nxt-pg{
-        order: 5;
+   
+    button{
+        padding: 8px;
+        height: 45px;
+        width: 100px;
+        position: relative;
+        left: 18%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    /*hamburger styling*/
+    nav.navbar{
+        display: block;
+    }
+    header#top-container{
         display: flex;
         flex-direction: row;
-        width: 100%;
+        justify-content: flex-end;
+        justify-content: space-between;
+        width: 65%;
+        margin-left: auto;
+        position: relative;
+        align-self: flex-end;
+    
     }
-    .buttons-container{
-        order: 6;
-        height: 15%;
-        
+    div.top-icons{
+        justify-content:right;
+        padding-right: 0%;
     }
     
-/*Flex-order End*/
-    #clinics-title{
-        font-style: normal;
-        font-weight: 500;
 
+    a.nav-btns{
+        margin: 0%;
     }
-    input#clinics-searchbox {
-        width: 100%;
-        background-color:  #EEEEEE;
+    .navbar{
+        width: 300px;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        position: fixed;
+        top: 0;
+        left: -300px;
     }
-        
-    th{
-        font-weight: normal;
-        text-align: center;
+    .change{
+        padding: 8px;
+        left: 0;
+        background: #00C5B4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        height: 80%;
     }
-    tr, td {
-        text-align: center;
+    .nav-item{
+        padding-bottom: 35px;
     }
-        /*NXT PAGE FLEX Position*/
-        .previous-pg{
-            width:30%
-            
-        }
-        .nextpage{width: 30%;}
-        div.agreement-container{
-            width: 90%;
-            margin: 0%;
-            padding: 0%;
-        }
-        button{
-            padding: 8px;
-            height: 45px;
-            width: 100px;
-            position: relative;
-            left: 18%;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        
-        /*hamburger styling*/
-        nav.navbar{
-            display: block;
-        }
-        header#top-container{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 65%;
-            margin-left: auto;
-            position: relative;
-            align-self: flex-end;
-
-           
-        }
-        div.top-icons{
-            justify-content:right;
-            padding-right: 0%;
-        }
-        
-    
-        a.nav-btns{
-            margin: 0%;
-        }
-        .navbar{
-            width: 300px;
-            height: 100%;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 8px;
-            position: fixed;
-            top: 0;
-            left: -300px;
-        }
-        .change{
-            padding: 8px;
-            left: 0;
-            background: #00C5B4;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            height: 80%;
-        }
-        .nav-item{
-            padding-bottom: 35px;
-        }
-        .hamburger-menu{
-            width: 28px;
-            height: 28px;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            position: fixed;
-            top: 20px;
-            left: 40px;
-            border-radius: 8px;
-            padding: 5px;
-          
-        }
-        .hamburger-menu::after{
-            left: 230px;
-        }
-        .line{
-            width: 100%;
-            height: 2px;
-            background-color:black;
-            transition: all 0.8s;
-        }
-        .change .line-1{
-            transform: rotate(-44deg) translate(-7px, 6px);
-        }
-        .change .line-2{
-           opacity: 0;
-        }
-        .change .line-3{
-            transform: rotate(45deg) translate(-8px, -6px);
-        }
+    .hamburger-menu{
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: fixed;
+        top: 20px;
+        left: 40px;
+        border-radius: 8px;
+        padding: 5px;
       
-        .nav-list{
-            text-align: left;
-        }
-        .nav-item{
-            font-size: 21px;
-        }
-        .change > .hamburger-menu{
-            left: 230px;
-        }
-        .nav-link:hover{
-            font-weight: bold;
-            color: white;
-        }
-    }/*Mobile Design end*/
+    }
+    .change > .hamburger-menu {
+        top: 11px;
+        left: 230px;
+    }
+    
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color:black;
+        transition: all 0.8s;
+    }
+    .change .line-1{
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+    .change .line-2{
+       opacity: 0;
+    }
+    .change .line-3{
+        transform: rotate(45deg) translate(-8px, -6px);
+    }
+  
+    .nav-list{
+        text-align: left;
+    }
+    .nav-item{
+        font-size: 21px;
+    }
+    .nav-link:hover{
+        color: white;
+        font-weight: bold;
+    }
+    #users {
+        font-size: 21px;
+    }
+   
+
+
+
+}
+
 
 
 
