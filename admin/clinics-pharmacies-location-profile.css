@@ -296,13 +296,145 @@ div.search-clinics{
 }
 .second-sect{
     width: 90%;
-    background-color: blue;
+    background: rgba(168, 168, 168, 0.1);
+    border-radius: 5px;
 }
 
 .third-sect {
     width: 90%;
-    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.inpt {
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    height: 30px;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.hours-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+.one, .two {
+    background: #FFFFFF;
+    border: 1px solid #A8A8A8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 200px;
+    /*padding: 15px;*/
+}
+.one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.days > p {
+    margin: 0px;
+}
+
+
+.two p {
+    text-align: center;
+}
+.location{
+    margin: 10px 0px;
+    text-align: center;
+}
+.hours{
+    width: 126px;
+    padding-left: 18px;
+}
+.days > p {
+    margin: 0px;
+}
+.score {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
+
+#service-score{
+    margin: 0px;
+}
+.three {
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blue-box {
+    background: rgba(0, 197, 180, 0.22);
+    border: 1px solid #00C5B4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 180px;
+    height: 80px;
+}
+
+.white-box {
+    background: #FFFFFF;
+    border: 1px solid rgba(138, 138, 138, 0.4);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 180px;
+    height: 100px;
+}
+.white-box > .center {
+    text-decoration: underline 2px #00C5B4;
+}
+.center{
+    text-align: center;
+} 
+
+.contact-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.column-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.column-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.pharmacy-info-container {
+    display: flex;
+    flex-direction: row;
+}
+
 
 /*MIDDLE SECTION STYLING END*/
 
