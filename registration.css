@@ -5,7 +5,6 @@ body {
     margin: 0px;
     width: 100%;
     height: 100vh;
-    overflow-x:hidden;
 }
 
 
@@ -42,34 +41,43 @@ body {
   .logo {
       display: flex;
       align-items: center;
+      text-decoration: none;
   }
+ 
   img{
     width:30px;
-    /* padding-left: 5px; */
+    padding-left: 5px;
   }
   h2{
     display: inline-block;
     font-size: 18px;
+    color: #000000;
     padding-left: 8px;
   }
   
-  a {
+  .no-dropdown a {
     color: #000000;
     text-decoration: none;
     margin: 0 0 0 32px;
-    transition: color 0.5s;
+    /* transition: color 0.5s; */
     font-family: 'Red Hat Display', sans-serif;
+   
     padding: 3px;
   }
   /* .no-dropdown a {
      font-weight: bold;
   } */
-  a:hover, a.selected {
+  .no-dropdown a:hover {
     background-color: #00c5b4;
     color: white;
     font-size: 18px;
   }
-  a.selected, a {
+  /* a.selected {
+    background-color: #00c5b4;
+    color: white;
+    font-size: 18px;
+  } */
+  .no-dropdown .selected, .no-dropdown a {
     border-radius: 7px;
     padding: 10px;
     margin-right: 1em;
@@ -94,29 +102,42 @@ body {
     .tab-wrapper a {
         text-decoration: none;
         font-weight: 600;
-        color: gray;
+        /* color: gray; */
         padding-bottom: 0.5em;
     }
   
         .patient-link {
-          /* border-bottom: 3.5px solid #f3ea12; */
-          background-color: rgb(39, 196, 180, 0.7);
-          border: 2px solid #00c5b4;
-          margin-bottom: 12.5px;
-          padding: 15px 89px 15px 10px;
+          border-bottom: 3.5px solid #00c5b4;
+          margin-right: 20px;
+          color: #000000;
+          /* background-color: rgb(39, 196, 180, 0.7); */
+          /* border: 2px solid #00c5b4; */
+          /* margin-bottom: 12.5px; */
+          /* padding: 15px 89px 15px 10px; */
+          border-radius: 0px;
+        }
+        .patient-link a {
+            color: #000000;
+            background-color: #00c5b4;
+            color: white;
+            font-size: 18px;
         }
   
         .doc-link {
-          /* border-bottom: 3.5px solid #c3c7d2; */
-          background-color: rgb(225, 223, 223);
-          border: .5px solid;
+            border-bottom: 3.5px solid #c3c7d2;
+          /* background-color: rgb(225, 223, 223); */
+          /* border: .5px solid; */
           border-color: rgb(179, 177, 177);
-          padding: 15px 87px 15px 10px;
+          /* padding: 15px 87px 15px 10px; */
+          border-radius: 0px;
+        }
+        .doc-link {
+            color: #000000;
         }
   
-        .doc-link:hover {
+        /* .doc-link:hover {
           border-bottom: 3.5px solid #f3ea12;
-        }
+        } */
 
 /* heading */
 
@@ -124,21 +145,18 @@ body {
     display: flex;
 }
 .img, .doc-img {
-    margin-top: 55px;
-    max-width: 88%;
-    margin-left: 50px;
+    margin-top: 88px;
+    max-width: 70%;
+    margin-left: 110px;
     width: 100%;
 }
 .signup-heading  {
-    margin-top: -25px;
+    margin-top: -30px;
     margin-left: 3em;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 600;
-}
-.form-container   {
-    margin-right: 20px;
 }
 *:focus {
     outline: none;
@@ -149,51 +167,78 @@ input:focus{
 .name-container {
     display: flex;
     font-family: 'Red Hat Display', sans-serif;
+    justify-content: space-between;
 }
 .fname {
-    background-color:rgb(245, 241, 241);
+    /* background-color:rgb(245, 241, 241);
     border: 1px solid;
     border-color: rgb(223, 222, 222);
     border-radius: 7px;
-    font-size: 15px;
+    font-size: 15px; */
+    border-color: rgb(223, 222, 222);
+     background-color: rgb(245, 241, 241);
+    padding-bottom: 15px;
+    padding-right: 50px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    border: 1px solid;
+    border-color: rgb(223, 222, 222);
+    border-radius: 7px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 17px;
 }
-.fname {
+/* .fname {
     padding-left: 6px; 
     padding-top: 14px;
     padding-bottom: 14px;
     padding-right: 20px;
-     margin-right: -20px; /*changed from -10px for lname */
+     margin-right: -20px;
     margin-bottom: 20px;
-}
+} */
 .lname {
-    background-color:rgb(245, 241, 241);
+    /* background-color:rgb(245, 241, 241);
     border: 1px solid;
     border-color: rgb(223, 222, 222);
     border-radius: 7px;
-    font-size: 15px;
+    font-size: 15px; */
+    border-color: rgb(223, 222, 222);
+     background-color: rgb(245, 241, 241);
+    padding-bottom: 15px;
+    padding-right: 50px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    margin-right: 10px;
+    border: 1px solid;
+    border-color: rgb(223, 222, 222);
+    border-radius: 7px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 17px;
 }
-.lname {
+/* .lname {
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 5px; 
     padding-right: 20px;
     margin-left: 58px;
     margin-bottom: 20px;
-}
+} */
 
 .phone, .email2, .cpwd {
-    background-color:rgb(245, 241, 241);
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-right: 280px;
-    padding-left: 5px; 
-    margin-bottom: 20px;
+    background-color: rgb(245, 241, 241);
+    padding-bottom: 15px;
+    padding-right: 277px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 4px;
     border: 1px solid;
     border-color: rgb(223, 222, 222);
     border-radius: 7px;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
 }
+
 .pass, .check-box{
     font-size: 20px;
 }
@@ -219,18 +264,21 @@ input:focus{
     font-size: 17px;
 }
 @media only screen and (max-width: 768px) {
-    html,body {
-        margin:0;
-        padding:0;
-        overflow-x:hidden;
-    }
-   
+    .doc-img {
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: -12px;
+        margin-bottom: -15px;
+         max-width: 60%; /*90% */
+        width: 100%;
+    } 
     header {  
         display: flex;
         width: 100%;
         margin-left: 0px;
         justify-content: space-around;
-        align-items: baseline;
+        align-items: center;
         padding: 0.8em 0em;
       }
       header .dropdown {
@@ -239,6 +287,13 @@ input:focus{
      header .no-dropdown {
        display: none;
      }
+     header a {
+        width: fit-content;
+        text-decoration: none;
+        margin: 10px;
+        padding: 0px;
+        margin-top: 10px;
+    }
      .navbar {
        display: block;
      }
@@ -252,7 +307,7 @@ input:focus{
      font-weight: none;
      border-radius: 15px;
      background-color: #fff;
-     box-shadow: 0px 8px 16px 0px rgba(135, 107, 107, 0.2);
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
      z-index: 1;
      left: 0;
    }
@@ -295,19 +350,18 @@ input:focus{
    
      
       /* header img{
-          margin-top: 20px;
-    
+          
+          width:40px; 
           margin-left: 146px;
       } */
    
-      header h2{
-          /* margin-left: 10px;
+      /* header h2{
+          margin-left: 10px;
           margin-right: 0px;
           margin-top: 28px;
-          margin-bottom: auto; */
-          font-size: 16px;
-   
-      }
+          margin-bottom: auto;
+          font-size: 18px;
+      } */
     
       header a {
          display: block;
@@ -320,15 +374,6 @@ input:focus{
    .tab-wrapper {
        display: none;
    }
-   .img, .doc-img {
-    display: block;
-    margin-left:auto;
-    margin-right: auto;
-    margin-top: -12px;
-    margin-bottom: -15px;
-     max-width: 60%; /*90% */
-    width: 100%;
-} 
     .signup-heading  {
         margin-left: 6.5em;
         font-size: 20px;
@@ -347,22 +392,17 @@ input:focus{
          display: block;
          flex-direction: row;
      }
-     .fname {
-         margin-bottom: 10px;
-         margin-left: 18px;
-         padding-right: 122px;
+     .fname, .lname {
+         
+         margin-left: 12px;
+         padding-right: 157px;
      }
-    .lname {
-         margin-left: 0px;
-         margin-bottom: 10px;
-         margin-left: 18px;
-         padding-right: 122px;
-     }
-     
+    
      .phone, .email2, .cpwd {
-         padding-right: 141px;
-         margin-left: 18px;
-         margin-bottom: 10px;
+        margin-left: 12px;
+         padding-right: 157px;
+         /* margin-left: 18px; */
+         /* margin-bottom: 10px; */
         
      }
      .pass {
@@ -415,16 +455,11 @@ input:focus{
      .fname, .lname, .phone, .email2, .cpwd {
          font-size: 30px;
      }
-     .fname {
-         margin-bottom: 10px;
-         margin-left: 18px;
-         padding-right: 141px;
-     }
-    .lname {
-         margin-left: 0px;
-         margin-bottom: 10px;
-         margin-left: 18px;
-         padding-right: 141px;
+     .fname, .lname {
+         /* margin-left: 18px;
+         padding-right: 141px; */
+         margin-left: 20px;
+         padding-right: 137px;
      }
      
      .phone, .email2, .cpwd {
