@@ -61,7 +61,7 @@ header {
 
 
   main {
-    width: 80%;
+    /* width: 80%; */
     margin: auto;
 }
 
@@ -203,6 +203,7 @@ header {
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-basis: 30%;
     margin-top:40px;
     /* grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:1fr; */
@@ -220,6 +221,7 @@ header {
 .content-sections {
     display: flex;
     justify-content: space-around;
+    flex-basis: 30%;
     margin: 1em 0em;
 }
 
@@ -236,7 +238,7 @@ header {
 
 .section5 img{
     width:250px;
-    margin-top:30px;
+    /* margin-top:30px; */
 }
 
 .section5 .text h3{
@@ -556,8 +558,9 @@ header {
          display: flex;
          width: 100%;
          margin-left: 0px;
-         justify-content: flex-start;
-         align-items: baseline;
+         justify-content: space-around;
+         align-items: center;
+         padding: 0.8em 0em;
        }
        header .dropdown {
         display: inline;
@@ -572,14 +575,15 @@ header {
       .dropdown-content {
         display: none;
         position: absolute;
-        width: 280px;
-        height: 320px;
+        width: 100%;
+        /* height: 320px; */
         font-size: 22px;
         font-weight: none;
         border-radius: 15px;
         background-color: #fff;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        left: 0;
       }
       /* Links inside the dropdown */
       .dropdown-content a {
@@ -615,7 +619,17 @@ header {
       .navbar a:hover {
         background-color: #00c5b4;
       }
-      
+      header h2{
+        font-size: 16px;
+    }
+    header a {
+      display: block;
+       width:fit-content;
+       text-decoration: none;
+       margin: 10px;
+       padding: 0px;
+       margin-top: 10px;
+   }
       .section1 {
           height: 300px;
       }
@@ -654,9 +668,9 @@ header {
       .reviews {
           margin-top: 20px;
       }
-      .reviews {
+      /* .reviews {
         margin-bottom: 20px;
-      }
+      } */
       .section3 p {
           margin-left: 60px;
           width: 60%;
