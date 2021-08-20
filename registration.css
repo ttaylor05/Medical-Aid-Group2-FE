@@ -72,11 +72,11 @@ body {
     color: white;
     font-size: 18px;
   }
-  /* a.selected {
+  .no-dropdown .selected {
     background-color: #00c5b4;
     color: white;
     font-size: 18px;
-  } */
+  }
   .no-dropdown .selected, .no-dropdown a {
     border-radius: 7px;
     padding: 10px;
@@ -144,15 +144,18 @@ body {
 .flex-container {
     display: flex;
 }
+.container {
+    text-align: center;
+}
 .img, .doc-img {
     margin-top: 88px;
-    max-width: 70%;
-    margin-left: 110px;
+    max-width: 80%;
+    /* margin-left: 110px; */
     width: 100%;
 }
 .signup-heading  {
     margin-top: -30px;
-    margin-left: 3em;
+    /* margin-left: 3em; */
     font-size: 40px;
     font-weight: bold;
     font-family: 'Red Hat Display', sans-serif;
@@ -177,16 +180,20 @@ input:focus{
     font-size: 15px; */
     border-color: rgb(223, 222, 222);
      background-color: rgb(245, 241, 241);
-    padding-bottom: 15px;
+    /* padding-bottom: 15px;
     padding-right: 50px;
-    padding-left: 5px;
+    padding-left: 5px; */
     margin-bottom: 10px;
     margin-top: 4px;
+    margin-left: -14px;
+    margin-right: 10px;
     border: 1px solid;
     border-color: rgb(223, 222, 222);
     border-radius: 7px;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 17px;
+    width: 90%;
+    padding: 0.5em;
 }
 /* .fname {
     padding-left: 6px; 
@@ -204,9 +211,9 @@ input:focus{
     font-size: 15px; */
     border-color: rgb(223, 222, 222);
      background-color: rgb(245, 241, 241);
-    padding-bottom: 15px;
+    /* padding-bottom: 15px;
     padding-right: 50px;
-    padding-left: 5px;
+    padding-left: 5px; */
     margin-bottom: 10px;
     margin-top: 4px;
     margin-right: 10px;
@@ -215,6 +222,8 @@ input:focus{
     border-radius: 7px;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 17px;
+    width: 90%;
+    padding: 0.5em;
 }
 /* .lname {
     padding-top: 14px;
@@ -227,20 +236,24 @@ input:focus{
 
 .phone, .email2, .cpwd {
     background-color: rgb(245, 241, 241);
-    padding-bottom: 15px;
+    /* padding-bottom: 15px;
     padding-right: 277px;
-    padding-left: 5px;
+    padding-left: 5px; */
     margin-bottom: 10px;
     margin-top: 4px;
+    margin-left: -30px;
     border: 1px solid;
     border-color: rgb(223, 222, 222);
     border-radius: 7px;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 17px;
+    width: 97%;
+    padding: 0.5em;
 }
 
 .pass, .check-box{
     font-size: 20px;
+    text-align: justify;
 }
 .fname:hover, .lname:hover, .phone:hover, .email2:hover, .cpwd:hover {
     /* background-color:rgb(178, 240, 226); */
@@ -257,7 +270,7 @@ input:focus{
     padding-bottom: 12px;
     padding-top: 12px;
     border: transparent;
-    margin-left: 105px;
+    /* margin-left: 105px; */
     font-size: 14px;
     border-radius: 5%;
     font-weight: bold;
@@ -270,7 +283,7 @@ input:focus{
         margin-right: auto;
         margin-top: -12px;
         margin-bottom: -15px;
-         max-width: 60%; /*90% */
+         /* max-width: 60%; */
         width: 100%;
     } 
     header {  
@@ -375,7 +388,7 @@ input:focus{
        display: none;
    }
     .signup-heading  {
-        margin-left: 6.5em;
+        /* margin-left: 6.5em; */
         font-size: 20px;
     } 
     .flex-container {
@@ -395,12 +408,13 @@ input:focus{
      .fname, .lname {
          
          margin-left: 12px;
-         padding-right: 157px;
+         /* padding-right: 157px; */
      }
     
      .phone, .email2, .cpwd {
         margin-left: 12px;
-         padding-right: 157px;
+        width: 90%;
+         /* padding-right: 157px; */
          /* margin-left: 18px; */
          /* margin-bottom: 10px; */
         
@@ -416,7 +430,7 @@ input:focus{
     }
     .signup-btn  {
        margin-bottom: 14px;
-       margin-left: 85px;
+       margin-left: 0px;
        padding-bottom: 8px;
        padding-top: 8px;
     }
@@ -463,15 +477,17 @@ input:focus{
      }
      
      .phone, .email2, .cpwd {
-         padding-right: 141px;
+         /* padding-right: 141px; */
          margin-left: 18px;
          margin-bottom: 10px;
+         width: 115%;
         
      }
      .pass {
-        /* font-size: 12px; */
+        
         margin-left: 18px;
     }
+
     .check-box{
         /* font-size: 15px; */
         margin-left: 13px;
@@ -479,7 +495,7 @@ input:focus{
     }
     .signup-btn  {
        margin-bottom: 14px;
-       margin-left: 85px;
+       /* margin-left: 85px; */
        padding-bottom: 8px;
        padding-top: 8px;
     }
