@@ -234,30 +234,36 @@ input:focus{
     padding-left: 58px;
 } */
 
-@media only screen and (max-width: 768px) {
-    /* .img, .doc-img {
-        display: block;
-        margin-left:auto;
-        margin-right: auto;
-        margin-top: -12px;
-        margin-bottom: -15px;
-         max-width: 60%; 
-        width: 100%;
-    }  */
-    .img, .doc2-img {
-      margin-top: 71px;
-      margin-left: 50px;
-      max-width: 90%;
+@media only screen and (max-width: 780px) {
+    /* html,body {
+
+      margin:0;
+  
+      padding:0;
+  
+      overflow-x:hidden;
+  
+  } */
+
+    header {
+      display: flex;
       width: 100%;
-      /* margin-right: -92px; */
+      margin-left: 0px;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0.8em 0.5em;
   }
-    header {  
-        display: flex;
-        width: 100%;
-        margin-left: 0px;
-        justify-content: flex-start;
-        align-items: baseline;
-      }
+      
+      
+        header a {
+           display: block;
+            width:fit-content;
+            text-decoration: none;
+            margin: 10px;
+            padding: 0px;
+            margin-top: 10px;
+            
+        }  
       header .dropdown {
        display: inline;
      }
@@ -317,39 +323,14 @@ input:focus{
      background-color: #00c5b4;
    }
    
-   header {
-    display: flex;
-    width: 100%;
-    margin-left: 0px;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.8em 0em;
-}
-     
-      /* header img{
-          margin-top: 20px;
-          width:40px;
-          margin-left: 146px;
-      } */
-   
-      /* header h2{
-          margin-left: 10px;
-          margin-right: 0px;
-          margin-top: 28px;
-          margin-bottom: auto;
-          font-size: 16px;
-   
-      } */
-    
-      header a {
-         display: block;
-          width:fit-content;
-          text-decoration: none;
-          margin: 10px;
-          padding: 0px;
-          margin-top: 10px;
-          
-      }
+      
+      .img, .doc2-img {
+        margin-top: 71px;
+        margin-left: 50px;
+        max-width: 90%;
+        width: 100%;
+        /* margin-right: -92px; */
+    }
    .tab-wrapper {
        display: none;
    }
@@ -409,6 +390,16 @@ input:focus{
     
  }
  @media only screen and (min-width: 1470px) {
+  html,body {
+
+    margin:0;
+
+    padding:0;
+
+    overflow-x:hidden;
+
+}
+    
     
     .img, .doc-img {
         /* display: block;
