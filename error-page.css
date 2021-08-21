@@ -61,13 +61,13 @@ header {
 
 
   main {
-    /* width: 80%; */
+    width: 80%;
     margin: auto;
 }
 
   .section1{
       position: relative;
-      background-image: url(/images/landing-page/image1.svg);
+      background-image: url(/images/error-page-images/keyboard-img.svg);
       max-width: 100%;
       height:600px;
       background-repeat: no-repeat;
@@ -189,6 +189,125 @@ header {
 
 
 /* Section Headings */
+.section-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 150px;
+  margin-top: 40px;
+}
+.search-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+#searchbox{
+  background-image: url(/images/error-page-images/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 15px;
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: none;
+  width: 300px;
+  height: 40px;
+}
+ .error-404{
+   height: 300px;
+ }
+.error-notfound{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  position: relative;
+  left: 42%;
+  top: 10%;
+  z-index: 1;
+}
+.rectangle-container{
+  height: 500px;
+  padding-left: 10%;
+}
+.rectangle805{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 25%;
+  bottom: 60%;
+}
+.rectangle806{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 40%;
+  bottom: 111%;
+}
+.rectangle807{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 33%;
+  bottom: 154%;
+}
+.rectangle{
+  width: 300px;
+  height: 300px;
+}
+/* .rectangle805{
+    background-image: url(/images/error-page-images/Rectangle\ 805.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    max-width: 100%;
+    height: 600px;
+    position: relative;
+    left: 249px;
+} 
+
+.rectangle806{
+    background-image: url(/images/error-page-images/Rectangle\ 806.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    max-width: 100%;
+    height: 600px;
+   position: relative;
+    left: 399px;
+    bottom: 535px;
+}
+
+.rectangle807{
+    background-image: url(/images/error-page-images/Rectangle\ 807.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    max-width: 100%;
+    height: 600px;
+    position: relative;
+    left: 299px;
+    bottom: 1010px;
+} */
+
+.error-notfound > h2 {
+  font-size: 62px;
+  margin: 0px;
+  text-align: center;
+  width: 464px;
+}
+#error-num{
+  font-size: 80px;
+}
+.home-btn{
+  background: #00C5B4;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 21px;
+  padding: 15px 5px;
+  margin-top: 15px;
+}
 .features, 
 .benefits,
 .reviews {
@@ -203,7 +322,6 @@ header {
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    flex-basis: 30%;
     margin-top:40px;
     /* grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:1fr; */
@@ -221,7 +339,6 @@ header {
 .content-sections {
     display: flex;
     justify-content: space-around;
-    flex-basis: 30%;
     margin: 1em 0em;
 }
 
@@ -238,7 +355,7 @@ header {
 
 .section5 img{
     width:250px;
-    /* margin-top:30px; */
+    margin-top:30px;
 }
 
 .section5 .text h3{
@@ -542,6 +659,48 @@ header {
 
 @media (max-width: 768px) {
 
+  .section1{
+    display: none;
+  }
+  .search-container{
+    display: none;
+  }
+  .home-btn{
+    color: white;
+  }
+  .rectangle805{
+    width: 200px;
+    height: 200px;
+    left: 10%;
+    bottom: 10%;
+  }
+  .rectangle806{
+    width: 200px;
+    height: 200px;
+    left: 30%;
+    bottom: 40%;
+  }
+  .rectangle807{
+    width: 200px;
+    height: 200px;
+    left: 10%;
+    bottom: 64%;
+  }
+  .rectangle{
+    width: 200px;
+    height: 200px;
+  }
+  .error-notfound{
+    top: 46%;
+    left: 26%;
+  }
+  .error-notfound > h2 {
+    font-size: 30px;
+  }
+  #error-num{
+    font-size: 30px;
+  }
+
     /* body{
         width:350px;
         overflow-x: hidden;
@@ -558,9 +717,8 @@ header {
          display: flex;
          width: 100%;
          margin-left: 0px;
-         justify-content: space-around;
-         align-items: center;
-         padding: 0.8em 0em;
+         justify-content: flex-start;
+         align-items: baseline;
        }
        header .dropdown {
         display: inline;
@@ -575,15 +733,14 @@ header {
       .dropdown-content {
         display: none;
         position: absolute;
-        width: 100%;
-        /* height: 320px; */
+        width: 280px;
+        height: 320px;
         font-size: 22px;
         font-weight: none;
         border-radius: 15px;
         background-color: #fff;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
-        left: 0;
       }
       /* Links inside the dropdown */
       .dropdown-content a {
@@ -619,17 +776,7 @@ header {
       .navbar a:hover {
         background-color: #00c5b4;
       }
-      header h2{
-        font-size: 16px;
-    }
-    header a {
-      display: block;
-       width:fit-content;
-       text-decoration: none;
-       margin: 10px;
-       padding: 0px;
-       margin-top: 10px;
-   }
+      
       .section1 {
           height: 300px;
       }
@@ -668,9 +815,9 @@ header {
       .reviews {
           margin-top: 20px;
       }
-      /* .reviews {
+      .reviews {
         margin-bottom: 20px;
-      } */
+      }
       .section3 p {
           margin-left: 60px;
           width: 60%;

@@ -334,6 +334,15 @@ input:focus{
    .tab-wrapper {
        display: none;
    }
+   .img, .doc-img {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: -12px;
+    margin-bottom: -15px;
+    max-width: 60%; /*90% */
+    width: 100%;
+} 
     .signup-heading  {
         margin-left: 6.5em;
         font-size: 20px;
@@ -419,6 +428,7 @@ input:focus{
        align-items: flex-start;
        padding-bottom: 0px;
     }
+    
     .container {
         padding-top: 50px;
        margin-left: -20px;
@@ -466,3 +476,4 @@ input:focus{
        padding-top: 8px;
     }
 }
+/* dfjkd */
