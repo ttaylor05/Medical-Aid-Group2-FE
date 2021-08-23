@@ -7,6 +7,7 @@
 	color: #000000;
 	margin: 0em;
   padding: 0em;
+  overflow-y: hidden;
 }
 
 header {
@@ -66,12 +67,13 @@ header {
 }
 
   .section1{
-      position: relative;
-      background-image: url(/images/error-page-images/keyboard-img.svg);
-      max-width: 100%;
-      height:600px;
-      background-repeat: no-repeat;
-      background-size: cover;
+    position: relative;
+    background-image: url(/images/error-page-images/keyboard-img.svg);
+    background-position-x: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+    height: 350px;
   }
 
   .section1 div{ 
@@ -192,17 +194,17 @@ header {
 .section-3{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  height: 150px;
-  margin-top: 40px;
+  height: 125px;
+  margin-top: 27px;
 }
 .search-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  height: 90px;
 }
 #searchbox{
   background-image: url(/images/error-page-images/search-icon.svg);
@@ -231,33 +233,33 @@ header {
   z-index: 1;
 }
 .rectangle-container{
-  height: 500px;
+  height: 200px;
   padding-left: 10%;
 }
 .rectangle805{
   width: 300px;
   height: 300px;
   position: relative;
-  left: 25%;
-  bottom: 60%;
+  left: 24%;
+  bottom: 136%;
 }
 .rectangle806{
-  width: 300px;
-  height: 300px;
-  position: relative;
-  left: 40%;
-  bottom: 111%;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 46%;
+    bottom: 274%;
 }
 .rectangle807{
   width: 300px;
   height: 300px;
   position: relative;
   left: 33%;
-  bottom: 154%;
+  bottom: 392%;
 }
 .rectangle{
-  width: 300px;
-  height: 300px;
+  width: 275px;
+  height: 275px;
 }
 /* .rectangle805{
     background-image: url(/images/error-page-images/Rectangle\ 805.svg);
@@ -658,7 +660,7 @@ header {
   
 
 @media (max-width: 768px) {
-
+  
   .section1{
     display: none;
   }
@@ -667,38 +669,43 @@ header {
   }
   .home-btn{
     color: white;
+    position: relative;
+    top: 182%;
+    left: 2%;
+    margin: 0px;
+}
   }
   .rectangle805{
     width: 200px;
     height: 200px;
-    left: 10%;
-    bottom: 10%;
+    left: 3%;
+    top: 12%;
   }
   .rectangle806{
     width: 200px;
     height: 200px;
     left: 30%;
-    bottom: 40%;
+    bottom: 69%;
   }
   .rectangle807{
     width: 200px;
     height: 200px;
-    left: 10%;
-    bottom: 64%;
+    left: 14%;
+    bottom: 127%;
   }
   .rectangle{
     width: 200px;
     height: 200px;
   }
   .error-notfound{
-    top: 46%;
-    left: 26%;
+    top: 78%;
+    left: 25%;
   }
   .error-notfound > h2 {
     font-size: 30px;
   }
   #error-num{
-    font-size: 30px;
+    font-size: 69px;
   }
 
     /* body{
@@ -708,8 +715,10 @@ header {
     html,body {
         margin:0;
         padding:0;
-        overflow-x:hidden;
-    }
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+      }
     main {
       width: 100%;
     }
