@@ -50,7 +50,7 @@
                     <a href="about-us.html">About Us</a>
                     <a href="FAQ.html">FAQ</a>
                     <a href="login.html">Login</a>
-                    <a href="registration.html" class="selected">Sign Up</a>
+                    <a href="registration.html">Sign Up</a>
                     
                   </div>
                 </div>
@@ -63,7 +63,7 @@
                         <a href="about-us.html">About Us</a>
                         <a href="FAQ.html">FAQ</a>
                         <a href="login.html">Login</a>
-                        <a href="registration.html" class="selected">Sign Up</a>
+                        <a href="registration.html">Sign Up</a>
                 </div>
                        
             </header>
@@ -76,44 +76,44 @@
                         </ul>
                         </div>
                     </div>
-             <div class="flex-container">
-                        <div class="image">
+             
+    <div class="flex-container">
+            <div class="image">
                             <img class="doc-img" src="./images/registration-image/Doctor 4.svg">
             </div>
                     
-            <div class="container">
+        <div class="container">
                 <div class="signup-heading">
                     <p>Sign Up</p>
                 </div>
+
+                        <form action="registration.php">
+
+                            <div class="name-container">
+                                <input type="text" class="fname" name="fname" placeholder="First Name" required><br>
+                                <input type="text" class="lname" name="lname" placeholder="Last Name" required><br>
+                            </div>
+
+                            <input type="tel" class="phone" name="phone" placeholder="Phone Number" required><br>
+                            <input type="email" class="email2" name="email2" placeholder="Enter Email Address" required><br>
+                            <input type="password" class="cpwd" name="cpwd" placeholder="Create a Password" required>
+                            
+                            <div class="pass">
+                                <p>Password must be between 8-16 characters</p>
+                                <p>Password can include the following:numbers, letters, !, ., #.</p>
+                            </div>
+                            
+                        <div class="check-box">
+                                <input type="checkbox" class="chkbx2" name="chkbx">
+                                <label for="chkbx"></label>I agree with Empr Medical's privacy policy.</label><br><br>
+                            </div>
+
+
+                                <button class="signup-btn">Sign Up</button>
+                            
+                        </form>
         
-                <form action="registration.php">
-
-
-                    <div class="name-container">
-                        <input type="text" class="fname" name="fname" placeholder="First Name" required><br>
-                        <input type="text" class="lname" name="lname" placeholder="Last Name" required><br>
-                    </div>
-
-                    <input type="tel" class="phone" name="phone" placeholder="Phone Number" required><br>
-                    <input type="email" class="email2" name="email2" placeholder="Enter Email Address" required><br>
-                    <input type="password" class="cpwd" name="cpwd" placeholder="Create a Password" required>
-                    
-                    <div class="pass">
-                        <p>Password must be between 8-16 characters</p>
-                        <p>Password can include the following:numbers, letters, !, ., #.</p>
-                    </div>
-                    
-                   <div class="check-box">
-                        <input type="checkbox" class="chkbx2" name="chkbx">
-                        <label for="chkbx"></label>I agree with Empr Medical's privacy policy.</label><br><br>
-                    </div>
-
-
-                        <button class="signup-btn">Sign Up</button>
-            
-                </form>
-            </div>
-            
+        </div>
      </div>
 
        
@@ -122,5 +122,4 @@
 </body>
 </html>
 
-<!-- update -->
 
