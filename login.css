@@ -43,10 +43,9 @@ header {
     display: none;
   }
  
-  img{
+  /* img{
     width:30px;
-    /* padding-left: 5px; */
-  }
+  } */
   h2{
     display: inline-block;
     font-size: 18px;
@@ -340,7 +339,7 @@ input:focus{
     margin-right: auto;
     margin-top: -12px;
     margin-bottom: -15px;
-    max-width: 60%; /*90% */
+
     width: 100%;
 } 
     .signup-heading  {
@@ -408,17 +407,7 @@ input:focus{
     overflow-x:hidden;
 
 }
-    
-    
-    .img, .doc-img {
-        /* display: block;
-        margin-left:auto;
-        margin-right: auto;
-        margin-top: -12px;
-        margin-bottom: -15px; */
-         max-width: 100%; /*90% */
-        /* width: 100%; */
-    } 
+ 
     .signup-heading  {
         /* margin-left: 6.5em; */
         font-size: 50px;
