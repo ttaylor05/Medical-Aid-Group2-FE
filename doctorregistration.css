@@ -117,28 +117,17 @@ body {
           border-radius: 0px;
         }
         .patient-link a {
-            color: #000000;
-            background-color: #00c5b4;
+            /* background-color: #00c5b4; */
             color: white;
             font-size: 18px;
         }
   
         .doc-link {
+          color: #000000;
           border-bottom: 3.5px solid #00c5b4 !important;
-          /* background-color: rgb(225, 223, 223); */
-          /* border: .5px solid; */
           border-color: rgb(179, 177, 177);
-          /* padding: 15px 87px 15px 10px; */
           border-radius: 0px;
         }
-        .doc-link {
-            color: #000000;
-        }
-  
-        /* .doc-link:hover {
-          border-bottom: 3.5px solid #f3ea12;
-        } */
-
 /* heading */
 
 .flex-container {
@@ -185,14 +174,14 @@ input:focus{
     padding-left: 5px; */
     margin-bottom: 10px;
     margin-top: 4px;
-    margin-left: -14px;
+    margin-left: -18px;
     margin-right: 10px;
     border: 1px solid;
     border-color: rgb(223, 222, 222);
     border-radius: 7px;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 17px;
-    width: 90%;
+    width: 98%;
     padding: 0.5em;
 }
 /* .fname {
@@ -247,7 +236,7 @@ input:focus{
     border-radius: 7px;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 17px;
-    width: 97%;
+    width: 97.5%;
     padding: 0.5em;
 }
 
@@ -406,8 +395,8 @@ input:focus{
          flex-direction: row;
      }
      .fname, .lname {
-         
-         margin-left: 12px;
+        width: 90%;
+         margin-left: 14px;
          /* padding-right: 157px; */
      }
     
@@ -469,20 +458,23 @@ input:focus{
      .fname, .lname, .phone, .email2, .cpwd {
          font-size: 30px;
      }
-     .fname, .lname {
-         /* margin-left: 18px;
-         padding-right: 141px; */
-         margin-left: 20px;
-         padding-right: 137px;
-     }
-     
-     .phone, .email2, .cpwd {
-         /* padding-right: 141px; */
-         margin-left: 18px;
-         margin-bottom: 10px;
-         width: 115%;
-        
-     }
+     /* .fname, .lname { */
+        /* margin-left: -26px;  */
+         /* width: 115%;   */
+    
+    
+   .fname {
+       margin-left: 0px;
+   }
+   .lname {
+       width: 97.5%;
+   }
+    .phone, .email2, .cpwd {
+        margin-left: 0px;
+        margin-bottom: 10px;
+        /* width: 90%; */
+       
+    }
      .pass {
         
         margin-left: 18px;
