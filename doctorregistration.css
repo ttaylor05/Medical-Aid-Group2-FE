@@ -6,31 +6,13 @@ body {
     width: 100%;
     height: 100vh;
 }
-
-
-/* .header {
-    padding-left: 1em;
-}
-.img, .a {
-    display: inline;
-    vertical-align: middle;
-}
-.text-only {
-    display: inline-block;
-    vertical-align: middle;
-}
-#a .nav-logo, .logo-text {  
-    color: black;
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-} */
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background:rgb(245, 241, 241);
     padding-bottom: 10px;
+    padding: 0.8em 4em;
   }
   .dropdown {
     display: none;
@@ -59,9 +41,8 @@ body {
     color: #000000;
     text-decoration: none;
     margin: 0 0 0 32px;
-    /* transition: color 0.5s; */
+    transition: color 0.5s;
     font-family: 'Red Hat Display', sans-serif;
-   
     padding: 3px;
   }
   /* .no-dropdown a {
@@ -70,7 +51,6 @@ body {
   .no-dropdown a:hover {
     background-color: #00c5b4;
     color: white;
-    font-size: 18px;
   }
   .no-dropdown .selected {
     background-color: #00c5b4;
