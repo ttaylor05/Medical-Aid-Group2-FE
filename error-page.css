@@ -7,7 +7,7 @@
 	color: #000000;
 	margin: 0em;
   padding: 0em;
-  overflow-y: hidden;
+ 
 }
 
 header {
@@ -204,7 +204,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90px;
+  height: 150px;
 }
 #searchbox{
   background-image: url(/images/error-page-images/search-icon.svg);
@@ -297,10 +297,11 @@ header {
   font-size: 62px;
   margin: 0px;
   text-align: center;
-  width: 464px;
+  width: 300px;
 }
 #error-num{
   font-size: 80px;
+  width: 300px;
 }
 .home-btn{
   background: #00C5B4;
@@ -657,9 +658,37 @@ header {
        transition:0.2s;
        font-weight: bold;
    }
+
+@media (max-width:768px) and (min-width:450px) {
+  main{
+    height: 100vh;
+  }
+  .error-notfound{
+    top: 30%;
+    left: 37%;
+  }
+  .rectangle805{
+    left: 9%;
+    top: -122%;
+  }
+  .rectangle806{
+    left: 42%;
+    bottom: 244%;
+  }
+  
+  .rectangle807{
+    left: 24%;
+    bottom: 352%;
+  }
+  .section-3{
+    position: relative;
+    top: 10%;
+  }
+}
+
   
 
-@media (max-width: 768px) {
+@media (max-width: 449px) {
   
   .section1{
     display: none;
@@ -670,237 +699,238 @@ header {
   .home-btn{
     color: white;
     position: relative;
-    top: 182%;
+    top: 100%;
     left: 2%;
     margin: 0px;
 }
-  }
-  .rectangle805{
-    width: 200px;
-    height: 200px;
-    left: 3%;
-    top: 12%;
-  }
-  .rectangle806{
-    width: 200px;
-    height: 200px;
-    left: 30%;
-    bottom: 69%;
-  }
-  .rectangle807{
-    width: 200px;
-    height: 200px;
-    left: 14%;
-    bottom: 127%;
-  }
-  .rectangle{
-    width: 200px;
-    height: 200px;
-  }
-  .error-notfound{
-    top: 78%;
-    left: 25%;
-  }
-  .error-notfound > h2 {
-    font-size: 30px;
-  }
-  #error-num{
-    font-size: 69px;
-  }
+.rectangle805{
+  width: 200px;
+  height: 200px;
+  left: 7%;
+    top: -34%;
+}
+.rectangle806{
+  width: 200px;
+  height: 200px;
+  left: 32%;
+  bottom: 118%;
+}
+.rectangle807{
+  width: 200px;
+  height: 200px;
+  left: 18%;
+  bottom: 176%;
+}
+.rectangle{
+  width: 200px;
+  height: 200px;
+}
+.error-notfound{
+  top: 30%;
+  left: 23%;
+}
+.error-notfound > h2 {
+  font-size: 30px;
+}
+#error-num{
+  font-size: 69px;
+}
 
-    /* body{
-        width:350px;
-        overflow-x: hidden;
-    } */
-    html,body {
-        margin:0;
-        padding:0;
-        height: 100vh;
-        width: 100%;
-        overflow: hidden;
-      }
-    main {
+  /* body{
+      width:350px;
+      overflow-x: hidden;
+  } */
+  html,body {
+      margin:0;
+      padding:0;
+      height: 100vh;
       width: 100%;
     }
-      header {  
-         display: flex;
-         width: 100%;
-         margin-left: 0px;
-         justify-content: flex-start;
-         align-items: baseline;
-       }
-       header .dropdown {
-        display: inline;
-      }
-      header .no-dropdown {
-        display: none;
-      }
-      .navbar {
-        display: block;
-      }
-    /* Dropdown content (hidden by default) */
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        width: 280px;
-        height: 320px;
-        font-size: 22px;
-        font-weight: none;
-        border-radius: 15px;
-        background-color: #fff;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      /* Links inside the dropdown */
-      .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 16px 8px;
-        text-decoration: none;
-        display: block;
-        /* text-align: center; */
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
-      /* Show the dropdown menu on hover */
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      
-        /* The dropdown container */
-      .dropdown {
-        float: left;
-        overflow: hidden;
-      }
-      
-      /* Dropdown button */
-      .dropdown .dropbtn {
-        border: none;
-        outline: none;
-        background-color: inherit;
-      }
-      
-      /* Add a background color to navbar links on hover */
-      .navbar a:hover {
-        background-color: #00c5b4;
-      }
-      
-      .section1 {
-          height: 300px;
-      }
-      
-      .section1 div {
-          position: static;
-          width: 314px;
-          margin-top: 0px;
-          height: 190px;
-        }
-        
-        .section2,
-        .section3,
-        .section4,
-        .section5 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 10px;
-        }
-          
-
-     
-        .section2 img {
-          width: 250px;
-          margin-left: 0px;
-      }
-      .section2 .text {
-          width: 80%;
-      }
-      .section2 button {
-          margin-left: 0px;
-      }
-      .features, 
-      .benefits,
-      .reviews {
-          margin-top: 20px;
-      }
-      .reviews {
-        margin-bottom: 20px;
-      }
-      .section3 p {
-          margin-left: 60px;
-          width: 60%;
-      }
-      .content-sections {
-        /* flex-direction: column;
-        align-items: center; */
-        flex-wrap: wrap;
-      }
-      /* .section6 .content-sections {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-
-      } */
-      .section4 .text, .section5 .text, .section6 .text {
-        flex-basis: 60%;
+  main {
+    width: 100%;
+  }
+    header {  
+       display: flex;
+       width: 100%;
+       margin-left: 0px;
+       justify-content: flex-start;
+       align-items: baseline;
+     }
+     header .dropdown {
+      display: inline;
     }
-      .section4 .text h1 {
+    header .no-dropdown {
+      display: none;
+    }
+    .navbar {
+      display: block;
+    }
+  /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      width: 280px;
+      height: 320px;
+      font-size: 22px;
+      font-weight: none;
+      border-radius: 15px;
+      background-color: #fff;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 16px 8px;
+      text-decoration: none;
+      display: block;
+      /* text-align: center; */
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+      /* The dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      border: none;
+      outline: none;
+      background-color: inherit;
+    }
+    
+    /* Add a background color to navbar links on hover */
+    .navbar a:hover {
+      background-color: #00c5b4;
+    }
+    
+    .section1 {
+        height: 300px;
+    }
+    
+    .section1 div {
+        position: static;
+        width: 314px;
+        margin-top: 0px;
+        height: 190px;
+      }
+      
+      .section2,
+      .section3,
+      .section4,
+      .section5 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 10px;
+      }
+        
+
+   
+      .section2 img {
+        width: 250px;
+        margin-left: 0px;
+    }
+    .section2 .text {
+        width: 80%;
+    }
+    .section2 button {
+        margin-left: 0px;
+    }
+    .features, 
+    .benefits,
+    .reviews {
+        margin-top: 20px;
+    }
+    .reviews {
+      margin-bottom: 20px;
+    }
+    .section3 p {
+        margin-left: 60px;
+        width: 60%;
+    }
+    .content-sections {
+      /* flex-direction: column;
+      align-items: center; */
+      flex-wrap: wrap;
+    }
+    /* .section6 .content-sections {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+
+    } */
+    .section4 .text, .section5 .text, .section6 .text {
+      flex-basis: 60%;
+  }
+    .section4 .text h1 {
+        margin-right: 0px;
+    }
+    .section5 .text h3 {
+      margin-right: 0px;
+    }
+    .section6 img {
+      margin-left: 0px;
+    }
+    .section6 .text, h1 {
           margin-right: 0px;
       }
-      .section5 .text h3 {
-        margin-right: 0px;
-      }
-      .section6 img {
-        margin-left: 0px;
-      }
-      .section6 .text, h1 {
-            margin-right: 0px;
-        }
 
-        .section6,
-        .section7 {
-            display: flex;
-            flex-direction: column;
-            margin-top: -43px;
-        }
-        .applegoogle-links {
-         display: flex;
-         /* justify-content: space-between; */
-        }
-        .applegoogle-links h4 {
-          padding: 12px;
-        }
-        .section7 {
-          height: auto;
-        }
-        .section7 .form {
-          margin-left: 10px;
+      .section6,
+      .section7 {
+          display: flex;
+          flex-direction: column;
+          margin-top: -43px;
       }
-      .section7 .contact {
-        font-size: 20px;
+      .applegoogle-links {
+       display: flex;
+       /* justify-content: space-between; */
+      }
+      .applegoogle-links h4 {
+        padding: 12px;
+      }
+      .section7 {
+        height: auto;
+      }
+      .section7 .form {
+        margin-left: 10px;
     }
-      /* .section8 {
-          margin-top: 200px;
-      } */
-      .section-bottom {
-        display: inline-block;
-        /* margin-top: 20px; */
-        width: 100%;
-      }
-      .section-bottom p {
-        font-size: 16px;
-        margin-left: 5%;
-      }
-      .section-bottom .last {
-        width: 103%;
-      }
-      footer {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-      }
+    .section7 .contact {
+      font-size: 20px;
+  }
+    /* .section8 {
+        margin-top: 200px;
+    } */
+    .section-bottom {
+      display: inline-block;
+      /* margin-top: 20px; */
+      width: 100%;
+    }
+    .section-bottom p {
+      font-size: 16px;
+      margin-left: 5%;
+    }
+    .section-bottom .last {
+      width: 103%;
+    }
+    footer {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+ 
     
       
-  }
+  
   /* e5a3769 */
