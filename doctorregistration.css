@@ -203,11 +203,8 @@ input:focus{
     margin-bottom: 20px;
 } */
 
-.phone, .email2, .cpwd {
+.phone, .email2, .cpwd, .signincode {
     background-color: rgb(245, 241, 241);
-    /* padding-bottom: 15px;
-    padding-right: 277px;
-    padding-left: 5px; */
     margin-bottom: 10px;
     margin-top: 4px;
     margin-left: -30px;
@@ -224,7 +221,7 @@ input:focus{
     font-size: 20px;
     text-align: justify;
 }
-.fname:hover, .lname:hover, .phone:hover, .email2:hover, .cpwd:hover {
+.fname:hover, .lname:hover, .phone:hover, .email2:hover, .cpwd:hover, .signincode:hover {
     /* background-color:rgb(178, 240, 226); */
     border-color: rgb(178, 240, 226);
   }
@@ -380,13 +377,9 @@ input:focus{
          /* padding-right: 157px; */
      }
     
-     .phone, .email2, .cpwd {
+     .phone, .email2, .cpwd, .signincode {
         margin-left: 12px;
         width: 90%;
-         /* padding-right: 157px; */
-         /* margin-left: 18px; */
-         /* margin-bottom: 10px; */
-        
      }
      .pass {
         font-size: 12px;
@@ -435,12 +428,10 @@ input:focus{
          display: block;
          flex-direction: row;
      }
-     .fname, .lname, .phone, .email2, .cpwd {
+     .fname, .lname, .phone, .email2, .cpwd, .signincode {
          font-size: 30px;
      }
-     /* .fname, .lname { */
-        /* margin-left: -26px;  */
-         /* width: 115%;   */
+     
     
     
    .fname {
@@ -449,7 +440,7 @@ input:focus{
    .lname {
        width: 97.5%;
    }
-    .phone, .email2, .cpwd {
+    .phone, .email2, .cpwd, .signincode {
         margin-left: 0px;
         margin-bottom: 10px;
         /* width: 90%; */
