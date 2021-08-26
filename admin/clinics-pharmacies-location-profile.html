@@ -138,18 +138,18 @@
     </aside><!--end of sidebar-->
     <main class="middle-container"><!--Main-->
        
-            <h2 id="clinics-title">Clinic/Pharmacies</h2><!--users-title-->
+            <h2 id="clinics-title" class="displayNone-mobile">Clinic/Pharmacies</h2><!--users-title-->
             <section class="first-sect">
                 <div class="profile-image">
                     
                     <img class="pharm-profile" src="/images/admin-images/emp-pharmacy.svg" alt="profile picture">
                 </div>
                 <div class="Pharmacy-info-container" >
-                    <div>
+                    <div class="pharmacy-info">
                         <h2>EMP Pharmacy</h2>
                         <a href="#"><button>Edit Location</button></a>
                     </div>
-                    <div>
+                    <div class="pharmacy-info">
                         <p>
                             <span>Address : 3521 Main Ave New Orleans, LA 70112</span>
                         </p>
@@ -161,8 +161,14 @@
             </section>
             <section class="second-sect">
                 <form action="contact-details" class="contact-details">
-                    <h2>Contact Details</h2>
-                    <div class="contact-input" >
+                    <h2 id="contact-title">Contact Details</h2>
+                    <div class="displayNone-dsktp" id="mobile-contact">
+                        <p class="contact-info-mobile">Phone: 555-555-1112</p>
+                        <p class="contact-info-mobile">Website: www.emprmed.com/emppharmacy</p>
+                        <p class="contact-info-mobile">Fax: &nbsp 555-555-1114</p>
+                        <p class="contact-info-mobile">Other:</p>
+                    </div>
+                    <div class="contact-input displayNone-mobile"  >
                         <div class="column-one">
                             <div class="primaryNum cont"> 
                                 <label for="primary-number"  >Primary <br> Number</label>
@@ -232,7 +238,7 @@
                            </p>
                         </div>
                         <div>
-                            <div class="review-container">
+                            <div class="review-container displayNone-mobile">
                                <p> Avg Review Rating</p>
                                 <div>
                                     <img src="/images/admin-images/yellow-star.svg" alt="">
@@ -243,15 +249,26 @@
                                 <p class="score" id="avg-rating">4.91</p>
                             </div>
                         </div>
-                        <div class="displayNone-dsktp">hi</div>
+                     
                     </div>
                     <div class="box three">
-                        <div class="blue-box"> <h3 class="center">View Staff Profiles </h3></div>
+                        <div class="blue-box displayNone-mobile"> <h3 class="center">View Staff Profiles </h3></div>
                         <div class="blue-box"><h3 class="center">Location Documentation</h3></div>
                          <div class="white-box"><h3 class="center">View Insurance Infomation</h3></div>   
     
                         </div>
             </section>
+            <div class=" btns-ctnr displayNone-dsktp" >
+                <div> <a href="#" id="back"> <img src="/images/admin-images/left-line-arrow.svg" alt="">Back</a> </div>
+                <div id="return-update" >
+                    <button class="mble-btns"id="update">
+                        Update
+                    </button>
+                    <button class="mble-btns" id="return"> 
+                        Return
+                    </button>
+                </div>
+            </div>
             
     </main><!--Main end-->
     <aside class="right-container"> <!--right-container-->
