@@ -65,49 +65,6 @@ header {
     width: 80%;
     margin: auto;
 }
-
-  .section1{
-    position: relative;
-    background-image: url(/images/error-page-images/keyboard-img.svg);
-    background-position-x: center;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 374px;
-  }
-
-  .section1 div{ 
-    position:absolute;
-    width:350px;
-    /* margin-left:690px; */
-    background-color:white;
-    /* margin-top:110px; */
-    padding-right:20px;
-    padding-left:20px;
-    background-repeat:no-repeat;
-    background: rgba(300, 243, 243, 0.6);
-    border-radius:6px;
-    height:270px;
-    right: 150px;
-    top: 100px;
-  } 
-
-
-  /* .section1 div, h1, p  {
-    text-align: center;
-  } */
-
-  
-
- 
-
-
-  
-
-  
-
-
-
   .section2{
       display: flex;
       justify-content: space-around;
@@ -640,9 +597,6 @@ header {
   main{
     height: 100vh;
   }
-  .section1{
-    height: 203px;
-  }
   .error-notfound{
     top: 30%;
     left: 30%;
@@ -672,10 +626,6 @@ header {
   
 
 @media (max-width: 449px) {
-  
-  .section1{
-    display: none;
-  }
   .search-container{
     display: none;
   }
@@ -798,17 +748,6 @@ header {
     .navbar a:hover {
       background-color: #00c5b4;
     }
-    
-    .section1 {
-        height: 300px;
-    }
-    
-    .section1 div {
-        position: static;
-        width: 314px;
-        margin-top: 0px;
-        height: 190px;
-      }
       
       .section2,
       .section3,
