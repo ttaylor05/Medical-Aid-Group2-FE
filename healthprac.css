@@ -71,9 +71,9 @@ header {
     justify-content: space-around;
     background: var(--seagreen);
     border-radius: 10px; 
-    padding-right: 140px;
+    padding-right: 5em;
     font-weight: bold;
-    /* width: 100%; */
+   
 }
 
 .dash-image img, 
@@ -87,13 +87,13 @@ header {
 .dash-logout {
     display: flex;
     flex-direction: row;
-    padding: 1.5em 0em;
+    padding: .5em 0em;
 }
 .dash-image h3, 
 .dash-support h3, 
 .dash-logout h3 {
     font-style: normal;
-    font-size: 25px;
+    font-size: 16px;
 }
 a {
     text-decoration: none;
@@ -139,9 +139,10 @@ a {
     display: flex;
      }
 .section1, .section2 {
-    width: 37%;
+    width: 20%;
     margin-right: 40px;
-    padding: 0px 50px 40px 50px;
+    /* padding: 0px 50px 40px 50px; */
+    padding: 1em 2em;
     border-radius: 15px;
     box-sizing: content-box;
     border: 1px solid gray;
@@ -468,7 +469,8 @@ header {
 }
 .cards {
    justify-content: space-evenly;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin-left: -10px;
 }
 .section1, .section2 {
     flex-basis: 50%;
@@ -477,10 +479,10 @@ header {
     /* margin-left: -15px; */
 }
 .section3 {
-    flex-basis: 80%;
+    flex-basis: 90%;
     width: max-content;
-    margin-left: -3em;
-    padding-left: 4px;
+    margin-left: -2.5em;
+    padding-left: .5em;
 }
 .column h1 {
     font-size: 60px;
