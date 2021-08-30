@@ -138,18 +138,18 @@
     </aside><!--end of sidebar-->
     <main class="middle-container"><!--Main-->
        
-            <h2 id="clinics-title">Clinic/Pharmcacies</h2><!--users-title-->
+            <h2 id="clinics-title" class="displayNone-mobile">Clinic/Pharmacies</h2><!--users-title-->
             <section class="first-sect">
                 <div class="profile-image">
                     
                     <img class="pharm-profile" src="/images/admin-images/emp-pharmacy.svg" alt="profile picture">
                 </div>
                 <div class="Pharmacy-info-container" >
-                    <div>
+                    <div class="pharmacy-info">
                         <h2>EMP Pharmacy</h2>
                         <a href="#"><button>Edit Location</button></a>
                     </div>
-                    <div>
+                    <div class="pharmacy-info">
                         <p>
                             <span>Address : 3521 Main Ave New Orleans, LA 70112</span>
                         </p>
@@ -161,33 +161,114 @@
             </section>
             <section class="second-sect">
                 <form action="contact-details" class="contact-details">
-                    <h2>Contact Details</h2>
-                    <div class="contact-input" >
-                       <span> 
-                           <label for="primary-number"  >Primary <br> Number</label>
-                          <input type="text" name="number" class="firstrow inpt" id="primary-number">
-                      </span>
-  
-                      <span>
-                      <label for="fax">Address</label>
-                      <input type="text" name="fax" class="firstrow inpt" id="fax">
-                      </span>
-  
-                      <span>
-                      <label for="Website">Website</label>
-                      <input type="text" name="Website" class="secondrow inpt" id="website">
-                      </span>
-  
-                      <span>
-                      <label for="other">Email</label>
-                      <input type="text" name="other" class="secondrow inpt" id="other">
-                      </span>
+                    <h2 id="contact-title">Contact Details</h2>
+                    <div class="displayNone-dsktp" id="mobile-contact">
+                        <p class="contact-info-mobile">Phone: 555-555-1112</p>
+                        <p class="contact-info-mobile">Website: www.emprmed.com/emppharmacy</p>
+                        <p class="contact-info-mobile">Fax: &nbsp 555-555-1114</p>
+                        <p class="contact-info-mobile">Other:</p>
+                    </div>
+                    <div class="contact-input displayNone-mobile"  >
+                        <div class="column-one">
+                            <div class="primaryNum cont"> 
+                                <label for="primary-number"  >Primary <br> Number</label>
+                               <input type="text" name="number" class="firstrow inpt" id="primary-number">
+                            </div>
+       
+                           <div class="address cont">
+                           <label for="fax">Address</label>
+                           <input type="text" name="fax" class="firstrow inpt" id="fax">
+                           </div>
+                        </div>
+                        <div class="column-two">
+                            <div class="website cont">
+                                <label for="Website">Website</label>
+                                <input type="text" name="Website" class="secondrow inpt" id="website">
+                                </div>
+            
+                                <div class="email cont">
+                                <label for="other">Email</label>
+                                <input type="text" name="other" class="secondrow inpt" id="other">
+                                </div>
+                        </div>
+
                     </div>
                 </form>
                  </section>
             <section class="third-sect">
-
+                    <div class="box one">
+                        <h3 class="location hours" >Location Hours</h3>
+                        <div class="hours-container">
+                            <div class="days">
+                                <p>Monday</p>
+                                <p>8am-7pm</p>
+                            </div>
+                            <div class="days">
+                                <p>Tuesday</p>
+                                <p>8am-7pm</p>
+                            </div>
+                            <div class="days">
+                                <p>Wednesday</p>
+                                <p>8am-7pm</p>
+                            </div>
+                            <div class="days">
+                                <p>Thursday</p>
+                                <p>8am-7pm</p>
+                            </div>
+                            <div class="days">
+                                <p>Friday</p>
+                                <p>8am-7pm</p>
+                            </div>
+                            <div class="days">
+                                <p>Saturday</p>
+                                <p>8am-7pm</p>
+                            </div>
+                            <div class="days">
+                                <p>Sunday</p>
+                                <p>8am-7pm</p>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="box two">
+                        <h3 class="location performance">Location  Performance </h3>
+                        <div>
+                            <p>Customer Service Score</p>
+                           <p class="score" id="service-score">
+                               90%
+                           </p>
+                        </div>
+                        <div>
+                            <div class="review-container displayNone-mobile">
+                               <p> Avg Review Rating</p>
+                                <div>
+                                    <img src="/images/admin-images/yellow-star.svg" alt="">
+                                    <img src="/images/admin-images/yellow-star.svg" alt="">
+                                    <img src="/images/admin-images/yellow-star.svg" alt="">
+                                    <img src="/images/admin-images/yellow-star.svg" alt="">
+                                </div>
+                                <p class="score" id="avg-rating">4.91</p>
+                            </div>
+                        </div>
+                     
+                    </div>
+                    <div class="box three">
+                        <div class="blue-box displayNone-mobile"> <h3 class="center">View Staff Profiles </h3></div>
+                        <div class="blue-box"><h3 class="center">Location Documentation</h3></div>
+                         <div class="white-box"><h3 class="center">View Insurance Infomation</h3></div>   
+    
+                        </div>
             </section>
+            <div class=" btns-ctnr displayNone-dsktp" >
+                <div> <a href="#" id="back"> <img src="/images/admin-images/left-line-arrow.svg" alt="">Back</a> </div>
+                <div id="return-update" >
+                    <button class="mble-btns"id="update">
+                        Update
+                    </button>
+                    <button class="mble-btns" id="return"> 
+                        Return
+                    </button>
+                </div>
+            </div>
             
     </main><!--Main end-->
     <aside class="right-container"> <!--right-container-->

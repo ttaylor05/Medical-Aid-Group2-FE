@@ -22,7 +22,6 @@ body{
 
 div.body-Container{
     width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-columns: 30px 1fr 2fr 1fr 1fr 20px ;
     grid-template-rows: 100px 5% 15% 20% 40% 10%;
@@ -45,6 +44,12 @@ header#top-container{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
+    position: fixed;
+    padding: 1em 0em;
+    font-family: 'Red Hat Display', sans-serif;
+    background: white;
+
 }
 aside.left-container{
     background-color: var(--sidebar-bg-color);
@@ -54,11 +59,15 @@ aside.left-container{
     padding-top: 0%;
     border-radius: var(--radius-border);
     width: 20%;
-    height: 94%;
+    height: 80%;
     font-size: 16px;
     font-weight: 500;
     position: fixed;
     top: 10%;
+    left:0%;
+    padding-top: 5%;
+    z-index: -1;
+
 }
 main.middle-container{
     grid-column-start: 3 ;
@@ -210,13 +219,7 @@ div.a-logo{
     font-size: 30px;
     line-height: 28px;
 }
-div.a-logo:hover{
-    background-color: var(--sidebar-bg-color);
-   border-radius: 5px;
-   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
-  
-}
+
 img.a-logo{
     width: 50px;
     margin-right: 10px;
@@ -343,6 +346,10 @@ button{
     border: none;
     margin-top:15px;
 }
+button:hover{
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
+    font-weight: bold;
+}
 /*middle container content css*/
 
 .middle-container{
@@ -355,7 +362,8 @@ button{
     background: linear-gradient(262.93deg, rgba(0, 197, 180, 0.4) 10.67%, rgba(0, 197, 180, 0) 55.52%);
     border-radius: 5px;
     width: 100%;
-    height: 19%;
+    height: 270px;
+    margin-bottom: 10px;
 }
 .middle-section{
    
@@ -365,6 +373,7 @@ button{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 .last-section{
     
@@ -404,6 +413,14 @@ button{
 .decline {
     background: #EEEEEE;
 }
+.application-buttons > a:hover{
+    color: white;
+    font-weight: bold;
+}
+.decline > a:hover{
+    color: black;
+    font-weight: bold;
+}
 tr:nth-child(2){
     display: flex;
     flex-direction: row;
@@ -438,7 +455,25 @@ tr:nth-child(2){
     gap: 15px;
     width: 87%;
 }
-
+.contact-first{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.contact-second {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.contact-first > div {
+    margin-bottom: 10px;
+}
+.contact-second > div {
+    margin-bottom: 10px;
+}
 .inpt{
     background: #FFFFFF;
     border-radius: 5px;
@@ -504,7 +539,7 @@ tr:nth-child(2){
 
 .interview-notes{
     width: 100%;
-    height: 90%;
+    height: 300px;
     margin: 0%;
     background: rgba(0, 197, 180, 0.22);
     border: 1px solid #00C5B4;
@@ -523,10 +558,18 @@ tr:nth-child(2){
     font-weight: bold;
     border-bottom: #00C5B4 solid 3px;
 }
+#prof-refs{
+    width: 80%;
+    text-align: center;
+}
 #return-requests{
     position: relative;
     top: 20px;
     left: 35%;
+}
+#return-requests > button:hover {
+    font-weight: bold;
+    color: white;
 }
 /*Middle Section styling END*/
 /*Middle contianer content css END*/
@@ -545,6 +588,7 @@ nav.navbar{
 }
 span.menu-selectionNames:hover{
 font-weight: bold;
+color: white;
 }
 
 /*Mobile Design Hiddens HTML DISPLAY END*/
@@ -564,6 +608,12 @@ font-weight: bold;
       aside.right-container{
          display: none;
         }
+        .left {
+            grid-gap: 10px;
+        }
+        .box{
+            height: 180px;
+        }
         div.nxt-pg{
           
             width: 500px;
@@ -579,6 +629,9 @@ font-weight: bold;
         grid-column-start: 3;
         grid-column-end: 4;
         width: 100%;
+        background-color: white;
+        z-index: 1;
+        font-family: 'red hat display', sans-serif;
     }
     div.top-icons{
         justify-content:right;
@@ -627,7 +680,12 @@ font-weight: bold;
         justify-content: space-around;
         position: fixed;
         top: 110px;
-        left: 45px;
+        left: 16px;
+    }
+
+    .change > .hamburger-menu {
+        top: 9px;
+        left: 230px;
     }
     .line{
         width: 100%;
@@ -650,6 +708,10 @@ font-weight: bold;
     }
     .nav-item{
         font-size: 21px;
+    }
+    .nav-link:hover{
+        color: white;
+        font-weight: bold;
     }
       /*Hamburger Styling END*/
     
@@ -727,7 +789,23 @@ font-weight: bold;
     section.middle-section{
         flex-wrap: wrap;
         row-gap: 10px;
-        padding-top: 30px;
+       
+    }
+    .first-section{
+        height: 140px;
+        width: 94%;
+    }
+    .middle-profile-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .profile-container > .dr-profile {
+        width: 80px;
+        height: 80px;
+        align-self: center;
+        margin-right: 10px;
     }
     .health-measures {
         width: 30%;
@@ -736,9 +814,8 @@ font-weight: bold;
     /*top section styling*/
     .profile-container{
         width: 100%;
-        height: 100%;
         font-size: 16px;
-        align-items: flex-start;
+        align-items: center;
     }
     .profile-container > img{
         width: 50px;
@@ -774,13 +851,24 @@ font-weight: bold;
     } 
     .left{
         width: 100%;
-        text-align: center;   
+        text-align: center;
+        grid-gap:10px;   
+    }
+    .box{
+        width: 170px;
+        height: 100px;
     }
     .box > a {
         font-size: 16px;
         font-weight: bold;
 
-    }  
+    } 
+    #prof-refs{
+        width: 120px;
+    }
+    .inpt{
+        display: none;
+    }
     /*Last sectopn styling*/
    /* .right{
         align-items:stretch;
@@ -851,7 +939,7 @@ font-weight: bold;
     }
     
     button{
-        padding: 8px;
+        padding: 7px 1em;
         height: 45px;
         width: 100px;
         position: relative;
@@ -883,7 +971,10 @@ font-weight: bold;
         left: 0%;
         
     }
-
+    #return-requests:hover{
+        color: white;
+        font-weight: bold;
+    }
     
     /*hamburger styling*/
     nav.navbar{
@@ -892,9 +983,12 @@ font-weight: bold;
     header#top-container{
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        gap: 10%;
-        width: 100%;
+        justify-content: space-between;
+        width: 65%;
+        margin-left: auto;
+        position: relative;
+        align-self: flex-end;
+    
     }
     div.top-icons{
         justify-content:right;
@@ -945,6 +1039,10 @@ font-weight: bold;
         padding: 5px;
       
     }
+    .change > .hamburger-menu{
+        top: 9px;
+        left: 230px;
+    }
     .line{
         width: 100%;
         height: 2px;
@@ -968,7 +1066,10 @@ font-weight: bold;
         font-size: 21px;
     }
    
-
+    .nav-link:hover{
+        color: white;
+        font-weight: bold;
+    }
 
 
 }

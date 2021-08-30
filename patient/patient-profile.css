@@ -66,7 +66,7 @@ aside.left-container{
     top:10%;
     left:0%;
     padding-top: 5%;
-    z-index: 1;
+    z-index: -1;
 
 }
 main.middle-container{
@@ -297,6 +297,8 @@ form{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    gap: 25px;
+    margin-bottom: 15px;
 }
 
 .second-section{
@@ -343,12 +345,38 @@ div > input {
     border-radius: 4px;
     height: 36px;
 }
+.DOB{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 4px;
+}
+.marital-status{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 2px;
+}
+#marital-status{
+    width: 175px;
+}
+#date {
+    width: 175px;
+}
+#gender{
+    width: 175px;
+}
 .zip-state{
     padding-left: 15px;
 }
 #zip-code {
     width: 80px;
 }
+    #zip{
+        margin-left: 15px;
+    }
 
  select{
     background: #FFFFFF;
@@ -393,6 +421,9 @@ input[type=button]{
     background: #EAEAEA;
     border-radius: 5px; 
     box-sizing: border-box;
+}
+input::placeholder{
+    color: white;
 }
 
 
@@ -685,6 +716,9 @@ nav.navbar{
         justify-content: space-evenly;
         width: 180px;
     }
+    #state{
+        width: 60px;
+    }
     #zip-code{
         width: 80px;
     }
@@ -696,6 +730,14 @@ nav.navbar{
     } 
     .emergency > h2 {
         display: block;
+    }
+    input::placeholder{
+        font-family: 'Red Hat Display', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: rgba(0, 0, 0, 0.5);
     }
 
 

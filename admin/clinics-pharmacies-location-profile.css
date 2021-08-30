@@ -46,6 +46,7 @@ header#top-container{
     z-index: 1;
     position: fixed;
     padding: 1em 0em;
+    background: white;
 
 }
 aside.left-container{
@@ -62,7 +63,7 @@ aside.left-container{
     top:10%;
     left:0%;
     padding-top: 5%;
-    z-index: 1;
+    z-index: -1;
   
 }
 main.middle-container{
@@ -75,6 +76,7 @@ main.middle-container{
     flex-direction: column;
     justify-content:flex-start;
     align-items:center;
+    gap: 20px;
     width: 100%;
     height: 100%;
     margin-left: 10px;
@@ -278,7 +280,8 @@ div.pharmacies-clinics{
 }
 main.middle-container h2{
     text-align: left;
-    padding-right: 60%;
+   
+
 }
 
 div.search-clinics{
@@ -289,18 +292,169 @@ div.search-clinics{
 /*MIDDLE SECTION STYLING*/
 .first-sect {
     width: 90%;
-    background-color: red;
+    background: linear-gradient(266.44deg, rgba(0, 197, 180, 0.22) 1.59%, rgba(0, 197, 180, 0.22) 14.94%, rgba(0, 197, 180, 0.22) 26.71%, rgba(0, 197, 180, 0) 41.33%);
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 .second-sect{
     width: 90%;
-    background-color: blue;
+    background: rgba(168, 168, 168, 0.1);
+    border-radius: 5px;
 }
 
 .third-sect {
     width: 90%;
-    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inpt {
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    height: 30px;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.hours-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+.box{
+    
+    width: 227px;
+}
+.one, .two {
+    background: #FFFFFF;
+    border: 1px solid #A8A8A8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /*padding: 15px;*/
+}
+.one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.days > p {
+    margin: 0px;
+}
+
+
+.two p {
+    text-align: center;
+}
+.location{
+    margin: 10px 0px;
+    text-align: center;
+}
+.hours{
+    width: 126px;
+    padding-left: 18px;
+}
+.days > p {
+    margin: 0px;
+}
+.score {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
+
+#service-score{
+    margin: 0px;
+}
+.three {
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blue-box {
+    background: rgba(0, 197, 180, 0.22);
+    border: 1px solid #00C5B4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 227px;
+    height: 80px;
+}
+
+.white-box {
+    background: #FFFFFF;
+    border: 1px solid rgba(138, 138, 138, 0.4);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 227px;
+    height: 100px;
+}
+.white-box > .center {
+    text-decoration: underline 2px #00C5B4;
+}
+.center{
+    text-align: center;
+} 
+
+.contact-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.column-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.column-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.pharmacy-info-container {
+    display: flex;
+    flex-direction: row;
+}
+.pharmacy-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.pharm-profile{
+    width: 120px;
+    background: white;
+    margin-top: 10px;
+}
+#contact-title {
+    margin-left: 9%;
+    width: 176px;
 }
 
 /*MIDDLE SECTION STYLING END*/
@@ -429,6 +583,9 @@ nav.navbar{
         justify-content:right;
         padding-right: 0%;
     }
+    .box{
+        width: 200px;
+    }
   
    
     a.nav-btns{
@@ -514,7 +671,6 @@ nav.navbar{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding: 15px;
     }
  
     /*Display None Desktop HTML*/
@@ -549,71 +705,152 @@ nav.navbar{
     main.middle-container h2{
         padding-right: 0%;
     }
-    /*Flex-Order*/
-    h2#clinics-title{
-        order:1 ;
-    }
-    div.search-clinics{
-        order: 2;
-        width: 90%;
-    }
-    div.pharmacies-clinics{
-        order:3;
-    }
-    div.clinics-tablelist{
-        order: 4;
-    }
-    div.nxt-pg{
-        order: 5;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    .buttons-container{
-        order: 6;
-        height: 15%;
-        
-    }
-    
-/*Flex-order End*/
     #clinics-title{
         font-style: normal;
         font-weight: 500;
 
     }
-    input#clinics-searchbox {
-        width: 100%;
-        background-color:  #EEEEEE;
-    }
-        
-    th{
-        font-weight: normal;
-        text-align: center;
-    }
-    tr, td {
-        text-align: center;
-    }
-        /*NXT PAGE FLEX Position*/
-        .previous-pg{
-            width:30%
-            
-        }
-        .nextpage{width: 30%;}
-        div.agreement-container{
-            width: 90%;
-            margin: 0%;
-            padding: 0%;
-        }
-        button{
+        .first-sect{
+            width: 85%;
             padding: 8px;
-            height: 45px;
-            width: 100px;
-            position: relative;
-            left: 18%;
-            font-style: normal;
-            font-weight: bold;
+        }
+        .second-sect{
+            width: 88%;
+        }
+        #contact-title{
             font-size: 16px;
         }
+       .third-sect{
+         width: 90%;
+        display: grid;
+        grid-template-columns: [column1] 2fr [column2]2fr[column3];
+        grid-template-rows: [row1] 176px [row2] 100px [row3] 150px [row4];
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        
+       }
+       .btns-ctnr{
+        width: 85%;
+       }
+       .one{
+        grid-row-start: 1;
+        grid-row-end: row3;
+        justify-content: space-evenly;
+        gap: 0px;
+       }
+       .two{
+        grid-row-start: row1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: column3;
+       }
+       .three{
+        grid-column-start: column2;
+        grid-column-end: column3;
+        grid-row-start: row2;
+        grid-row-end: 4;
+       }
+       .box {
+           width: 160px;
+         
+       }
+       .one {
+           justify-content: space-around;
+       }
+       .location{
+           font-size: 14px;
+       }
+       .days{
+           font-size: 12px;
+       }
+       .blue-box{
+           width: 160px;
+           font-size: 14px;
+       }
+       .white-box{
+        width: 330px;
+        height: 100px;
+        position: relative;
+        right: 106%;
+        bottom: 16%;
+        font-size: 14px;
+       }
+       .white-box > h3 {
+           margin-top: 35px;
+       }
+       .Pharmacy-info-container{
+           width: 88%;
+        }
+       .pharmacy-info{
+           justify-content: space-evenly;
+       }
+
+       .profile-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 10px;
+       }
+       .pharm-profile{
+           width: 55px;
+       }
+       .pharmacy-info > h2 {
+        font-size: 16px;
+       }
+       .pharmacy-info > p {
+           font-size: 14px;
+       }
+        a > button{
+        background: none;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 0px;
+        padding-bottom: 5px;
+       }
+       #return-update{
+        margin-left: 35%;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+       }
+       #mobile-contact{
+           padding: 10px;
+       }
+
+       #back{
+           font-size: 16px;
+       }
+       #back > img {
+           margin-right: 10px;
+       }
+       #back:hover{
+           color:#00C5B4 ;
+       }
+       .mble-btns{
+           padding:  10px 1em;
+           font-weight: 600;
+       }
+       .mble-btns:hover{
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
+        font-weight: bold;
+       }
+       #return:hover{
+           color: white;
+       }
+       #update{
+        background: #00C5B4;
+        border-radius: 5px;
+        color: white;
+       }
+       #return{
+        background: #EEEEEE;
+        border-radius: 5px;
+        color: black;
+       }
+
+        
         
         /*hamburger styling*/
         nav.navbar{
