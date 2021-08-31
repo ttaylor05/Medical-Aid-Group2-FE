@@ -291,7 +291,9 @@ div.search-clinics{
 /*MIDDLE SECTION STYLING*/
 .first-sect {
     width: 90%;
-    background: linear-gradient(266.44deg, rgba(0, 197, 180, 0.22) 1.59%, rgba(0, 197, 180, 0.22) 14.94%, rgba(0, 197, 180, 0.22) 26.71%, rgba(0, 197, 180, 0) 41.33%);
+    background: linear-gradient(
+266.44deg
+, rgba(0, 197, 180, 0.22) 1.59%, rgba(0, 197, 180, 0.22) 14.94%, rgba(0, 197, 180, 0.22) 26.71%, rgba(0, 197, 180, 0) 41.33%);
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -328,6 +330,9 @@ div.search-clinics{
 }
 
 /*Contact Details*/
+#contact-title{
+    margin-left: 10%;
+}
 .pharmacy-info-container {
     display: flex;
     flex-direction: row;
@@ -378,6 +383,99 @@ div.search-clinics{
     justify-content: center;
     align-items: flex-end;
 }
+/*Third-Sect*/
+.first-div{
+    width: 340px;
+    background: rgba(0, 197, 180, 0.22);
+    border-radius: 5px;
+    padding: 15px;
+}
+.second-div{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.upload-photo{
+    background: #FFFFFF;
+    border: 1px solid #A8A8A8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.documentation{
+    background: rgba(0, 197, 180, 0.2);
+    border: 1px solid #00C5B4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.insurance{
+    background: #FFFFFF;
+    border: 1px solid rgba(138, 138, 138, 0.4);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.first-div > h4 {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+}
+.upload-photo > h4 {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+}
+.documentation > h4 {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+}
+.insurance > h4{
+    text-decoration: underline #00C5B4 4px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+}
+.upload-photo > img {
+    width: 65px;
+}
+
+.edit-hours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inpt-div{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+.days-inpt{
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    height: 30px;
+    margin-left: 10px;
+}
+.inpt-div > label {
+    margin-right:10px;
+}
+/*Third-Sect End*/
 
 /*MIDDLE SECTION STYLING END*/
 
@@ -477,7 +575,10 @@ nav.navbar{
           
         }
          h2#clinics-title{
-            padding-right: 40%;
+           width: 60%;
+        }
+        #contact-title{
+            width: 60%;
         }
       aside.right-container{
          display: none;
@@ -644,41 +745,13 @@ nav.navbar{
         }
        .third-sect{
          width: 90%;
-        display: grid;
-        grid-template-columns: [column1] 2fr [column2]2fr[column3];
-        grid-template-rows: [row1] 176px [row2] 100px [row3] 150px [row4];
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        
+         justify-content: space-between;
        }
+
        .btns-ctnr{
         width: 85%;
        }
-       .one{
-        grid-row-start: 1;
-        grid-row-end: row3;
-        justify-content: space-evenly;
-        gap: 0px;
-       }
-       .two{
-        grid-row-start: row1;
-        grid-row-end: 2;
-        grid-column-start: 2;
-        grid-column-end: column3;
-       }
-       .three{
-        grid-column-start: column2;
-        grid-column-end: column3;
-        grid-row-start: row2;
-        grid-row-end: 4;
-       }
-       .box {
-           width: 160px;
-         
-       }
-       .one {
-           justify-content: space-around;
-       }
+       
        .location{
            font-size: 14px;
        }
@@ -771,7 +844,35 @@ nav.navbar{
         border-radius: 5px;
         color: black;
        }
+       /*third-sect */
 
+       .first-div{
+           width: 172px;
+           padding: 0px;
+           background-color: white;
+       }
+       .second-div{
+           width: 132px;
+       }
+       .first-div > h4 {
+           font-size: 16px;
+       }
+       .inpt-div > label{
+           margin-right: 0px;
+       }
+       .days-inpt{
+           width: 60px;
+           margin-left: 15px;
+       }
+       .upload-photo > h4{
+           font-size: 16px;
+       } 
+       .documentation > h4{
+           font-size: 16px;
+       } 
+       .insurance > h4 {
+           font-size: 16px;
+       }
         
         
         /*hamburger styling*/

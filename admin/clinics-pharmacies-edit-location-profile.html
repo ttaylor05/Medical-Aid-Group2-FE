@@ -162,12 +162,6 @@
             <section class="second-sect">
                 <form action="contact-details" class="contact-details">
                     <h2 id="contact-title">Contact Details</h2>
-                    <div class="displayNone-dsktp" id="mobile-contact">
-                        <p class="contact-info-mobile">Phone: 555-555-1112</p>
-                        <p class="contact-info-mobile">Website: www.emprmed.com/emppharmacy</p>
-                        <p class="contact-info-mobile">Fax: &nbsp 555-555-1114</p>
-                        <p class="contact-info-mobile">Other:</p>
-                    </div>
                     <div class="contact-input displayNone-mobile"  >
                         <div class="column-one">
                             <div class="primaryNum cont"> 
@@ -196,21 +190,52 @@
                 </form>
                  </section>
             <section class="third-sect">
-               <div class="location-hours" >
-                   <form action="edit-hours">
+               <div class="first-div" >
+                <h4 class="location-hrs">Location Hours</h4>
+                   <form action="edit-hours" class="displayNone-mobile">
                        <div class="inpt-div">
                         <label for="mon">Mon</label>
                         <input type="text" name="monday" id="monday" class="days-inpt" >
                        </div>
-                       <div class="inpt-div"></div>
-                       <div class="inpt-div"></div>
-                       <div class="inpt-div"></div>
-                       <div class="inpt-div"></div>
-                       <div class="inpt-div"></div>
-                       <div class="inpt-div"></div>
+                       <div class="inpt-div">
+                        <label for="tues">Tues</label>
+                        <input type="text" name="tuesday" id="tuesday" class="days-inpt" >
+                       </div>
+                       <div class="inpt-div">
+                        <label for="wednesday">Wed</label>
+                        <input type="text" name="wednesday" id="wednesday" class="days-inpt" >
+                       </div>
+                       <div class="inpt-div">
+                        <label for="thursday">Thurs</label>
+                        <input type="text" name="thursday" id="thursday" class="days-inpt" >
+                       </div>
+                       <div class="inpt-div">
+                        <label for="friday">Fri</label>
+                        <input type="text" name="friday" id="fridday" class="days-inpt" >
+                       </div>
+                       <div class="inpt-div">
+                        <label for="saturday">Sat</label>
+                        <input type="text" name="saturday" id="saturday" class="days-inpt" >
+                       </div>
+                       <div class="inpt-div">
+                        <label for="sunday">Sun</label>
+                        <input type="text" name="sunday" id="sunday" class="days-inpt" >
+                       </div>
                    </form>
+                   <img src="" alt="">
                </div>
-               <div></div>    
+               <div class="second-div">
+                   <div class="upload-photo">
+                    <h4> Upload Photos</h4>
+                    <img src="/images/admin-images/upload-images.svg" alt="upload-images">
+                   </div>
+                   <div class="documentation">
+                       <h4>Location Documentation</h4>
+                   </div>
+                   <div class="insurance">
+                        <h4>View Insurance Infomation</h4>
+                   </div>
+               </div>    
             </section>
             <div class=" btns-ctnr displayNone-dsktp" >
                 <div> <a href="#" id="back"> <img src="/images/admin-images/left-line-arrow.svg" alt="">Back</a> </div>
