@@ -162,28 +162,35 @@
             <section class="second-sect">
                 <form action="contact-details" class="contact-details">
                     <h2 id="contact-title">Contact Details</h2>
-                    <div class="contact-input displayNone-mobile"  >
+                    <div class="contact-input"  >
                         <div class="column-one">
+                            <div class="displayNone-dsktp name cont">
+                                <input type="text" class="Fullname inpt"  placeholder="Name">
+                            </div>
                             <div class="primaryNum cont"> 
                                 <label for="primary-number"  >Primary <br> Number</label>
-                               <input type="text" name="number" class="firstrow inpt" id="primary-number">
+                               <input type="text" name="number" class="firstrow inpt" id="primary-number" placeholder="Phone Number">
                             </div>
        
                            <div class="address cont">
                            <label for="fax">Address</label>
-                           <input type="text" name="fax" class="firstrow inpt" id="fax">
+                           <input type="text" name="fax" class="firstrow inpt displayNone-mobile" id="fax">
                            </div>
                         </div>
                         <div class="column-two">
                             <div class="website cont">
                                 <label for="Website">Website</label>
-                                <input type="text" name="Website" class="secondrow inpt" id="website">
+                                <input type="text" name="Website" class="secondrow inpt" id="website" placeholder="Website">
                                 </div>
             
                                 <div class="email cont">
                                 <label for="other">Email</label>
-                                <input type="text" name="other" class="secondrow inpt" id="other">
+                                <input type="text" name="email" class="secondrow inpt displayNone-mobile" id="other">
                                 </div>
+                        </div>
+                        <div class="column-three displayNone-dsktp">
+                            <input type="text" name="other" class="other inpt" placeholder="Other">
+
                         </div>
 
                     </div>
@@ -222,7 +229,8 @@
                         <input type="text" name="sunday" id="sunday" class="days-inpt" >
                        </div>
                    </form>
-                   <img src="" alt="">
+                   <img src="/images/admin-images/add-1.svg" alt="Edit Hours Image" class="displayNone-dsktp">
+                   <p class="displayNone-dsktp">Add Location Hours</p>
                </div>
                <div class="second-div">
                    <div class="upload-photo">
@@ -239,12 +247,12 @@
             </section>
             <div class=" btns-ctnr displayNone-dsktp" >
                 <div> <a href="#" id="back"> <img src="/images/admin-images/left-line-arrow.svg" alt="">Back</a> </div>
-                <div id="return-update" >
-                    <button class="mble-btns"id="update">
-                        Update
+                <div id="accept-deny" >
+                    <button class="mble-btns"id="accept">
+                        Accept
                     </button>
-                    <button class="mble-btns" id="return"> 
-                        Return
+                    <button class="mble-btns" id="deny"> 
+                        Deny
                     </button>
                 </div>
             </div>
