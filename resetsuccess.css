@@ -27,9 +27,6 @@ header {
     display: none;
   }
  
-  /* img{
-    width:30px;
-  } */
   h2{
     display: inline-block;
     font-size: 18px;
@@ -45,9 +42,7 @@ header {
     font-weight: normal;
     padding: 3px;
   }
-  /* .no-dropdown a {
-     font-weight: bold;
-  } */
+
   header a:hover, header a.selected {
     background-color: #00c5b4;
     color: white;
@@ -57,12 +52,12 @@ header {
   a.selected, a {
     border-radius: 7px;
     padding: 10px;
-    /* margin-right: 1em; */
     font-size: 16px;
     font-weight: bold;
   }
 /* heading */
-.tab-switch {
+
+/* .tab-switch {
     display: flex;
     justify-content: center;
   }
@@ -85,7 +80,7 @@ header {
     }
   
         .patient-link {
-          /* border-bottom: 3.5px solid #f3ea12; */
+          
           background-color: rgb(225, 223, 223);
           margin-bottom: 12.5px;
           padding: 15px 89px 15px 10px;
@@ -94,7 +89,7 @@ header {
         }
   
         .doc-link {
-          /* border-bottom: 3.5px solid #c3c7d2; */
+        
           background-color: rgb(39, 196, 180, 0.7);
           border: 2px solid #00c5b4;
         padding: 15px 87px 15px 10px;
@@ -102,18 +97,19 @@ header {
   
         .doc-link:hover {
           border-bottom: 3.5px solid #f3ea12;
-        }
+        } */
     
 /* heading */
 .flex-container {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 .container {
-  flex-basis: 80%;
+  margin-top: 2em;
   text-align: center;
+  margin-left: -39px;
 }
-.img, .doc2-img {
+.img {
     margin-top: 71px;
     margin-left: 70px; 
     margin-right: -100px;
@@ -126,14 +122,23 @@ header {
     font-weight: bold;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 600;
-    text-align: justify;
+    text-align: left;
 }
 .login-heading p {
-  padding-left: .5em;
+  padding-left: .9em;
 }
-.content-text {
-    text-align: justify;
+.content-text, .content-text2 {
+    text-align: left;
     padding-left: 1.5em;
+}
+
+.container h4 {
+  text-align: left;
+  padding: 0em 1.4em;
+}
+.content-text p {
+  padding: 0em 0em;
+  /* padding: 0em 1.5em; */
 }
 .form {
     text-align: justify;
@@ -150,13 +155,14 @@ input:focus{
     margin-bottom: 42px;
     margin-top: 4px;
     margin-right: 30px;
+    margin-left: 10px;
     border: 1px solid;                                      
     border-color: rgb(223, 222, 222);
     border-radius: 7px;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 17px;
-    width: 85%;
-    padding: 0.5em;
+    padding: 0em 19em 0em 1em;
+    
 }
 input:focus{
     background-color:rgb(178, 240, 226);;
@@ -167,23 +173,7 @@ input:focus{
     
   }
 
-.pwd {
-    background-color:   rgb(245, 241, 241); 
-    margin-bottom: 0px;
-    margin-right: 30px;
-    border: 1px solid;
-    border-color: rgb(223, 222, 222);
-    border-radius: 7px;
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 17px;
-    width: 85%;
-    padding: 0.5em;
-}
-.psw a {
-  /* margin-right: 0px; */
-   text-align: center;
-   margin: 0 0 0 0px;
-}
+
 .move-bx {
   display: flex;
 }
@@ -203,14 +193,10 @@ input:focus{
 .login-btn {
     color: #ffff;
     background-color: rgb(42, 199, 183);
-    padding-right: 58px;
-    padding-left: 58px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: .6em 2.5em .6em 2.5em;
     border: none;
-    /* margin-left: 79px; */
     margin-bottom: 50px;
-    margin-top: 58px;
+    margin-top: 2em;
     font-size: 14px;
     border-radius: 5%;
     font-weight: bold;
@@ -242,10 +228,9 @@ input:focus{
       margin-left: 0px;
       justify-content: space-around;
       align-items: center;
-      padding: 0.8em 0.5em;
+      
   }
-      
-      
+
         header a {
            display: block;
             width:fit-content;
@@ -313,26 +298,22 @@ input:focus{
    .navbar a:hover {
      background-color: #00c5b4;
    }
-   
-      
-      .img, .doc2-img {
+      /* .img {
         margin-top: 71px;
         margin-left: 50px;
         max-width: 90%;
         width: 100%;
-        /* margin-right: -92px; */
-    }
+    } */
    .tab-wrapper {
        display: none;
    }
-   .img, .doc-img {
+   .doc-img {
     display: block;
-    margin-left:auto;
-    margin-right: auto;
+    /* margin-left:auto;
+    margin-right: auto; */
     margin-top: -12px;
-    margin-bottom: -15px;
-
-    width: 100%;
+    margin-bottom: -35px;
+    width: 130%;
 } 
     .signup-heading  {
         margin-left: 6.5em;
@@ -344,45 +325,11 @@ input:focus{
        padding-bottom: 0px;
     }
     .container {
-        padding-top: 50px;
-        margin-left:auto;
-        margin-right: auto;
         text-align: center;
+        padding-left: 2em;
+        margin-right: -5em;
+        margin-left: 0px;
      }
-     .name-container {
-         display: block;
-         flex-direction: row;
-     }
-     .fname {
-         margin-bottom: 10px;
-         margin-left: 18px;
-         padding-right: 122px;
-     }
-    .lname {
-         margin-left: 0px;
-         margin-bottom: 10px;
-         margin-left: 18px;
-         padding-right: 122px;
-     }
-     
-     .email1, .pwd {
-       margin-right: 0px;
-     }
-     .phone, .email2, .cpwd {
-         padding-right: 141px;
-         margin-left: 18px;
-         margin-bottom: 10px;
-        
-     }
-     .pass {
-        font-size: 12px;
-        margin-left: 18px;
-    }
-    .check-box{
-        font-size: 15px;
-        margin-left: 13px;
-        margin-bottom: -10px;
-    }
     .signup-btn  {
        margin-bottom: 14px;
        margin-left: 85px;
@@ -396,17 +343,10 @@ input:focus{
   html,body {
 
     margin:0;
-
     padding:0;
-
     overflow-x:hidden;
-
 }
- 
-    .signup-heading  {
-        /* margin-left: 6.5em; */
-        font-size: 50px;
-    } 
+
     .flex-container {
        /* flex-direction: column; */
        align-items: flex-start;
@@ -416,47 +356,7 @@ input:focus{
     .container {
         padding-top: 50px;
        margin-left: -20px;
-        /* margin-left:auto;
-        margin-right: auto; */
      }
-     .name-container {
-         display: block;
-         flex-direction: row;
-     }
-     .fname, .lname, .phone, .email2, .cpwd {
-         font-size: 30px;
-     }
-     .fname {
-         margin-bottom: 10px;
-         margin-left: 18px;
-         padding-right: 141px;
-     }
-    .lname {
-         margin-left: 0px;
-         margin-bottom: 10px;
-         margin-left: 18px;
-         padding-right: 141px;
-     }
-     
-     .phone, .email2, .cpwd {
-         padding-right: 141px;
-         margin-left: 18px;
-         margin-bottom: 10px;
-        
-     }
-     .pass {
-        /* font-size: 12px; */
-        margin-left: 18px;
-    }
-    .check-box{
-        /* font-size: 15px; */
-        margin-left: 13px;
-        margin-bottom: -10px;
-    }
-    .signup-btn  {
-       margin-bottom: 14px;
-       margin-left: 85px;
-       padding-bottom: 8px;
-       padding-top: 8px;
-    }
-}
+    
+ }
+ 
