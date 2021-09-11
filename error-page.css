@@ -65,77 +65,6 @@ header {
     width: 80%;
     margin: auto;
 }
-
-  .section1{
-    position: relative;
-    background-image: url(/images/error-page-images/keyboard-img.svg);
-    background-position-x: center;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: 800px;
-    height: 350px;
-  }
-
-  .section1 div{ 
-    position:absolute;
-    width:350px;
-    /* margin-left:690px; */
-    background-color:white;
-    /* margin-top:110px; */
-    padding-right:20px;
-    padding-left:20px;
-    background-repeat:no-repeat;
-    background: rgba(300, 243, 243, 0.6);
-    border-radius:6px;
-    height:270px;
-    right: 150px;
-    top: 100px;
-  } 
-
-
-  /* .section1 div, h1, p  {
-    text-align: center;
-  } */
-
-  
-
-  .section1 a {
-    color: #000000;
-    width:100px;
-    padding:10px;
-    border:none;
-    cursor:pointer;
-    border-radius:6px;
-    margin-top:30px;
-    font-size:16px;
-    font-weight: bold;
-    font-family: 'Red Hat Display', sans-serif;
-    text-decoration: none; 
-    
-  }
-
-
-  .section1 .login:hover{
-      background: lightgray;
-      transition: 0.5s;
-  }
-
-  .section1 .signup:hover{
-      background:lightgray;
-      transition: 0.5s;
-  }
-
-  .section1 .login{
-    background-color:#00c5b4;
-  }
-
-  .section1 .signup{
-      background-color:#00c5b4;
-      margin-left:30px;
-  }
-
-
-
   .section2{
       display: flex;
       justify-content: space-around;
@@ -228,7 +157,7 @@ header {
   align-items: center;
   width: 200px;
   position: relative;
-  left: 42%;
+  left: 40%;
   top: 10%;
   z-index: 1;
 }
@@ -247,7 +176,7 @@ header {
     width: 300px;
     height: 300px;
     position: relative;
-    left: 46%;
+    left: 41%;
     bottom: 274%;
 }
 .rectangle807{
@@ -309,7 +238,12 @@ header {
   font-weight: bold;
   font-size: 21px;
   padding: 15px 5px;
-  margin-top: 15px;
+  margin-top: 78px;
+}
+.home-btn:hover{
+  color: white;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -7px rgba(0,0,0,0.21);
+
 }
 .features, 
 .benefits,
@@ -665,14 +599,17 @@ header {
   }
   .error-notfound{
     top: 30%;
-    left: 37%;
+    left: 30%;
+  }
+  .rectangle-container{
+    padding-left: 0px;
   }
   .rectangle805{
     left: 9%;
     top: -122%;
   }
   .rectangle806{
-    left: 42%;
+    left: 32%;
     bottom: 244%;
   }
   
@@ -689,10 +626,6 @@ header {
   
 
 @media (max-width: 449px) {
-  
-  .section1{
-    display: none;
-  }
   .search-container{
     display: none;
   }
@@ -703,23 +636,26 @@ header {
     left: 2%;
     margin: 0px;
 }
+.rectangle-container{
+  padding-left: 0px;
+}
 .rectangle805{
   width: 200px;
   height: 200px;
-  left: 7%;
-    top: -34%;
+  left: 12%;
+  top: -34%;
 }
 .rectangle806{
   width: 200px;
   height: 200px;
-  left: 32%;
+  left: 38%;
   bottom: 118%;
 }
 .rectangle807{
   width: 200px;
   height: 200px;
-  left: 18%;
-  bottom: 176%;
+  left: 24%;
+  bottom: 185%;
 }
 .rectangle{
   width: 200px;
@@ -812,17 +748,6 @@ header {
     .navbar a:hover {
       background-color: #00c5b4;
     }
-    
-    .section1 {
-        height: 300px;
-    }
-    
-    .section1 div {
-        position: static;
-        width: 314px;
-        margin-top: 0px;
-        height: 190px;
-      }
       
       .section2,
       .section3,
